@@ -1,0 +1,26 @@
+{
+  "folders": [
+    {
+      "path": "./dotNet"
+    },
+    {
+      "path": "./README.Stub"
+    }
+  ],
+  "settings": {
+    "files.readonlyInclude": {
+      "../README.md": true
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "github.copilot",
+      "github.copilot-chat",
+      "ms-vscode.vscode-speech",
+      "ms-dotnettools.csharp",
+      "ms-dotnettools.vscode-dotnet-runtime",
+      "ms-dotnettools.csdevkit",
+      "vsls-contrib.codetour"
+    ]
+  }
+}
