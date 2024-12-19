@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+<!-- SEECRET: rolled -->
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>AdvancedGHCP</RootNamespace>
+  </PropertyGroup>
+
+</Project>
