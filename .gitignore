@@ -134,4 +134,4 @@ HIDDENSECRETVALUE = 5
 
 # Ignore the files in the dotnet obj folder
 dotNet/obj/
-dotNet/obj/Debug/net6.0/AdvancedGHCP.AssemblyInfo.cs
+dotNet/bin/
