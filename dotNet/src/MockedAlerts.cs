@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using SOC.AdvancedCopilot.Models;
 
 namespace Mocks;
 
@@ -18,8 +19,8 @@ public class MockedAlerts
             LocationName = "Kitchen",
             Latitude = 1.0,
             Longitude = 1.0,
-            Severity = Alert.AlertSeverity.Info,
-            Status = Alert.AlertStatus.Active,
+            Severity = AlertSeverity.Info,
+            Status = AlertStatus.Active,
             Source = "Microphone"
             },
             new Alert
@@ -31,8 +32,8 @@ public class MockedAlerts
             LocationName = "Living room",
             Latitude = 2.0,
             Longitude = 2.0,
-            Severity = Alert.AlertSeverity.Warning,
-            Status = Alert.AlertStatus.Acknowledged,
+            Severity = AlertSeverity.Warning,
+            Status = AlertStatus.Acknowledged,
             Source = "Camera"
             },
             new Alert
@@ -44,8 +45,8 @@ public class MockedAlerts
             LocationName = "Garage",
             Latitude = 3.0,
             Longitude = 3.0,
-            Severity = Alert.AlertSeverity.Error,
-            Status = Alert.AlertStatus.Resolved,
+            Severity = AlertSeverity.Error,
+            Status = AlertStatus.Resolved,
             Source = "Camera"
             },
             new Alert
@@ -57,8 +58,8 @@ public class MockedAlerts
             LocationName = "Garage",
             Latitude = 4.0,
             Longitude = 4.0,
-            Severity = Alert.AlertSeverity.Critical,
-            Status = Alert.AlertStatus.Active,
+            Severity = AlertSeverity.Critical,
+            Status = AlertStatus.Active,
             Source = "Sensor"
             },
             new Alert
@@ -70,8 +71,8 @@ public class MockedAlerts
                 LocationName = "Office",
                 Latitude = 5.0,
                 Longitude = 5.0,
-                Severity = Alert.AlertSeverity.Info,
-                Status = Alert.AlertStatus.Active,
+                Severity = AlertSeverity.Info,
+                Status = AlertStatus.Active,
                 Source = "Keyboard"
             },
             new Alert
@@ -83,8 +84,8 @@ public class MockedAlerts
                 LocationName = "Kitchen",
                 Latitude = 6.0,
                 Longitude = 6.0,
-                Severity = Alert.AlertSeverity.Warning,
-                Status = Alert.AlertStatus.Acknowledged,
+                Severity = AlertSeverity.Warning,
+                Status = AlertStatus.Acknowledged,
                 Source = "Fridge Sensor"
             },
             new Alert
@@ -96,8 +97,8 @@ public class MockedAlerts
                 LocationName = "Laundry Room",
                 Latitude = 7.0,
                 Longitude = 7.0,
-                Severity = Alert.AlertSeverity.Error,
-                Status = Alert.AlertStatus.Resolved,
+                Severity = AlertSeverity.Error,
+                Status = AlertStatus.Resolved,
                 Source = "Washing Machine"
             }
         };

@@ -1,0 +1,24 @@
+{
+  "folders": [
+    {
+      "path": "./Typescript"
+    },
+    {
+      "path": "./README.Stub"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/dotNet": true
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "github.copilot",
+      "github.copilot-chat",
+      "ms-vscode.vscode-speech",
+      "wallabyjs.quokka-vscode",
+      "vsls-contrib.codetour"
+    ]
+  }
+}
