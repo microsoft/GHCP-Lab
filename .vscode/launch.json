@@ -1,0 +1,22 @@
+{
+  "configurations": [
+    //{
+    //  "name": "C#: AdvancedGHC",
+    //  "type": "dotnet",
+    //  "request": "launch",
+    //  "projectPath": "${workspaceFolder}\\dotNet\\AdvancedGHC.csproj",
+    //  "launchConfigurationId": "TargetFramework=;AdvancedGHC"
+    //}
+    {
+      "name": "C#: AdvancedGHC",
+      "type": "dotnet",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/dotNet/bin/Debug/net5.0/AdvancedGHC.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/dotNet",
+      "stopAtEntry": false,
+      "console": "internalConsole"
+    }
+  ]
+}

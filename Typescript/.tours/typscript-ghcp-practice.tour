@@ -1,0 +1,117 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "[Typescript] Github Copilot (GHCP) Lab",
+  "steps": [
+    {
+      "file": "../README.Stub/README.md",
+      "description": "Start Here!",
+      "line": 1,
+      "title": "Start here!"
+    },
+    {
+      "file": "./models.ts",
+      "description": "Get to know your data!\r\n\r\nHere we have alarms and user events data.\r\nYou will need to help process this information\r\n\r\nScroll down this page and view the user events.\r\nTake note of the structure - location, names, severity and everything",
+      "line": 1,
+      "title": "Know your data"
+    },
+    {
+      "file": "./NamingVariables.ts",
+      "description": "#1 Let's warm up and let Copilot do it for us, please create a variable to store the total alarm events.\r\n\r\nSimply place your caret after the equal sign and hit space.\r\nLet's see what GC completes.",
+      "line": 2,
+      "title": "Naming Variables 1"
+    },
+    {
+      "file": "./NamingVariables.ts",
+      "description": "#2 Your first attempt at solo assignment, save the number of user events into a variable.\r\n\r\nHowever, look! Github Copilot knows exactly what to do, and offers you to create exactly that variable on your behalf!",
+      "line": 5,
+      "title": "Naming Variables 2"
+    },
+    {
+      "file": "./NamingVariables.ts",
+      "description": "#3 So for your actual solo assignment - create a variable to store the total number of events, user and alarms.",
+      "line": 8,
+      "title": "Naming Variables 3"
+    },
+    {
+      "file": "./NamingVariables.ts",
+      "description": "#4 Create a method to count the total alarm events which happened by an input of location",
+      "line": 11,
+      "title": "Naming Variables 4"
+    },
+    {
+      "file": "./NamingVariables.ts",
+      "description": "#5 Find the list of users names which were at the same location where the alarm events occurred.\r\nDo not input any parameters and let Copilot iterate over the data and find the matching pairs.\r\n\r\nShould return an array of user *names*, example: [\"Brad\", \"Lee\", \"Cooper\"]",
+      "line": 14,
+      "title": "Naming Variables 5"
+    },
+    {
+      "file": "./NamingVariables.ts",
+      "description": "#6 Create a dictionary with keys of alarm severities and a count of how many alarm events of respective severity type events occurred.\r\n\r\nExample output:\r\n{ \r\n    Low: 2,\r\n    Medium: 3,\r\n    High: 3\r\n}",
+      "line": 17,
+      "title": "Naming Variables 6"
+    },
+    {
+      "file": "InlineChat.ts",
+      "description": "Using GHCP Inline Chat fits scenarios where you need more than one thing at a time, a very specific logic that's too long for a variable name, or you want to provide examples (yes, that's a recommendation!).\r\n\r\n\r\nIn VS Code the default shortcut is ctrl + I to open inline chat",
+      "line": 72,
+      "title": "Inline chat introduction"
+    },
+    {
+      "file": "./InlineChat.ts",
+      "description": "Create a method which returns a list of the user's name property if the alarm and user events overlap in time (exactly).\r\nDuring the comparison, if there's a match, console log the alarm name and user name\r\n\r\nNow you're probably thinking -\r\n\r\nCan I copy and paste this? The answer is yes. But how will you practice phrasing your requirements?\r\n\r\nIf the thought of typing a lot is what deters you, consider talking to VS Code! Using the extension \"VS Code Speech\" (Also recommended in workspace and should be installed) you can simply talk to VS Code with speech to text. This works very well and can be done both in editor, in inline chat as well as in the chat window, give it a go!\r\n\r\n",
+      "line": 74,
+      "title": "Inline chat 1"
+    },
+    {
+      "file": "./InlineChat.ts",
+      "description": "Create method which creates a dictionary of alarm events by alarm name, unless the name contains intrusion (Casing insensitive). In the value store the event locations as a list.\r\n\r\nExample: \r\n{\r\n    'Gas Leak': ['Kitchen', 'Bathroom'],\r\n    ...\r\n}\r\n\r\n\r\nNow we have to stop for a second to ask: But why can't I simply use comments instead? They are also left in the repo explaining what the code below does!\r\n\r\n  1. Code gets refactored, comments usually do not. These comments will demand a cleanup in the future and get disregarded and become unrelevant.\r\n  2. More importantly, comments with GHCP aren't iterable, meaning it's a one-shot completions attempt. If you get it wrong, you have to edit your comment and try again. When using the inline chat you can then reply with what needs to be fixed. Just think of how rare it is when you code things that work for the first time, the better you are explaining what you want to GHCP, the better GHCP will help you, sometimes it takes a few rounds of explanations, a.k.a. \"inline chat ;)\"",
+      "line": 76,
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 6,
+          "character": 2
+        }
+      },
+      "title": "Inline chat 2"
+    },
+    {
+      "file": "Chat.ts",
+      "description": "Using GHCP Chat is ideal for discussions, questions and guidance and reassurance of your code. \r\nWith GCHP chat (CTRL + ALT + I), it's much easier to provide more context using ALIASES, we'll talk about aliases next.\r\nThe more context you add, the more capable Copilot would be.\r\n\r\n\r\nSome (none?) standard examples one can use:\r\n1. \"Check if I missed any edge cases in #selection\"\r\n2. \"Can you provide a numerical example?\" (If you can't remember if you should compare time)\r\n3. \"How do I run the project?\" More often than not, the instructions may be a little obscure, Copilot knows how to simplify and provide simple commands.\r\n4. Using it for some git operations! \"What command to edit the last commit message?\"\r\n\r\nRemember context is everything, if GHCP chat starts providing bad information, it may be confused with older contexts, don't ask him about C# and jump to typescript, create a new chat for these subject jumps. You can always navigate to previous sessions.\r\n",
+      "line": 1,
+      "title": "Chat introduction"
+    },
+    {
+      "file": "./Chat.ts",
+      "description": "Open up Copilot (Ctrl + Shift + I) and make it prompt it, to get a list the `AlarmEvent` keys.\r\n\r\nCopilot should chat list out: \r\ntime,\r\n\r\nseverity,\r\n\r\nlocation,\r\n\r\nname.\r\n\r\n\r\nHint: If you can't get it work, try opening the file to provide context! As we said, context is everything! Can't find it? Consider skipping this one and coming back to it!\r\n\r\n\r\n",
+      "line": 3,
+      "title": "Chat 1"
+    },
+    {
+      "file": "./Chat.ts",
+      "description": "Using Copilot, ask it where you can find the `UserEvent` interface?\r\n\r\nExpected result, get a reference to `models.ts`",
+      "line": 5,
+      "title": "Chat 2"
+    },
+    {
+      "file": "./Chat.ts",
+      "description": "Somewhere in the code, I've listed several SECRET keys. Why don't you try and ask Copilot to list them for you? \r\nYou may use #codebase or @workspace (at the beginning) to list them, give it a try.\r\n\r\nHint: there are a couple of variations and typos, to the secret keywords. Find all isn't an option.",
+      "line": 7,
+      "title": "Chat 3"
+    },
+    {
+      "file": "EasterEggs.md",
+      "description": "From this list of emails below, I only want the non-domain part formatted with new line separators",
+      "line": 14
+    },
+    {
+      "file": "EasterEggs.md",
+      "description": "Congratulations!!!\r\n\r\n\r\nYou have completed the lab and a few easter eggs, I hope that you have learned a thing or two and had some fun while you're at it.\r\n\r\nRemember - \r\n\r\n\r\nShort.\r\n\r\n\r\nSimple.\r\n\r\n\r\nSpecific.\r\n\r\n\r\n\r\n\r\nAnd provide the relevant context (#file/ #selection, etc.)",
+      "line": 27
+    }
+  ],
+  "ref": "main"
+}

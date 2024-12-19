@@ -21,12 +21,11 @@ Each workspace has recommended extensions that you need to install to be able to
 
 
 Pre-req:
-Have Copilot and Copilot Chat installed.
-If you don't have it, follow [https://aka.ms/copilot](aka.ms/copilot) install instructions
+Follow [https://aka.ms/copilot](aka.ms/copilot) install instructions
 
 How to participate:
 1. Clone / Unzip
-2. Double click the relevant workspace and hit the "Open Workspace" button in the Editor (bottom right)
+2. Double click the relevant workspace
 3. Install recommended extensions from the workspace
     3.1 If you don't want to run the code, CodeTour is the critical one
 4. Start the tour by clicking on the Play button to the right of the tour title, on the bottom left CodeTour Panel.![Code tour starting place](image.png)
