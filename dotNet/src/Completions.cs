@@ -1,6 +1,5 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
+
 namespace SOC.AdvancedCopilot.DotNet;
 
 public class GHCPCompletions
@@ -8,7 +7,7 @@ public class GHCPCompletions
     public static void OnlyCompletions(List<Alert> alerts)
     {
         // #1
-
+        var totalAlerts =
         // #2
 
         // #3

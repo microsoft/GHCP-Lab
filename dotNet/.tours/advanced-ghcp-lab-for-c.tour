@@ -16,37 +16,37 @@
     },
     {
       "file": "src/Program.cs",
-      "description": "Let's mock some alerts and get started!\r\n\r\nWe'll take a look at GHCP Completions, Inline chat (and comments) and finally Chat in that order.",
+      "description": "Let's mock some alerts and get started!\r\n\r\nWe'll take a look at GHCP Completions, Inline chat (and comments) and finally Chat in that order.\r\n\r\nJump right in by navigating to the relevant file where the questions are according the the methods below.",
       "line": 8,
       "title": "Mocks and order of exercises"
     },
     {
       "file": "src/Completions.cs",
-      "description": "Using GHCP completions is optimal for Short, Specific and Simple logic (the 3 `S`s), remember that!\r\n\r\n\r\n\r\nFor best completions results - \r\nName a variable according to the logic you expect and then refactor the name after.\r\n\r\nProtip:\r\nGHCP also suggests names (!) if you press Refactor (F2) on the function/variable name.",
+      "description": "Using GHCP completions is optimal for Short, Specific and Simple logic (the 3 `S` principle), remember that!\r\n\r\n\r\n\r\nFor best completions results - \r\nName a variable according to the logic you expect and then refactor the name after.\r\n\r\nPro tips:\r\n1. GHCP also suggests names (!) if you press Refactor (F2) on the function/variable name.\r\n2. Watch this for more context on the [3 `S` Principal](https://www.youtube.com/watch?v=hh1nOX14TyY&t=38s&ab_channel=VisualStudioCode)",
       "line": 8,
       "title": "Completions introduction"
     },
     {
       "file": "src/Completions.cs",
-      "description": "Create a variable to store the total number of alerts",
+      "description": "Let's start easy, we'll create a variable to store the total number of alerts.\r\n\r\nSimply place your caret after the equal sign and the `Space` key",
       "line": 10,
       "title": "Completion #1"
     },
     {
       "file": "src/Completions.cs",
-      "description": "Create a function that returns the count of alerts by Severity, example output: {\"High\": 2, \"Medium\": 1, ....}\r\n\r\n\r\nOcasionally, you may not get the completion you want, you may use \r\n\r\nCtrl + Enter\r\n\r\nTo open the `Suggestions panel`, and see several options (it may present very bad options, so proceed with care and feel free to only take what you need and ignore the rest)",
-      "line": 12,
+      "description": "Create a function that receives a location and finds the alerts which happened in that location.",
+      "line": 14,
       "title": "Completion #2"
     },
     {
       "file": "src/Completions.cs",
-      "description": "Create a function that receives a location and finds the alerts which happened in that location.",
-      "line": 14,
+      "description": "Create a function that returns the aggregated count of alerts by Severity, example output: {\"High\": 2, \"Medium\": 1, ....}\r\n\r\n\r\nFriendly reminder that occasionally, you may not get the completion you want, you may use \r\n\r\n`Ctrl + Enter`\r\n\r\nTo open the `Suggestions panel`, and see several options (it may present very bad options, so proceed with care and feel free to only take what you need and ignore the rest)",
+      "line": 12,
       "title": "Completion #3"
     },
     {
       "file": "src/Completions.cs",
-      "description": "Create a function to get all alerts which happened between two specific dates (you may ignore time).",
+      "description": "Create a function to get all alerts which happened between two specific dates.\r\n\r\nAnother thought, how would that change if you wanted to get alerts between specific hours?",
       "line": 16,
       "title": "Completion #4"
     },
@@ -58,7 +58,7 @@
     },
     {
       "file": "src/Completions.cs",
-      "description": "Let's try to be more specific, when you type `alertsWithLongName` what is the length you get (try it)? Does that satisfy you? What if you wanted it to be a little longer let's say with 12 characters? \r\nThink of how'd you write name that variable in a more specific way.",
+      "description": "Let's try to be more specific, when you type `alertsWithLongName` what is the length you get (try it)? Does that satisfy you? What if you wanted it to be a little longer let's say with 12 characters? \r\nThink of how'd you write name that variable in a more specific way - you can always rename after.",
       "line": 20,
       "title": "Completions #6"
     },
@@ -70,7 +70,7 @@
     },
     {
       "file": "src/InlineChat.cs",
-      "description": "Your task: \r\n\r\nCreate a function which takes an alert and checks if the `AlertStatus` is not `Resolved` for more than seven days, log to console if so.\r\n\r\nNow you're probably thinking - \r\n\r\nCan I copy and paste this? The answer is yes. But how will you practice phrasing your requirements? \r\n\r\nIf the thought of typing a lot is what deters you, consider talking to VS Code! Using the extension \"VS Code Speech\" (Also recommended in workspace and should be installed) you can simply talk to VS Code with speech to text. This works very well and can be done both in editor, in inline chat as well as in the chat window, give it a go!",
+      "description": "Your task: \r\n\r\nCreate a function which takes an alert and checks if the `AlertStatus` is not `Resolved` for more than seven days, log to console if so.\r\n\r\nNow you're probably thinking - \r\n\r\nCan I copy and paste this? The answer is yes. But how will you practice phrasing your requirements? \r\n\r\nDoes the below code work? If not, try selecting the function, and prompt inline chat again with `\"/fix\"`.\r\n\r\nLazy tip:\r\nIf the thought of typing a lot is what deters you, consider talking to VS Code! Using the extension \"VS Code Speech\" (Also recommended in workspace and should be installed) you can simply talk to VS Code with speech to text. This works very well and can be done both in editor, in inline chat as well as in the chat window, give it a go!\r\nOnce installed, you may invoke it within the inline chat using another click of `Ctrl + I` or simply press the mic button",
       "line": 8,
       "title": "Inline chat #1"
     },

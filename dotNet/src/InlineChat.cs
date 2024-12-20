@@ -1,4 +1,4 @@
-public class CHCPInlineChat
+public class GHCPInlineChat
 {
     public static void OnlyInlineChat()
     {
