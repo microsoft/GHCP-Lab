@@ -4,7 +4,7 @@ Welcome to the Github copilot (GHCP) lab.
 
 ## What will we learn in this lab?
 - At the end of this lab you will know the differences between Github Copilot chat, inline chat, and completions and when to use which one.
-- You will learn about GHCP aliases and slash commands for GHCP Copilot Chat and inline.
+- You will learn about GHCP aliases (`@` / `#`) and slash commands for GHCP Copilot Chat and inline.
 - You will learn how to be more proficient with your completions and how to get it right on the first try 🥇
 - You will learn about the GHCP suggestions panel.
 - How to utilize context to the fullest so that Github Copilot gives you what you want. 
@@ -28,6 +28,7 @@ If you don't have them installed, follow the installation instructions at [https
   3. When a completion is showing up, you can click `Ctrl + Enter` to open a panel with several suggestions 
 - Inline chat is the experience where you have a small chat window that appears in the editor. You can make change requests, ask questions and get answers from GHCP, all in the editor window.
 - Chat is the experience where you have a full chat window that appears next to the editor (usually on the right side). Answers you receive here won't affect your code in the editor.
+- In GHCP, **Context Is Everything**. Starting from your selection, to the open files in your IDE and most importantly- to what aliases / commands you're asking GHCP to do include in your prompt's context.
 
 ## How to participate:
 1. Double click the relevant workspace and hit the "Open Workspace" button in the Editor (bottom right)
