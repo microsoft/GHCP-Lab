@@ -34,7 +34,7 @@
     },
     {
       "file": "src/Completions.cs",
-      "description": "Create a function that receives a location and finds the alerts which happened in that location.",
+      "description": "Create a function that receives a location name and finds the alerts which happened with that `locationName`.\r\n\r\nBut what about the return type? Please use `dynamic` for all return types, we will get to it later using inline chat.",
       "line": 14,
       "title": "Completion #2"
     },
@@ -61,6 +61,12 @@
       "description": "Let's try to be more specific, when you type `alertsWithLongName` what is the length you get (try it)? Does that satisfy you? What if you wanted it to be a little longer let's say with 12 characters? \r\nThink of how'd you write name that variable in a more specific way - you can always rename after.",
       "line": 20,
       "title": "Completions #6"
+    },
+    {
+      "file": "src/Completions.cs",
+      "description": "So we now know to name the variable according to what the logic we want it to execute, and then rename it for easier reading. \r\n\r\n\r\nAs a perfect segway for inline chat, let's now fix all these \"dynamic\" return types.\r\nSelect all the methods which include the dynamic return type, open inline chat (using CTRL + I) and use the following prompt: \r\n\r\n\"**Instead of dynamic, use correct return type**\"\r\n\r\nGithub Copilot should fix these to be the correct return type auto-magically ✨.",
+      "line": 30,
+      "title": "Completions summary"
     },
     {
       "file": "src/InlineChat.cs",
