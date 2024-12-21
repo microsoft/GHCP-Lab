@@ -3,7 +3,7 @@
   "title": "Advanced GHCP lab for C#",
   "steps": [
     {
-      "file": "../README.Stub/README.md",
+      "file": "src/README-dotNet.md",
       "description": "Start here :) ",
       "line": 1,
       "title": "Start Here!"

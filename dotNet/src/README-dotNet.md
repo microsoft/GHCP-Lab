@@ -3,7 +3,7 @@
 Welcome to the Github copilot (GHCP) lab dotNet track!
 
 There is no need to run the code in this lab, you can follow the tour and learn about GHCP. 
-If you'd like to run the code, you can simply log the output to console and see if you've answered the question correctly.
+If you'd like to see the results, you can simply log the results to console and see if you've answered the question correctly.
 
 
 Feel free to reach out with improvement suggestions, 
