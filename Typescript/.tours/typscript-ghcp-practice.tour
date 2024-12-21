@@ -15,6 +15,12 @@
       "title": "Know your data"
     },
     {
+      "file": "NamingVariables.ts",
+      "description": "Using GHCP completions is optimal for Short, Specific and Simple logic (The 3 `S` principle), remember that!\r\n\r\n\r\nFor best completions results - \r\nName a variable according to the logic you expect and then refactor the name after.\r\n\r\nPro tips:\r\n1. GHCP also suggests names (!) if you press Refactor (F2) on the function/variable name.\r\n2. Watch this for more context on [The 3 `S` Principal](https://www.youtube.com/watch?v=hh1nOX14TyY&t=38s&ab_channel=VisualStudioCode)",
+      "line": 1,
+      "title": "Completions introduction"
+    },
+    {
       "file": "./NamingVariables.ts",
       "description": "#1 Let's warm up and let Copilot do it for us, please create a variable to store the total alarm events.\r\n\r\nSimply place your caret after the equal sign and hit space.\r\nLet's see what GC completes.",
       "line": 2,
@@ -64,7 +70,7 @@
     },
     {
       "file": "./InlineChat.ts",
-      "description": "Create method which creates a dictionary of alarm events by alarm name, unless the name contains intrusion (Casing insensitive). In the value store the event locations as a list.\r\n\r\nExample: \r\n{\r\n    'Gas Leak': ['Kitchen', 'Bathroom'],\r\n    ...\r\n}\r\n\r\n\r\nNow we have to stop for a second to ask: But why can't I simply use comments instead? They are also left in the repo explaining what the code below does!\r\n\r\n  1. Code gets refactored, comments usually do not. These comments will demand a cleanup in the future and get disregarded and become unrelevant.\r\n  2. More importantly, comments with GHCP aren't iterable, meaning it's a one-shot completions attempt. If you get it wrong, you have to edit your comment and try again. When using the inline chat you can then reply with what needs to be fixed. Just think of how rare it is when you code things that work for the first time, the better you are explaining what you want to GHCP, the better GHCP will help you, sometimes it takes a few rounds of explanations, a.k.a. \"inline chat ;)\"",
+      "description": "Create method which creates a dictionary of alarm events by alarm name, unless the name contains intrusion (Casing insensitive). In the value store the event locations as a list.\r\n\r\nExample: \r\n{\r\n    'Gas Leak': ['Kitchen', 'Bathroom'],\r\n    ...\r\n}\r\n\r\n\r\nNow we have to stop for a second to ask: But why can't I simply use comments instead? They are also left in the repo explaining what the code below does!\r\n\r\n  1. Code gets refactored, comments usually do not. These comments will demand a cleanup in the future and get disregarded and become irrelevant.\r\n  2. More importantly, comments with GHCP aren't iterable, meaning it's a one-shot completions attempt. If you get it wrong, you have to edit your comment and try again. When using the inline chat you can then reply with what needs to be fixed. Just think of how rare it is when you code things that work for the first time, the better you are explaining what you want to GHCP, the better GHCP will help you, sometimes it takes a few rounds of explanations, a.k.a. \"inline chat ;)\"",
       "line": 76,
       "selection": {
         "start": {
