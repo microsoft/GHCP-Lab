@@ -40,7 +40,7 @@
     },
     {
       "file": "src/Completions.cs",
-      "description": "Create a function that returns the aggregated count of alerts by Severity, example output: {\"High\": 2, \"Medium\": 1, ....}\r\n\r\n\r\nFriendly reminder that occasionally, you may not get the completion you want, you may use \r\n\r\n`Ctrl + Enter`\r\n\r\nTo open the `Suggestions panel`, and see several options (it may present very bad options, so proceed with care and feel free to only take what you need and ignore the rest)",
+      "description": "Create a function that returns the aggregated count of alerts by Severity, example output: {\"Critical\": 2, \"Medium\": 1, ....}\r\n\r\n\r\nFriendly reminder that occasionally, you may not get the completion you want, you may use \r\n\r\n`Ctrl + Enter`\r\n\r\nTo open the `Suggestions panel`, and see several options (it may present very bad options, so proceed with care and feel free to only take what you need and ignore the rest)",
       "line": 12,
       "title": "Completion #3"
     },
@@ -82,7 +82,7 @@
     },
     {
       "file": "src/InlineChat.cs",
-      "description": "Create a method which accepts a list of alerts and as a parameter, checks if there are any alerts with High severity which are still active, return these alerts.\r\n\r\n\r\n\r\nNow we have to stop for a second to ask:\r\nBut why can't I simply use comments instead? They are also left in the repo explaining what the code below does! \r\n\r\n1. Code gets refactored, comments usually do not. These comments will demand a cleanup in the future and get disregarded and become unrelevant.\r\n2. More importantly, comments with GHCP aren't iterable, meaning it's a one-shot completions attempt. If you get it wrong, you have to edit your comment and try again. When using the inline chat you can then reply with what needs to be fixed. Just think of how rare it is when you code things that work for the first time, the better you are explaining what you want to GHCP, the better GHCP will help you, sometimes it takes a few rounds of explanations, a.k.a. \"inline chat ;)\"",
+      "description": "Create a method which accepts a list of alerts and as a parameter, checks if there are any alerts with Critic severity which are still active, return these alerts.\r\n\r\n\r\n\r\nNow we have to stop for a second to ask:\r\nBut why can't I simply use comments instead? They are also left in the repo explaining what the code below does! \r\n\r\n1. Code gets refactored, comments usually do not. These comments will demand a cleanup in the future and get disregarded and become unrelevant.\r\n2. More importantly, comments with GHCP aren't iterable, meaning it's a one-shot completions attempt. If you get it wrong, you have to edit your comment and try again. When using the inline chat you can then reply with what needs to be fixed. Just think of how rare it is when you code things that work for the first time, the better you are explaining what you want to GHCP, the better GHCP will help you, sometimes it takes a few rounds of explanations, a.k.a. \"inline chat ;)\"",
       "line": 10,
       "selection": {
         "start": {
@@ -126,7 +126,13 @@
     },
     {
       "file": "src/Chat.cs",
-      "description": "Let's say you remembered there's an enum for `AlarmSeverity`, but looking at the file structure, you can't recall what it is.\r\nYou may use the @workspace or the #codebase aliases in GHCP to search for it. \r\n\r\nThese two aliases (GHCP functions) iterate over *all the project* and can answer your questions on a project scope.\r\n\r\nLet's start by asking it where you can find the AlarmSeverity enum? \r\n\r\nUse the @workspace alias (in the beginning of the question) or #codebase anywhere in your question, there's a subtle difference by how it displays the answer, give it a go!\r\n\r\nTip: When searching in the project scope, be sure to deselect the active file attached by clicking the eye icon next to it.",
+      "description": "Before proceeding, open the panel (Again, Ctrl+Alt+I) and let's get to know our aliases \"`@`\", context accessors \"`#`\" and operations \"`/`\".\r\n\r\nStart typing each of these and see what operations show up in the pop up completion, take the time and iterate with Up and Down arrows. Read a little to know about the possibilities these provide, they are very useful.\r\n\r\nWorth noting - if you've heard of Copilot Edits (Ctrl+Shift+I, for the curious).. It's \"equivalent\" to adding specific files as context, with the change that code is being applied directly to the files in the working set (the context provided), and possibly behind the scenes it's processed differently. More on Copilot Edits at a different lab.",
+      "line": 7,
+      "title": "Aliases, Context and tools"
+    },
+    {
+      "file": "src/Chat.cs",
+      "description": "Let's say you remembered there's an enum for `AlarmSeverity`, but looking at the file structure, you can't recall what it is.\r\nYou may use the @workspace alias or the #codebase context accessor in GHCP to search for it. Try both, first use @workspace, then in chat, click up arrow and replace @workspace with #codebase. \r\n\r\nThese two GHCP functions iterate over *all the project* and can answer your questions on a project scope.\r\n\r\nLet's start by asking it where you can find the AlarmSeverity enum? \r\n\r\nUse the @workspace alias (in the beginning of the question) or #codebase anywhere in your question, there's a subtle difference by how it displays the answer, give it a go!\r\n\r\nTip: When searching in the project scope, be sure to deselect the active file attached by clicking the eye icon next to it.",
       "line": 8,
       "title": "Chat #1"
     },

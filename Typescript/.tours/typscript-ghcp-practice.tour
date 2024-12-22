@@ -91,6 +91,21 @@
       "title": "Chat introduction"
     },
     {
+      "file": "Chat.ts",
+      "description": "Before proceeding, open the panel (Again, Ctrl+Alt+I) and let's get to know our aliases \"`@`\", context accessors \"`#`\" and operations \"`/`\".\r\n\r\nStart typing each of these and see what operations show up in the pop up completion, take the time and iterate with Up and Down arrows. Read a little to know about the possibilities these provide, they are very useful.\r\n\r\nWorth noting - if you've heard of Copilot Edits (Ctrl+Shift+I, for the curious).. It's \"equivalent\" to adding specific files as context, with the change that code is being applied directly to the files in the working set (the context provided), and possibly behind the scenes it's processed differently. More on Copilot Edits at a different lab.",
+      "line": 2,
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 5,
+          "character": 347
+        }
+      }
+    },
+    {
       "file": "./Chat.ts",
       "description": "Open up Copilot (Ctrl + Shift + I) and make it prompt it, to get a list the `AlarmEvent` keys.\r\n\r\nCopilot should chat list out: \r\ntime,\r\n\r\nseverity,\r\n\r\nlocation,\r\n\r\nname.\r\n\r\n\r\nHint: If you can't get it work, try opening the file to provide context! As we said, context is everything! Can't find it? Consider skipping this one and coming back to it!\r\n\r\n\r\n",
       "line": 3,
