@@ -12,7 +12,7 @@ Sed auctor, nunc id lacinia lacinia, nisl nunc tincidunt nunc, id lacinia mi nun
 
 Nulla facilisi. Nulla facilisi. Sed euismod, nunc id lacinia lacinia, nisl nunc tincidunt nunc, id lacinia mi nunc id nunc. Nulla facilisi. Nulla facilisi. Sed auctor, nunc id lacinia lacinia, nisl nunc tincidunt nunc, id lacinia mi nunc id nunc. Nulla facilisi. Nulla facilisi. Sed euismod, nunc id lacinia lacinia, nisl nunc tincidunt nunc, id lacinia mi nunc id nunc.
 
-## Copilot can even help you with string manipulation! Here's an example of how you can use Copilot to extract aliases from a list of emails:
+## Copilot can even help you with string manipulation! Here's an example of how you can use Copilot to extract aliases from a list of emails (see code tour step):
 
 "python@microsoft.com",
 "javascript@microsoft.com",

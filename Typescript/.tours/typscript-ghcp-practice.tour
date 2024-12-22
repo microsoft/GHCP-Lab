@@ -124,6 +124,11 @@
       "title": "Chat 3"
     },
     {
+      "file": "models.ts",
+      "description": "Last minute easter egg- \r\n\r\n**Copilot Edits** (Shortcut: _Ctrl+Shift+I_)\r\n\r\nSimilar to the chat but with an inline experience, meaning changes are applied directly to the files provided as context, also called \"working set\". It's still in preview, but let's give it a shot, it's cool.\r\n\r\n\r\nMake sure the only files in the working set is `models.ts` by looking at the working set just above the text input box on the bottom of the page. Click on X to remove irrelevant files and + to add the desired files to edit. Once only `models.ts` is in the working set...\r\n\r\nStart with the prompt:\r\n\r\n\"_Add a logger method to the AlarmEvent type_\"\r\n\r\n\r\nHit submit and watch the magic happens\r\n\r\nNow let's reiterate before we get too excited and accept, write the next prompt: \r\n\r\n\"_This looks very repetitive, suggest a better way_\"\r\n\r\nTa. Da.\r\n\r\nDon't forget to accept / discard the changes.",
+      "line": 8
+    },
+    {
       "file": "EasterEggs.md",
       "description": "From this list of emails below, I only want the non-domain part formatted with new line separators",
       "line": 14
