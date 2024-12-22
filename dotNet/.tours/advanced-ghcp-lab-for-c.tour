@@ -126,12 +126,6 @@
     },
     {
       "file": "src/Chat.cs",
-      "description": "Before proceeding, open the panel (Again, Ctrl+Alt+I) and let's get to know our aliases \"`@`\", context accessors \"`#`\" and operations \"`/`\".\r\n\r\nStart typing each of these and see what operations show up in the pop up completion, take the time and iterate with Up and Down arrows. Read a little to know about the possibilities these provide, they are very useful.\r\n\r\nWorth noting - if you've heard of Copilot Edits (Ctrl+Shift+I, for the curious).. It's \"equivalent\" to adding specific files as context, with the change that code is being applied directly to the files in the working set (the context provided), and possibly behind the scenes it's processed differently. More on Copilot Edits at a different lab.",
-      "line": 7,
-      "title": "Aliases, Context and tools"
-    },
-    {
-      "file": "src/Chat.cs",
       "description": "Let's say you remembered there's an enum for `AlarmSeverity`, but looking at the file structure, you can't recall what it is.\r\nYou may use the @workspace alias or the #codebase context accessor in GHCP to search for it. Try both, first use @workspace, then in chat, click up arrow and replace @workspace with #codebase. \r\n\r\nThese two GHCP functions iterate over *all the project* and can answer your questions on a project scope.\r\n\r\nLet's start by asking it where you can find the AlarmSeverity enum? \r\n\r\nUse the @workspace alias (in the beginning of the question) or #codebase anywhere in your question, there's a subtle difference by how it displays the answer, give it a go!\r\n\r\nTip: When searching in the project scope, be sure to deselect the active file attached by clicking the eye icon next to it.",
       "line": 8,
       "title": "Chat #1"
@@ -172,9 +166,15 @@
     },
     {
       "file": "src/Chat.cs",
-      "description": "There are many more aliases, even for the `Terminal` which is extremly useful to debug errors, recall git commands much more. I urge you to go into the Chat input and...\r\n1. Start by typing \"/\", browse through the list of options. These are all commands \r\n2. Delete the \"/\" and try \"@\". These are all context \r\n3. Finally, delete the \"@\" and take a look at the # commands.\r\n\r\nThere's a lot the Chat experience can provide and teach, don't hesitate to explore!",
+      "description": "There are many more aliases, even for the `Terminal` which is extremely useful to debug errors, recall git commands much more. I urge you to go into the Chat input and...\r\n1. Start by typing \"/\", browse through the list of options. These are all commands \r\n2. Delete the \"/\" and try \"@\". These are all context \r\n3. Finally, delete the \"@\" and take a look at the # commands.\r\n\r\nThere's a lot the Chat experience can provide and teach, don't hesitate to explore!\r\nUse the up and down arrows and spend a little time to read the descriptions of these commands.",
       "line": 21,
       "title": "Chat #6"
+    },
+    {
+      "file": "src/Alert.cs",
+      "description": "Last minute easter egg- \r\n\r\n**Copilot Edits** (Shortcut: _Ctrl+Shift+I_)\r\n\r\nSimilar to the chat but with an inline experience, meaning changes are applied directly to the files provided as context, also called \"working set\". It's still in preview, but let's give it a shot, it's cool.\r\n\r\n\r\nMake sure the only files in the working set is Alert.cs by looking at the working set just above the text input box on the bottom of the page. Click on X to remove irrelevant files and + to add the desired files to edit. Once only `Alert.cs` is in the working set...\r\n\r\nStart with the prompt:\r\n\r\n\"_Add a logger to the alert class and log the important properties_\"\r\n\r\n\r\nHit submit and watch the magic happens\r\n\r\nNow let's reiterate before we get too excited and accept, write the next prompt: \r\n\r\n\"_Log everything in a single log and use JSON_\"\r\n\r\nTa. Da.\r\n\r\nDon't forget to accept / discard the changes.",
+      "line": 26,
+      "title": "Copilot edits 😮"
     },
     {
       "file": "src/Program.cs",
