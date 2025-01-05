@@ -57,6 +57,7 @@
     {
       "file": "src/Completions.cs",
       "description": "Let's try to be more specific, when you type \"`dynamic filterAlertsWithLongName`\" what is the length you get in the code? Stop reading and give it try, then continue reading.\r\n\r\nDoes that \"satisfy\" the requirement? What if you wanted it to be a little longer let's say more than 12 characters?\r\n\r\n You have two options:\r\n\r\n1. To write a hard-coded value in the variable name and that's the generated code you get, i.e. filterAlertsWithNameLongerThan12. Then you can rename the variable to your needs.\r\n\r\n2. Create a variable, let's create a const with a value of 15 named MAX_ALERT_NAME. Now when you write `filterAlertWithLongName` Copilot will take that into account and use the variable",
+
       "line": 20,
       "title": "Completions #6"
     },
