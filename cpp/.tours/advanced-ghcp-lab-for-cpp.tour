@@ -1,0 +1,187 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Advanced GHCP lab for C++",
+  "steps": [
+    {
+      "file": "src/README-cpp.md",
+      "description": "Start here :) ",
+      "line": 1,
+      "title": "Start Here!"
+    },
+    {
+      "file": "src/Alert.h",
+      "description": "This is the model of the alert, this is what we'll be iterating on.\r\n\r\n\r\nWe'll make aggregations on alerts and create functions to process alerts.\r\n\r\nTake a few seconds and take a look at it. ",
+      "line": 6,
+      "title": "Get to know your data!"
+    },
+    {
+      "file": "src/Program.cpp",
+      "description": "Let's mock some alerts and get started!\r\n\r\nWe'll take a look at GHCP Completions, Inline chat (and comments) and finally Chat in that order.\r\n\r\nJump right in by navigating to the relevant file where the questions are according the the methods below.",
+      "line": 7,
+      "title": "Mocks and order of exercises"
+    },
+    {
+      "file": "src/Completions.cpp",
+      "description": "Using GHCP completions is optimal for Short, Specific and Simple logic (the 3 `S` principle), remember that!\r\n\r\n\r\n\r\nFor best completions results - \r\nName a variable according to the logic you expect and then refactor the name after.\r\n\r\nPro tips:\r\n1. GHCP also suggests names (!) if you press Refactor (F2) on the function/variable name.\r\n2. Watch this for more context on the [3 `S` Principal](https://www.youtube.com/watch?v=hh1nOX14TyY&t=38s&ab_channel=VisualStudioCode)",
+      "line": 4,
+      "title": "Completions introduction"
+    },
+    {
+      "file": "src/Completions.cpp",
+      "description": "Let's start easy, we'll create a variable to store the total number of alerts.\r\n\r\nSimply place your caret after the equal sign and the `Space` key",
+      "line": 4,
+      "title": "Completion #1"
+    },
+    {
+      "file": "src/Completions.cpp",
+      "description": "Create a function that receives a location name and finds the alerts which happened with that `locationName`.\r\n\r\nBut what about the return type? Please use `auto` for all return types, we will get to it later using inline chat.",
+      "line": 4,
+      "title": "Completion #2"
+    },
+    {
+      "file": "src/Completions.cpp",
+      "description": "Create a function that returns the aggregated count of alerts by Severity, example output: {\"Critical\": 2, \"Medium\": 1, ....}\r\n\r\n\r\nFriendly reminder that occasionally, you may not get the completion you want, you may use \r\n\r\n`Ctrl + Enter`\r\n\r\nTo open the `Suggestions panel`, and see several options (it may present very bad options, so proceed with care and feel free to only take what you need and ignore the rest)",
+      "line": 4,
+      "title": "Completion #3"
+    },
+    {
+      "file": "src/Completions.cpp",
+      "description": "Create a function to get all alerts which happened between two specific dates.\r\n\r\nAnother thought, how would that change if you wanted to get alerts between specific hours?",
+      "line": 4,
+      "title": "Completion #4"
+    },
+    {
+      "file": "src/Completions.cpp",
+      "description": "Top Alert Sources: Create a function to identify the most common source of alerts. ",
+      "line": 4,
+      "title": "Completion #5"
+    },
+    {
+      "file": "src/Completions.cpp",
+      "description": "Let's try to be more specific, when you type `alertsWithLongName` what is the length you get (try it)? Does that satisfy you? What if you wanted it to be a little longer let's say with 12 characters? \r\nThink of how'd you write name that variable in a more specific way - you can always rename after.",
+      "line": 4,
+      "title": "Completions #6"
+    },
+    {
+      "file": "src/Completions.cpp",
+      "description": "So we now know to name the variable according to what the logic we want it to execute, and then rename it for easier reading. \r\n\r\n\r\nAs a perfect segway for inline chat, let's now fix all these \"auto\" return types.\r\nSelect all the methods which include the auto return type, open inline chat (using CTRL + I) and use the following prompt: \r\n\r\n\"**Instead of auto, use correct return type**\"\r\n\r\nGithub Copilot should fix these to be the correct return type auto-magically ✨.",
+      "line": 4,
+      "title": "Completions summary"
+    },
+    {
+      "file": "src/InlineChat.cpp",
+      "description": "Using GHCP Inline Chat fits scenarios where you need more than one thing at a time, a very specific logic that's too long for a variable name, or you want to provide examples (yes, that's a recommendation!).\r\n\r\n\r\nIn VS Code the default shortcut is ctrl + I to open inline chat",
+      "line": 4,
+      "title": "Inline chat introduction"
+    },
+    {
+      "file": "src/InlineChat.cpp",
+      "description": "Your task: \r\n\r\nCreate a function which takes an alert and checks if the `AlertStatus` is not `Resolved` for more than seven days, log to console if so.\r\n\r\nNow you're probably thinking - \r\n\r\nCan I copy and paste this? The answer is yes. But how will you practice phrasing your requirements? \r\n\r\nDoes the below code work? If not, try selecting the function, and prompt inline chat again with `\"/fix\"`.\r\n\rTip: you may want to add the codebase as a context to the prompt. You can do that by clicking the attach button and selecting codebase or just adding #codebase\r\n\r\nLazy tip:\r\nIf the thought of typing a lot is what deters you, consider talking to VS Code! Using the extension \"VS Code Speech\" (Also recommended in workspace and should be installed) you can simply talk to VS Code with speech to text. This works very well and can be done both in editor, in inline chat as well as in the chat window, give it a go!\r\nOnce installed, you may invoke it within the inline chat using another click of `Ctrl + I` or simply press the mic button",
+      "line": 4,
+      "title": "Inline chat #1"
+    },
+    {
+      "file": "src/InlineChat.cpp",
+      "description": "Create a method which accepts a list of alerts as a parameter, checks if there are any alerts with Critical severity which are still active, return these alerts.\r\n\r\n\r\n\r\nNow we have to stop for a second to ask:\r\nBut why can't I simply use comments instead? They are also left in the repo explaining what the code below does! \r\n\r\n1. Code gets refactored, comments usually do not. These comments will demand a cleanup in the future and get disregarded and become unrelevant.\r\n2. More importantly, comments with GHCP aren't iterable, meaning it's a one-shot completions attempt. If you get it wrong, you have to edit your comment and try again. When using the inline chat you can then reply with what needs to be fixed. Just think of how rare it is when you code things that work for the first time, the better you are explaining what you want to GHCP, the better GHCP will help you, sometimes it takes a few rounds of explanations, a.k.a. \"inline chat ;)\"",
+      "line": 4,
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 1,
+          "character": 162
+        }
+      },
+      "title": "Inline chat #2"
+    },
+    {
+      "file": "src/InlineChat.cpp",
+      "description": "Create a method which receives a location and a severity level and checks if location had any alerts with provided severity",
+      "line": 4,
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 1,
+          "character": 124
+        }
+      },
+      "title": "Inline chat #3"
+    },
+    {
+      "file": "src/InlineChat.cpp",
+      "description": "Filter alerts which have a source of everything but words ending with 'phone'.\r\ni.e., Source == 'Sensor', yes, 'telephone', no, 'microphone', no. Log to console when matched and return alerts",
+      "line": 4,
+      "title": "Inline chat #4"
+    },
+    {
+      "file": "src/Chat.h",
+      "description": "Using GHCP Chat is ideal for discussions, questions and guidance and reassurance of your code. \r\nWith GCHP chat (CTRL + ALT + I), it's much easier to provide more context using ALIASES, we'll talk about aliases next.\r\nThe more context you add, the more capable Copilot would be.\r\n\r\n\r\nSome (none?) standard examples one can use:\r\n1. \"Check if I missed any edge cases in #selection\"\r\n2. \"Can you provide a numerical example?\" (If you can't remember if you should compare time)\r\n3. \"How do I run the project?\" More often than not, the instructions may be a little obscure, Copilot knows how to simplify and provide simple commands.\r\n4. Using it for some git operations! \"What command to edit the last commit message?\"\r\n\r\nRemember context is everything, if GHCP chat starts providing bad information, it may be confused with older contexts, don't ask him about C# and jump to typescript, create a new chat for these subject jumps. You can always navigate to previous sessions.\r\n",
+      "line": 3,
+      "title": "Chat introduction"
+    },
+    {
+      "file": "src/Chat.h",
+      "description": "Let's say you remembered there's an enum for `AlarmSeverity`, but looking at the file structure, you can't recall what it is.\r\nYou may use the @workspace alias or the #codebase context accessor in GHCP to search for it. Try both, first use @workspace, then in chat, click up arrow and replace @workspace with #codebase. \r\n\r\nThese two GHCP functions iterate over *all the project* and can answer your questions on a project scope.\r\n\r\nLet's start by asking it where you can find the AlarmSeverity enum? \r\n\r\nUse the @workspace alias (in the beginning of the question) or #codebase anywhere in your question, there's a subtle difference by how it displays the answer, give it a go!\r\n\r\nTip: When searching in the project scope, be sure to deselect the active file attached by clicking the eye icon next to it.",
+      "line": 3,
+      "title": "Chat #1"
+    },
+    {
+      "file": "src/Chat.h",
+      "description": "Let's give it another go. \r\nIn the repo, I've hidden a few SECRETs. Try using Copilot to find these secrets",
+      "line": 3,
+      "title": "Chat #2"
+    },
+    {
+      "file": "src/Chat.h",
+      "description": "Now let's use #selection, this is what you should be using when asking code-specific-questions or writing unit tests. Highlight the text desired and in your question (even in inline-chat) use the #selection alias.\r\n\r\nLet's try it now: \r\n1. Highlight the method\r\n2. Ask in chat \"What edge cases did I miss\"?\r\n",
+      "line": 3,
+      "title": "Chat #3"
+    },
+    {
+      "file": "src/Chat.h",
+      "description": "While trivial, lots of developers tend to jump into code and start reading it to understand, natural language is still faster to comprehend. You can use the `/explain` alias and read it in plain text, it's pretty accurate.",
+      "line": 3,
+      "title": "Chat #4"
+    },
+    {
+      "file": "src/Chat.h",
+      "description": "Finally, let's write some unit tests using GHCP.\r\nRemember what we said? \r\nHighlight the desired code to test, in our case the Divider function. let's write up unittests for it, remember to fix the missing edge case first.\r\n\r\nIn chat, write:\r\n\r\n`@workspace /tests Write unit tests for #selection using NUnit`\r\n\r\n\r\nDon't forget to metion which test framework you're using as it may vary.",
+      "line": 3,
+      "selection": {
+        "start": {
+          "line": 6,
+          "character": 1
+        },
+        "end": {
+          "line": 6,
+          "character": 54
+        }
+      },
+      "title": "Chat #5"
+    },
+    {
+      "file": "src/Chat.h",
+      "description": "There are many more aliases, even for the `Terminal` which is extremely useful to debug errors, recall git commands much more. I urge you to go into the Chat input and...\r\n1. Start by typing \"/\", browse through the list of options. These are all commands \r\n2. Delete the \"/\" and try \"@\". These are all context \r\n3. Finally, delete the \"@\" and take a look at the # commands.\r\n\r\nThere's a lot the Chat experience can provide and teach, don't hesitate to explore!\r\nUse the up and down arrows and spend a little time to read the descriptions of these commands.",
+      "line": 3,
+      "title": "Chat #6"
+    },
+    {
+      "file": "src/Alert.h",
+      "description": "Last minute easter egg- \r\n\r\n**Copilot Edits** (Shortcut: _Ctrl+Shift+I_)\r\n\r\nSimilar to the chat but with an inline experience, meaning changes are applied directly to the files provided as context, also called \"working set\". It's still in preview, but let's give it a shot, it's cool.\r\n\r\n\r\nMake sure the only files in the working set is Alert.h by looking at the working set just above the text input box on the bottom of the page. Click on X to remove irrelevant files and + to add the desired files to edit. Once only `Alert.h` is in the working set...\r\n\r\nStart with the prompt:\r\n\r\n\"_Add a logger to the alert class and log the important properties_\"\r\n\r\n\r\nHit submit and watch the magic happens\r\n\r\nNow let's reiterate before we get too excited and accept, write the next prompt: \r\n\r\n\"_Log everything in a single log and use JSON_\"\r\n\r\nTa. Da.\r\n\r\nDon't forget to accept / discard the changes.",
+      "line": 26,
+      "title": "Copilot edits 😮"
+    },
+    {
+      "file": "src/Program.cpp",
+      "description": "Congratulations!!!\r\n\r\n\r\nYou have completed the lab, I hope that you have learned a thing or two and had some fun while you're at it.\r\n\r\nRemember - \r\n\r\n\r\nShort.\r\n\r\n\r\nSimple.\r\n\r\n\r\nSpecific.\r\n\r\n\r\n\r\n\r\nAnd provide the relevant context (#file/ #selection, etc.)",
+      "line": 18,
+      "title": "Finishing up"
+    }
+  ],
+  "ref": "main"
+}
