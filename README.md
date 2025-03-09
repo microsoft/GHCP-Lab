@@ -6,8 +6,8 @@ For easier reading, you can preview this file as Markdown using `Ctrl+Shift+V`,
 it may need a moment to open render. 
 
 ## What will we learn in this lab?
-- At the end of this lab you will know the differences between Github Copilot chat, inline chat, and completions and when to use which one.
-- You will learn about GHCP aliases (`@` / `#`) and slash commands for GHCP Copilot Chat and inline.
+- At the end of this lab you will know the differences between Github Copilot chat, inline chat, and completions and even edits. And you'll learn when to use which one.
+- You will learn about GHCP aliases (`@` / `#`) and slash commands for Github Copilot Chat and inline.
 - You will learn how to be more proficient with your completions and how to get it right on the first try 🥇
 - You will learn about the GHCP suggestions panel.
 - How to utilize context to the fullest so that Github Copilot gives you what you want. 
@@ -19,6 +19,10 @@ There are two tracks, the [Typescript](./GHCP-Typescript.code-workspace) track a
 
 Each workspace has recommended extensions that you need to install to be able to run the code, you can run those.
 
+## How will we learn it? 
+Using the CodeTour extension, you will be prompted with questions which will help you shift your programming paradigm, allowing you to use Github Copilot more effectively. The text in CodeTour is outside the Github Copilot context (which you will learn more about during this lab).
+
+ At times, you'll also read through Github Copilot tips, tricks and educational material.
 
 ## Pre-requisite:
 Have the extensions Copilot and Copilot Chat installed.
@@ -39,6 +43,7 @@ If you don't have them installed, follow the installation instructions at [https
 1. Double click the relevant workspace and hit the "Open Workspace" button in the Editor (bottom right)
     1. `GHCP-dotNet.code-workspace` for dotNet developers
     2. `GHCP-Typescript.code-workspace` for Typescript developers
+    2. `GHCP-cpp.code-workspace` for C++ developers
     ![Image showing where to click to open the relevant workspace](assets/image-1.png)
 2. Install recommended extensions from the workspace
     1. If you don't want to run the code, CodeTour is the critical one
