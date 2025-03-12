@@ -1,16 +1,18 @@
-public class GHCPInlineChat
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using SOC.AdvancedCopilot;
+using SOC.AdvancedCopilot.Models;
+
+public static class GHCPInlineChat
 {
-    public static void OnlyInlineChat()
-    {
-        // #1
+    // #1
 
-        // #2
+    // #2
 
-        // #3
+    // #3
 
-        // #4
+    // #4
 
-        // #5
-
-    }
+    // #5
 }

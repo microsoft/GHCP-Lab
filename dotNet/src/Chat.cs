@@ -1,4 +1,6 @@
 
+using System;
+
 namespace SOC.AdvancedCopilot.DotNet;
 
 public class GHCPChat
