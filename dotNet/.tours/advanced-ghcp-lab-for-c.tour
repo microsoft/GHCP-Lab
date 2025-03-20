@@ -16,51 +16,57 @@
     },
     {
       "file": "src/Program.cs",
-      "description": "Let's mock some alerts and get started!\r\n\r\nWe'll take a look at GHCP Completions, Inline chat (and comments) and finally Chat in that order.\r\n\r\nJump right in by navigating to the relevant file where the questions are according the the methods below.",
+      "description": "We have mocked some alerts! Spoiler, will be used later.\r\n\r\nIn the following order, we'll take a look at GHCP Completions, Inline chat (and comments), then Chat, Edits and Agent!",
       "line": 8,
       "title": "Mocks and order of exercises"
     },
     {
-      "file": "src/Completions.cs",
+      "file": "src/Program.cs",
       "description": "Using GHCP completions is optimal for Short, Specific and Simple logic (the 3 `S` principle), remember that!\r\n\r\n\r\n\r\nFor best completions results - \r\nName a variable according to the logic you expect and then refactor the name after.\r\n\r\nPro tips:\r\n1. GHCP also suggests names (!) if you press Refactor (F2) on the function/variable name.\r\n2. Watch this for more context on the [3 `S` Principal](https://www.youtube.com/watch?v=hh1nOX14TyY&t=38s&ab_channel=VisualStudioCode)",
-      "line": 8,
+      "line": 9,
       "title": "Completions introduction"
     },
     {
-      "file": "src/Completions.cs",
+      "file": "src/Program.cs",
       "description": "Let's start easy, we'll create a variable to store the total number of alerts.\r\n\r\nSimply place your caret after the equal sign and the `Space` key",
-      "line": 10,
+      "line": 13,
       "title": "Completion #1"
     },
     {
       "file": "src/Completions.cs",
-      "description": "Create a function that receives a location name and finds the alerts which happened with that `locationName`.\r\n\r\nBut what about the return type? Please use `dynamic` for all return types, we will get to it later using inline chat.",
+      "description": "Create a function that receives alerts and `locationName` and finds the alerts which happened at `locationName`.\r\n\r\nBut what about the return type? Please use `dynamic` for all return types, we will get to it later using inline chat.",
       "line": 14,
       "title": "Completion #2"
     },
     {
       "file": "src/Completions.cs",
-      "description": "Create a function that returns the aggregated count of alerts by Severity, example output: {\"Critical\": 2, \"Medium\": 1, ....}\r\n\r\n\r\nFriendly reminder that occasionally, you may not get the completion you want, you may use \r\n\r\n`Ctrl + Enter`\r\n\r\nTo open the `Suggestions panel`, and see several options (it may present very bad options, so proceed with care and feel free to only take what you need and ignore the rest)",
+      "description": "Create a function with an input of alerts and returns the aggregated count of alerts by Severity, example output: {\"Critical\": 2, \"Medium\": 1, ....}\r\n\r\n\r\nFriendly reminder that occasionally, you may not get the completion you want, you may use \r\n\r\n`Ctrl + Enter`\r\n\r\nTo open the `Suggestions panel`, and see several options (it may present very bad options, so proceed with care and feel free to only take what you need and ignore the rest)",
       "line": 12,
       "title": "Completion #3"
     },
     {
       "file": "src/Completions.cs",
-      "description": "Create a function to get all alerts which happened between two specific dates.\r\n\r\nAnother thought, how would that change if you wanted to get alerts between specific hours?",
+      "description": "Create a function to get all alerts which happened between two specific dates.\r\n\r\nNow, how would that change if you wanted to get alerts between specific hours, as string? Create a function for that too.",
       "line": 16,
       "title": "Completion #4"
     },
     {
       "file": "src/Completions.cs",
-      "description": "Top Alert Sources: Create a function to identify the most common source of alerts. ",
+      "description": "Top Alert Sources: Create a function that takes all alerts and finds the most common source of alerts. ",
       "line": 18,
       "title": "Completion #5"
     },
     {
       "file": "src/Completions.cs",
-      "description": "Let's try to be more specific, when you type `alertsWithLongName` what is the length you get (try it)? Does that satisfy you? What if you wanted it to be a little longer let's say with 12 characters? \r\nThink of how'd you write name that variable in a more specific way - you can always rename after.",
+      "description": "Let's try to be more specific, when you type `dynamic filter alertsWithLongName` what is the length you get, try it.\r\n\r\nDoes that \"satisfy\" the requirement? What if you wanted it to be a little longer let's say more than 12 characters?\r\n\r\nThink of how'd you write name that variable in a more specific way - you can always rename after.",
       "line": 20,
       "title": "Completions #6"
+    },
+    {
+      "file": "src/Point.cs",
+      "description": "The point of this file is demonstrate Next Edit Suggestions, rename Point to Point3D and move your cursor to the constructor, see how there's a green pop up? You can accept that with the Tab key or cancel with Esc",
+      "line": 1,
+      "title": "Next Edit Suggestions"
     },
     {
       "file": "src/Completions.cs",
@@ -98,7 +104,7 @@
     },
     {
       "file": "src/InlineChat.cs",
-      "description": "Create a method which receives a location and a severity level and checks if location had any alerts with provided severity",
+      "description": "Create a method which receives a list of alerts, a locationName and a severity level and checks if location had any alerts with provided severity",
       "line": 12,
       "selection": {
         "start": {
@@ -107,7 +113,7 @@
         },
         "end": {
           "line": 1,
-          "character": 124
+          "character": 14
         }
       },
       "title": "Inline chat #3"
@@ -117,6 +123,12 @@
       "description": "Filter alerts which have a source of everything but words ending with 'phone'.\r\nI.e Source == 'Sensor', yes, 'telephone', no, 'microphone', no. Log to console when matched and return alerts",
       "line": 14,
       "title": "Inline chat #4"
+    },
+    {
+      "file": "src/InlineChat.cs",
+      "description": "Using Inline Chat gives us significant advantages over completions and comments. With Inline Chat, we can:\n\n1. Handle complex, multi-step tasks that are too lengthy for variable names\n2. Iterate on our requirements through conversation rather than starting over\n3. Provide specific examples to clarify our intent\n4. Fix and refine code through multiple prompts\n\nRemember to use `/fix` when you need to fix existing code, and consider using speech-to-text for more natural interactions. When defining your requirements, be as specific as possible about the task you're trying to accomplish, including expected inputs, outputs, and edge cases.",
+      "line": 14,
+      "title": "Inline chat summary"
     },
     {
       "file": "src/Chat.cs",
@@ -132,9 +144,19 @@
     },
     {
       "file": "src/Chat.cs",
-      "description": "Let's give it another go. \r\nIn the repo, I've hidden a few SECRETs. Try using Copilot to find these secrets, let's see if you can find all 4.",
+      "description": "Let's give it another go. \r\nIn the repo, I've hidden a few SECRETs. Try using Copilot to find these secrets, let's see if you can find all 4.\r\n\r\nUse the prompt: \"List all secrets in #codebase\"",
       "line": 10,
-      "title": "Chat #2"
+      "title": "Chat #2",
+      "selection": {
+        "start": {
+          "line": 4,
+          "character": 18
+        },
+        "end": {
+          "line": 4,
+          "character": 47
+        }
+      }
     },
     {
       "file": "src/Chat.cs",
@@ -166,15 +188,41 @@
     },
     {
       "file": "src/Chat.cs",
-      "description": "There are many more aliases, even for the `Terminal` which is extremely useful to debug errors, recall git commands much more. I urge you to go into the Chat input and...\r\n1. Start by typing \"/\", browse through the list of options. These are all commands \r\n2. Delete the \"/\" and try \"@\". These are all context \r\n3. Finally, delete the \"@\" and take a look at the # commands.\r\n\r\nThere's a lot the Chat experience can provide and teach, don't hesitate to explore!\r\nUse the up and down arrows and spend a little time to read the descriptions of these commands.",
+      "description": "There are many more aliases, even for the `Terminal` which is extremely useful to debug errors, recall git commands much more. I urge you to go into the Chat input and iterate over these prefixes\r\n1. \"`/`\" - Use specific funcionality \"/test\", \"/explain\", \"/search\". Let's try out \"/help\"\r\n1. \"`@`\" - Used to set a scope @github/@vscode/@workspace etc.\r\n1. \"`#`\" - Used to provide additional context. Recently #folder and #problem were introduced and are helpful in scoping the context\r\n\r\nThere's a lot the Chat experience can provide and teach, don't hesitate to explore!\r\nUse the up and down arrows and spend a little time to read the descriptions of these commands.",
       "line": 21,
       "title": "Chat #6"
     },
     {
       "file": "src/Alert.cs",
-      "description": "Last minute easter egg- \r\n\r\n**Copilot Edits** (Shortcut: _Ctrl+Shift+I_)\r\n\r\nSimilar to the chat but with an inline experience, meaning changes are applied directly to the files provided as context, also called \"working set\". It's still in preview, but let's give it a shot, it's cool.\r\n\r\n\r\nMake sure the only files in the working set is Alert.cs by looking at the working set just above the text input box on the bottom of the page. Click on X to remove irrelevant files and + to add the desired files to edit. Once only `Alert.cs` is in the working set...\r\n\r\nStart with the prompt:\r\n\r\n\"_Add a logger to the alert class and log the important properties_\"\r\n\r\n\r\nHit submit and watch the magic happens\r\n\r\nNow let's reiterate before we get too excited and accept, write the next prompt: \r\n\r\n\"_Log everything in a single log and use JSON_\"\r\n\r\nTa. Da.\r\n\r\nDon't forget to accept / discard the changes.",
+      "description": "**Copilot Edits** (Shortcut: _Ctrl+Shift+I_)\r\n\r\nUsed to **edit multiple files at the same time**! \r\n\r\nChanges are applied directly to the files provided as context / detected by Copilot, these files are also called \"working set\" and recently the 10 file limit has been removed (yay). \r\n\r\n\r\nLet's start with the prompt:\r\n\r\n\"_Add a to string method to the Alert class. In addition, add logger to the project. Search the #codebase , in places the console was used to print anything, also append the alert to string method and log instead of printing to console_\"\r\n\r\n\r\nHit submit and watch the magic happens\r\n\r\nDon't forget to accept / discard the changes.",
       "line": 26,
-      "title": "Copilot edits 😮"
+      "title": "Copilot edits 😮",
+      "selection": {
+        "start": {
+          "line": 19,
+          "character": 3
+        },
+        "end": {
+          "line": 19,
+          "character": 46
+        }
+      }
+    },
+    {
+      "file": "src/Program.cs",
+      "description": "Introducing Agent mode, same functionality of editing multiple files, but with iterations. Let's call it edits ++ \r\n\r\nLet's ask Copilot to create the spec for our functionality:\r\n\r\n`\r\nI want the main function to use the different functions that exists in the code base. And allow the user to filter specific alerts based on inputs. So this will now be a console app that runs on the generated alerts, and while the alerts are generated every second in the background.Without interfering with alert generation, the user will be able to get the current status by choosing a number from the menu which will execute a specific function.`\r\n\r\nBut before that, **copy the prompt above** and let's use our [special prompt](.github\\prompts\\Feature breakdown prompt.prompt.md):\r\n\r\n\r\nCtrl + Shift + P -> Use prompt\r\n\r\nPaste the prompt, and take the response.",
+      "line": 18,
+      "selection": {
+        "start": {
+          "line": 4,
+          "character": 1
+        },
+        "end": {
+          "line": 8,
+          "character": 1
+        }
+      },
+      "title": "Github Copilot Agent 🤯"
     },
     {
       "file": "src/Program.cs",

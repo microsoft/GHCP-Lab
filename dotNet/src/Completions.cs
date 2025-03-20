@@ -1,13 +1,13 @@
+#nullable enable
+using System;
+using System.Linq;
 using System.Collections.Generic;
+using SOC.AdvancedCopilot.Models;
 
 namespace SOC.AdvancedCopilot.DotNet;
 
 public class GHCPCompletions
 {
-    public static void OnlyCompletions(List<Alert> alerts)
-    {
-        // #1
-        var totalAlerts =
         // #2
 
         // #3
@@ -18,48 +18,5 @@ public class GHCPCompletions
 
         // #6
 
-    }
+    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// SECRET: got

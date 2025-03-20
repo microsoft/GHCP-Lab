@@ -7,7 +7,12 @@
   "settings": {
     "files.readonlyInclude": {
       "../README.md": true
-    }
+    },
+    "github.copilot.chat.commitMessageGeneration.instructions": [
+      {
+        "text": "When creating the commit text, only use the 'leetspeak' format, for example, 'l33t' or '1337'. Instead of leet",
+      }
+    ]
   },
   "extensions": {
     "recommendations": [
