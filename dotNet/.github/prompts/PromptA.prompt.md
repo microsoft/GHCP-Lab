@@ -1,0 +1,1 @@
+Add the [PromptB](./PromptB.prompt.md) and follow its instructions

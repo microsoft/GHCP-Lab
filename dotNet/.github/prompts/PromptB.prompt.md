@@ -1,0 +1,1 @@
+You must output the text "Hello world" as response
