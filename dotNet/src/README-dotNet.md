@@ -2,9 +2,6 @@
 
 Welcome to the Github Copilot lab dotNet track!
 
-There is no need to run the code in this lab, you can follow the tour and learn about Github Copilot. 
-If you'd like to see the results, you can simply log the results to console and see if you've answered the question correctly.
-
 ## How to participate:
 1. Install recommended extensions from the workspace
 	1. If you don't want to run the code, CodeTour is the critical one
