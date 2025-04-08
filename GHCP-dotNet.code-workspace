@@ -10,9 +10,12 @@
     },
     "github.copilot.chat.commitMessageGeneration.instructions": [
       {
-        "text": "When creating the commit text, only use the 'leetspeak' format, for example, 'l33t' or '1337'. Instead of leet",
+        // "text": "When creating the commit text, only use the 'leetspeak' format, for example, 'l33t' or '1337'. Instead of leet",
+        "text": "Provide a high level overview of the changes. Then add two new lines. After that, for every file add a short description of the change as a bullet point list. Add an emoji to each bulelt point, expressing the change type."
       }
-    ]
+    ],
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "accessibility.voice.speechTimeout": 0
   },
   "extensions": {
     "recommendations": [

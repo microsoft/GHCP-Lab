@@ -1,9 +1,9 @@
 {
   "$schema": "https://aka.ms/codetour-schema",
-  "title": "[Typescript] Github Copilot (GHCP) Lab",
+  "title": "Advanced Github Copilot (GHCP) Lab",
   "steps": [
     {
-      "file": "../README.Stub/README.md",
+      "file": "./README-TS.md",
       "description": "Start Here!",
       "line": 1,
       "title": "Start here!"
@@ -15,50 +15,50 @@
       "title": "Know your data"
     },
     {
-      "file": "NamingVariables.ts",
+      "file": "Completions.ts",
       "description": "Using GHCP completions is optimal for Short, Specific and Simple logic (The 3 `S` principle), remember that!\r\n\r\n\r\nFor best completions results - \r\nName a variable according to the logic you expect and then refactor the name after.\r\n\r\nPro tips:\r\n1. GHCP also suggests names (!) if you press Refactor (F2) on the function/variable name.\r\n2. Watch this for more context on [The 3 `S` Principal](https://www.youtube.com/watch?v=hh1nOX14TyY&t=38s&ab_channel=VisualStudioCode)",
       "line": 1,
       "title": "Completions introduction"
     },
     {
-      "file": "./NamingVariables.ts",
+      "file": "./Completions.ts",
       "description": "#1 Let's warm up and let Copilot do it for us, please create a variable to store the total alarm events.\r\n\r\nSimply place your caret after the equal sign and hit space.\r\nLet's see what GC completes.",
       "line": 2,
-      "title": "Naming Variables 1"
+      "title": "Completions #1"
     },
     {
-      "file": "./NamingVariables.ts",
+      "file": "./Completions.ts",
       "description": "#2 Your first attempt at solo assignment, save the number of user events into a variable.\r\n\r\nHowever, look! Github Copilot knows exactly what to do, and offers you to create exactly that variable on your behalf!",
       "line": 5,
-      "title": "Naming Variables 2"
+      "title": "Completions #2"
     },
     {
-      "file": "./NamingVariables.ts",
+      "file": "./Completions.ts",
       "description": "#3 So for your actual solo assignment - create a variable to store the total number of events, user and alarms.",
       "line": 8,
-      "title": "Naming Variables 3"
+      "title": "Completions #3"
     },
     {
-      "file": "./NamingVariables.ts",
+      "file": "./Completions.ts",
       "description": "#4 Create a method to count the total alarm events which happened by an input of location",
       "line": 11,
-      "title": "Naming Variables 4"
+      "title": "Completions #4"
     },
     {
-      "file": "./NamingVariables.ts",
+      "file": "./Completions.ts",
       "description": "#5 Find the list of users names which were at the same location where the alarm events occurred.\r\nDo not input any parameters and let Copilot iterate over the data and find the matching pairs.\r\n\r\nShould return an array of user *names*, example: [\"Brad\", \"Lee\", \"Cooper\"]",
       "line": 14,
-      "title": "Naming Variables 5"
+      "title": "Completions #5"
     },
     {
-      "file": "./NamingVariables.ts",
+      "file": "./Completions.ts",
       "description": "#6 Create a dictionary with keys of alarm severities and a count of how many alarm events of respective severity type events occurred.\r\n\r\nExample output:\r\n{ \r\n    Low: 2,\r\n    Medium: 3,\r\n    High: 3\r\n}",
       "line": 17,
-      "title": "Naming Variables 6"
+      "title": "Completions #6"
     },
     {
       "file": "InlineChat.ts",
-      "description": "Using GHCP Inline Chat fits scenarios where you need more than one thing at a time, a very specific logic that's too long for a variable name, or you want to provide examples (yes, that's a recommendation!).\r\n\r\n\r\nIn VS Code the default shortcut is ctrl + I to open inline chat",
+      "description": "Using GHCP Inline Chat fits scenarios where you need more than one thing at a time, a very specific logic that's too long for a variable name, or you want to provide examples (yes, that's a recommendation!).\r\n\r\nIn VS Code the default shortcut is ctrl + I to open inline chat.\r\n\r\nDoes the below code work? If not, try selecting the function, and prompt inline chat again with `/fix`.\r\n\r\nLazy tip:\r\nIf the thought of typing a lot is what deters you, consider talking to VS Code! Using the extension \"VS Code Speech\" (Also recommended in workspace and should be installed) you can simply talk to VS Code with speech to text.",
       "line": 72,
       "title": "Inline chat introduction"
     },
@@ -125,8 +125,15 @@
     },
     {
       "file": "models.ts",
-      "description": "Last minute easter egg- \r\n\r\n**Copilot Edits** (Shortcut: _Ctrl+Shift+I_)\r\n\r\nSimilar to the chat but with an inline experience, meaning changes are applied directly to the files provided as context, also called \"working set\". It's still in preview, but let's give it a shot, it's cool.\r\n\r\n\r\nMake sure the only files in the working set is `models.ts` by looking at the working set just above the text input box on the bottom of the page. Click on X to remove irrelevant files and + to add the desired files to edit. Once only `models.ts` is in the working set...\r\n\r\nStart with the prompt:\r\n\r\n\"_Add a logger method to the AlarmEvent type_\"\r\n\r\n\r\nHit submit and watch the magic happens\r\n\r\nNow let's reiterate before we get too excited and accept, write the next prompt: \r\n\r\n\"_This looks very repetitive, suggest a better way_\"\r\n\r\nTa. Da.\r\n\r\nDon't forget to accept / discard the changes.",
-      "line": 8
+      "description": "**Copilot Edits** (Shortcut: _Ctrl+Shift+I_)\r\n\r\nUsed to **edit multiple files at the same time**! \r\n\r\nChanges are applied directly to the files provided as context / detected by Copilot, these files are also called \"working set\" and recently the 10 file limit has been removed (yay).\r\n\r\nLet's start with the prompt:\r\n\r\n\"_Add a logger to the AlarmEvent type and log the important properties_\"",
+      "line": 8,
+      "title": "Copilot edits 😮"
+    },
+    {
+      "file": "models.ts",
+      "description": "Introducing Agent mode, same functionality of editing multiple files, but with iterations. Let's call it edits ++ \r\n\r\nLet's ask Copilot to create the spec for our functionality:\r\n\r\n`\r\nI want the main function to use the different functions that exists in the code base. And allow the user to filter specific alarms based on inputs. So this will now be a console app that runs on the generated alarms, and while the alarms are generated every second in the background. Without interfering with alarm generation, the user will be able to get the current status by choosing a number from the menu which will execute a specific function.`\r\n\r\nBut before that, **copy the prompt above** and let's use our [special prompt](.github\\prompts\\Feature breakdown prompt.prompt.md):\r\n\r\n\r\nCtrl + Shift + P -> Use prompt\r\n\r\nPaste the prompt, and take the response.",
+      "line": 8,
+      "title": "Github Copilot Agent 🤯"
     },
     {
       "file": "EasterEggs.md",

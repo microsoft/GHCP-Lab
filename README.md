@@ -12,7 +12,7 @@ it may need a moment to open render.
 - You will learn about the GHCP suggestions panel.
 - How to utilize context to the fullest so that Github Copilot gives you what you want. 
 
-*This lab **shouldn't take more than 30 minutes**. 
+*This lab **shouldn't take more than 60 minutes**. 
 Take a look at the clock. If you reach more than 30 minutes, I suggest you stop and wait for the learning session*
 
 There are two tracks, the [Typescript](./GHCP-Typescript.code-workspace) track and the [dotNet](./GHCP-dotNet.code-workspace)** track, choose the one that suits you best, or do both!

@@ -1,4 +1,3 @@
-#nullable enable
 using System;
 using System.Linq;
 using System.Collections.Generic;
@@ -6,8 +5,12 @@ using SOC.AdvancedCopilot.Models;
 
 namespace SOC.AdvancedCopilot.DotNet;
 
-public class GHCPCompletions
+public static class GHCPCompletions
 {
+
+        // #1 
+        dynamic totalAlertsCount
+
         // #2
 
         // #3
@@ -18,5 +21,6 @@ public class GHCPCompletions
 
         // #6
 
-    
+        // #7
+
 }
