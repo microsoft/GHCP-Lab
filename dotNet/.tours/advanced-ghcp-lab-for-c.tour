@@ -16,20 +16,20 @@
     },
     {
       "file": "src/Program.cs",
-      "description": "We have mocked some alerts! Spoiler, will be used later.\r\n\r\nIn the following order, we'll take a look at GHCP Completions, Inline chat (and comments), then Chat, Edits and Agent!",
+      "description": "We have mocked some alerts! Spoiler, will be used later.\r\n\r\nIn the following order, we'll take a look at GHCP Completions, Inline chat (and comments), then Chat, Edits and finally - Agent mode!",
       "line": 8,
       "title": "Mocks and order of exercises"
     },
     {
       "file": "src/Program.cs",
-      "description": "Using GHCP completions is optimal for Short, Specific and Simple logic (the 3 `S` principle), remember that!\r\n\r\n\r\n\r\nFor best completions results - \r\nName a variable according to the logic you expect and then refactor the name after.\r\n\r\nPro tips:\r\n1. GHCP also suggests names (!) if you press Refactor (F2) on the function/variable name.\r\n2. Watch this for more context on the [3 `S` Principal](https://www.youtube.com/watch?v=hh1nOX14TyY&t=38s&ab_channel=VisualStudioCode)",
+      "description": "Using GHCP completions is optimal for Simple, Short and Specific logic (the 3 `S` principle), remember that!\r\n\r\n\r\n\r\nFor best completions results - \r\nName a variable according to the logic you expect and then refactor the name after.\r\n\r\nPro tips:\r\n1. GHCP also suggests names (!) if you press Refactor (F2) on the function/variable name.\r\n2. Watch this for more context on the [3 `S` Principal](https://www.youtube.com/watch?v=hh1nOX14TyY&t=38s&ab_channel=VisualStudioCode)",
       "line": 9,
       "title": "Completions introduction"
     },
     {
-      "file": "src/Program.cs",
-      "description": "Let's start easy, we'll create a variable to store the total number of alerts.\r\n\r\nSimply place your caret after the equal sign and the `Space` key",
-      "line": 13,
+      "file": "src/Completions.cs",
+      "description": "Let's start easy, we'll create a function to return the total number of alerts \r\n\r\nSimply place your caret at the end of the function and add the opening brackets()",
+      "line": 12,
       "title": "Completion #1"
     },
     {
@@ -58,9 +58,14 @@
     },
     {
       "file": "src/Completions.cs",
-      "description": "Let's try to be more specific, when you type `dynamic filter alertsWithLongName` what is the length you get, try it.\r\n\r\nDoes that \"satisfy\" the requirement? What if you wanted it to be a little longer let's say more than 12 characters?\r\n\r\nThink of how'd you write name that variable in a more specific way - you can always rename after.",
+      "description": "Let's try to be more specific, when you type \"`dynamic filterAlertsWithLongName`\" what is the length you get in the code? Stop reading and give it try, then continue reading.\r\n\r\nDoes that \"satisfy\" the requirement? What if you wanted it to be a little longer let's say more than 12 characters?\r\n\r\n You have two options:\r\n\r\n1. To write a hard-coded value in the variable name and that's the generated code you get, i.e. filterAlertsWithNameLongerThan12. Then you can rename the variable to your needs.\r\n\r\n2. Create a variable, let's create a const with a value of 15 named MAX_ALERT_NAME. Now when you write `filterAlertWithLongName` Copilot will take that into account and use the variable",
       "line": 20,
       "title": "Completions #6"
+    },
+    {
+      "file": "src/Completions.cs",
+      "title": "Completions #7",
+      "description": "In case you got here, here are a few more methods to implement:\r\n\r\n1. Get Average Latitute or average Langitute of all alerts.\r\n\r\n1. Get the last alert by time.\r\n\r\n1. Get first alert by time.\r\n\r\n1. Get alert count by input of Severity.\r\n\r\n1. Get all alerts which are not Resolved.\r\n\r\n1. Extract alert descriptions"
     },
     {
       "file": "src/Point.cs",
@@ -70,25 +75,25 @@
     },
     {
       "file": "src/Completions.cs",
-      "description": "So we now know to name the variable according to what the logic we want it to execute, and then rename it for easier reading. \r\n\r\n\r\nAs a perfect segway for inline chat, let's now fix all these \"dynamic\" return types.\r\nSelect all the methods which include the dynamic return type, open inline chat (using CTRL + I) and use the following prompt: \r\n\r\n\"**Instead of dynamic, use correct return type**\"\r\n\r\nGithub Copilot should fix these to be the correct return type auto-magically ✨.",
+      "description": "So we now know to name the variable according to what the logic we want it to execute, and then rename it for easier reading. \r\n\r\n\r\nAs a perfect segue for inline chat, let's now fix all these \"dynamic\" return types.\r\nSelect all the methods which include the dynamic return type, open inline chat using Ctrl + I (🍏: Command + I) and use the following prompt: \r\n\r\n\"**Instead of dynamic, use correct return type**\"\r\n\r\nGithub Copilot should fix these to be the correct return type auto-magically ✨.",
       "line": 30,
       "title": "Completions summary"
     },
     {
       "file": "src/InlineChat.cs",
-      "description": "Using GHCP Inline Chat fits scenarios where you need more than one thing at a time, a very specific logic that's too long for a variable name, or you want to provide examples (yes, that's a recommendation!).\r\n\r\n\r\nIn VS Code the default shortcut is ctrl + I to open inline chat",
+      "description": "Using GHCP Inline Chat fits scenarios where you need to directly edit code, generate code that does more than one thing at a time, a very specific logic that's too long for a variable name, or you want to provide examples (yes, that's a recommendation!).\r\n\r\n\r\nIn VS Code the default shortcut is Ctrl + I (🍏: Command + I) to open inline chat.\r\n\r\n\r\nThis is also where models start coming into play. Tokens are per model, so if you run out, simply switch a model. \r\n\r\nGPT models are great for reasoning, 4o when you care more about speed and less about accuracy.\r\n\r\nClaude models are superb for code generation. \r\n\r\nUsing Claude within VS Code **is allowed** and I'd recommend 3.7 over 3.5",
       "line": 5,
       "title": "Inline chat introduction"
     },
     {
       "file": "src/InlineChat.cs",
-      "description": "Your task: \r\n\r\nCreate a function which takes an alert and checks if the `AlertStatus` is not `Resolved` for more than seven days, log to console if so.\r\n\r\nNow you're probably thinking - \r\n\r\nCan I copy and paste this? The answer is yes. But how will you practice phrasing your requirements? \r\n\r\nDoes the below code work? If not, try selecting the function, and prompt inline chat again with `\"/fix\"`.\r\n\r\nLazy tip:\r\nIf the thought of typing a lot is what deters you, consider talking to VS Code! Using the extension \"VS Code Speech\" (Also recommended in workspace and should be installed) you can simply talk to VS Code with speech to text. This works very well and can be done both in editor, in inline chat as well as in the chat window, give it a go!\r\nOnce installed, you may invoke it within the inline chat using another click of `Ctrl + I` or simply press the mic button",
+      "description": "Your task: \r\n\r\nCreate a function which takes an alert and checks if the `AlertStatus` is not `Resolved` for more than seven days, log to console if so.\r\n\r\nNow you're probably thinking - \r\n\r\nCan I copy and paste this? The answer is yes. But how will you practice phrasing your requirements? \r\n\r\nDoes the below code work? If not, try selecting the function, and prompt inline chat again with `\"/fix\"`.\r\n\r\nLazy tip:\r\nIf the thought of typing a lot is what deters you, consider talking to VS Code (aka _Vibe Coding_)! Using the extension \"VS Code Speech\" (Also recommended in workspace and should be installed) you can simply talk to VS Code with speech to text. This works very well and can be done both in editor, in inline chat as well as in the chat window, give it a go!\r\n\r\nOnce installed, you may invoke it within the inline chat using another click of `Ctrl + I` or simply press the mic button with the mouse",
       "line": 8,
       "title": "Inline chat #1"
     },
     {
       "file": "src/InlineChat.cs",
-      "description": "Create a method which accepts a list of alerts and as a parameter, checks if there are any alerts with Critic severity which are still active, return these alerts.\r\n\r\n\r\n\r\nNow we have to stop for a second to ask:\r\nBut why can't I simply use comments instead? They are also left in the repo explaining what the code below does! \r\n\r\n1. Code gets refactored, comments usually do not. These comments will demand a cleanup in the future and get disregarded and become unrelevant.\r\n2. More importantly, comments with GHCP aren't iterable, meaning it's a one-shot completions attempt. If you get it wrong, you have to edit your comment and try again. When using the inline chat you can then reply with what needs to be fixed. Just think of how rare it is when you code things that work for the first time, the better you are explaining what you want to GHCP, the better GHCP will help you, sometimes it takes a few rounds of explanations, a.k.a. \"inline chat ;)\"",
+      "description": "Create a method which accepts a list of alerts and as a parameter, checks if there are any alerts with Critical severity which are still active, return these alerts.\r\n\r\n\r\n\r\nNow we have to stop for a second to ask:\r\nBut why can't I simply use comments instead? They are also left in the repo explaining what the code below does! \r\n\r\n1. Code gets refactored, comments usually do not. These comments will demand a cleanup in the future and get disregarded and become unrelevant.\r\n2. More importantly, comments with GHCP aren't iterable, meaning it's a one-shot completions attempt. If you get it wrong, you have to edit your comment and try again. When using the inline chat you can then reply with what needs to be fixed. Just think of how rare it is when you code things that work for the first time, the better you are explaining what you want to GHCP, the better GHCP will help you, sometimes it takes a few rounds of explanations, a.k.a. \"inline chat ;)\"",
       "line": 10,
       "selection": {
         "start": {
@@ -132,19 +137,23 @@
     },
     {
       "file": "src/Chat.cs",
-      "description": "Using GHCP Chat is ideal for discussions, questions and guidance and reassurance of your code. \r\nWith GCHP chat (CTRL + ALT + I), it's much easier to provide more context using ALIASES, we'll talk about aliases next.\r\nThe more context you add, the more capable Copilot would be.\r\n\r\n\r\nSome (none?) standard examples one can use:\r\n1. \"Check if I missed any edge cases in #selection\"\r\n2. \"Can you provide a numerical example?\" (If you can't remember if you should compare time)\r\n3. \"How do I run the project?\" More often than not, the instructions may be a little obscure, Copilot knows how to simplify and provide simple commands.\r\n4. Using it for some git operations! \"What command to edit the last commit message?\"\r\n\r\nRemember context is everything, if GHCP chat starts providing bad information, it may be confused with older contexts, don't ask him about C# and jump to typescript, create a new chat for these subject jumps. You can always navigate to previous sessions.\r\n",
+      "description": "Using GHCP Ask mode (previously called Chat) is ideal for discussions, questions, guidance and reassurance of your code. \r\n\r\nOpen GCHP side pane (Ctrl + Alt + I), and pick the Ask from the dropdown at the bottom next to the model picker. It's much easier to provide context in this experience and to use ALIASES. We'll talk about aliases next.\r\n\r\nThe more context you add, the more accurate and efficient Copilot would be.\r\n\r\n\r\nSome examples to use:\r\n1. \"Check if I missed any edge cases in #selection\"\r\n2. \"Can you provide a numerical example? To validate my logic. Format response as a table with inputs and output values\"\r\n3. \"How do I run the project?\"\r\n    - More often than not, the instructions may be a little obscure, Copilot knows how to simplify and provide simple commands.\r\n4. Using it for some git operations! \r\n    - \"How to edit the last commit message?\"\r\n\t- \"List all commits that have any editing of the path `packages/some_package`, format the list as table with columns 'author, commit message, date'\"",
       "line": 6,
       "title": "Chat introduction"
     },
     {
+      "title": "Context explanation",
+      "description": "With GHCP, context is everything. If you see  bad responses, it may be confused with older, no-longer-relevant, contexts. For better accuracy / responses:\r\n\r\n1. Try closing unused editor windows.\r\n1. Provide more context by attaching it directly using # operators, which also reduces search time for Copilot\r\n1. Don't ask him about C# and jump to typescript, create a new chat for these subject jumps. You can always navigate to previous sessions\r\n1. Provide [Custom Instructions](https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot?tool=vscode#enabling-or-disabling-custom-instructions) - we will discuss these in more details after the Ask/Chat section"
+    },
+    {
       "file": "src/Chat.cs",
-      "description": "Let's say you remembered there's an enum for `AlarmSeverity`, but looking at the file structure, you can't recall what it is.\r\nYou may use the @workspace alias or the #codebase context accessor in GHCP to search for it. Try both, first use @workspace, then in chat, click up arrow and replace @workspace with #codebase. \r\n\r\nThese two GHCP functions iterate over *all the project* and can answer your questions on a project scope.\r\n\r\nLet's start by asking it where you can find the AlarmSeverity enum? \r\n\r\nUse the @workspace alias (in the beginning of the question) or #codebase anywhere in your question, there's a subtle difference by how it displays the answer, give it a go!\r\n\r\nTip: When searching in the project scope, be sure to deselect the active file attached by clicking the eye icon next to it.",
+      "description": "Let's say you remembered there's an enum for `AlarmSeverity`, but looking at the file structure, you can't recall where it is.\r\nYou may use the @workspace scope or the #codebase context in GHCP to search for it. These two GHCP functionalties iterate over *the _open_ project* and can answer your questions on a project scope. Try asking in Ask mode\r\n\r\nUsing @workspace it where you can find the AlarmSeverity enum?\r\n\r\nTip: When searching in the project scope, be sure to deselect the active file attached by clicking the eye icon next to it.",
       "line": 8,
       "title": "Chat #1"
     },
     {
       "file": "src/Chat.cs",
-      "description": "Let's give it another go. \r\nIn the repo, I've hidden a few SECRETs. Try using Copilot to find these secrets, let's see if you can find all 4.\r\n\r\nUse the prompt: \"List all secrets in #codebase\"",
+      "description": "More searching... I've hidden a few SECRETs in the repo. Try using Copilot to find these secrets there should be four.\r\n\r\nTry your own phrasing or use the prompt: \"List all secrets in #codebase\"",
       "line": 10,
       "title": "Chat #2",
       "selection": {
@@ -166,13 +175,13 @@
     },
     {
       "file": "src/Chat.cs",
-      "description": "While trivial, lot's of developers tend to jump into code and start reading it to understand, natural language is still faster to comprehend. You can use the `/explain` alias and read it in plain text, it's pretty accurate.",
+      "description": "While trivial, lots of developers tend to jump into code and start reading it to understand, natural language is still faster to comprehend. You can use the `/explain` alias and read it in plain text, it's pretty accurate.",
       "line": 17,
       "title": "Chat #4"
     },
     {
       "file": "src/Chat.cs",
-      "description": "Finally, let's write some unit tests using GHCP.\r\nRemember what we said? \r\nHighlight the desired code to test, in our case the Divider function. let's write up unittests for it, remember to fix the missing edge case first.\r\n\r\nIn chat, write:\r\n\r\n`@workspace /tests Write unit tests for #selection using NUnit`\r\n\r\n\r\nDon't forget to metion which test framework you're using as it may vary.",
+      "description": "Finally, let's write some unit tests using GHCP.\r\nRemember what we said? \r\nHighlight the desired code to test, in our case the Divider function. let's write up unittests for it, remember to fix the missing edge case first.\r\n\r\nIn chat, write:\r\n\r\n`@workspace /tests Write unit tests for #selection using NUnit`\r\n\r\n\r\nDon't forget to mention which test framework you're using as it may vary.",
       "line": 19,
       "selection": {
         "start": {
@@ -188,7 +197,7 @@
     },
     {
       "file": "src/Chat.cs",
-      "description": "There are many more aliases, even for the `Terminal` which is extremely useful to debug errors, recall git commands much more. I urge you to go into the Chat input and iterate over these prefixes\r\n1. \"`/`\" - Use specific funcionality \"/test\", \"/explain\", \"/search\". Let's try out \"/help\"\r\n1. \"`@`\" - Used to set a scope @github/@vscode/@workspace etc.\r\n1. \"`#`\" - Used to provide additional context. Recently #folder and #problem were introduced and are helpful in scoping the context\r\n\r\nThere's a lot the Chat experience can provide and teach, don't hesitate to explore!\r\nUse the up and down arrows and spend a little time to read the descriptions of these commands.",
+      "description": "There are many more aliases, even for the `Terminal` which is extremely useful to debug errors, recall git commands much more. I urge you to go into the Chat input and iterate over these prefixes\r\n1. \"`/`\" - Use specific functionality \"/test\", \"/explain\", \"/search\". Let's try out \"/help\"\r\n1. \"`@`\" - Used to set a scope @github/@vscode/@workspace etc.\r\n1. \"`#`\" - Used to provide additional context. Recently #folder and #problem were introduced and are helpful in scoping the context\r\n\r\nThere's a lot the Chat experience can provide and teach, don't hesitate to explore!\r\nUse the up and down arrows and spend a little time to read the descriptions of these commands.",
       "line": 21,
       "title": "Chat #6"
     },
