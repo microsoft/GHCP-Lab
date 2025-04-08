@@ -100,6 +100,45 @@ public class MockedAlerts
                 Severity = AlertSeverity.Error,
                 Status = AlertStatus.Resolved,
                 Source = "Washing Machine"
+            },
+            new Alert
+            {
+                Id = "8",
+                Name = "Window Break",
+                Description = "Detected a broken window in the living room",
+                CreatedDate = DateTime.Now.AddHours(-3),
+                LocationName = "Living Room",
+                Latitude = 8.0,
+                Longitude = 8.0,
+                Severity = AlertSeverity.Critical,
+                Status = AlertStatus.Active,
+                Source = "Glass Break Sensor"
+            },
+            new Alert
+            {
+                Id = "9",
+                Name = "Overheated Oven",
+                Description = "The oven temperature is too high, potential fire hazard",
+                CreatedDate = DateTime.Now.AddMinutes(-15),
+                LocationName = "Kitchen",
+                Latitude = 9.0,
+                Longitude = 9.0,
+                Severity = AlertSeverity.Error,
+                Status = AlertStatus.Acknowledged,
+                Source = "Oven Sensor"
+            },
+            new Alert
+            {
+                Id = "10",
+                Name = "Water Leak",
+                Description = "Water detected on the floor near the washing machine",
+                CreatedDate = DateTime.Now.AddHours(-6),
+                LocationName = "Laundry Room",
+                Latitude = 10.0,
+                Longitude = 10.0,
+                Severity = AlertSeverity.Warning,
+                Status = AlertStatus.Resolved,
+                Source = "Water Sensor"
             }
         };
     }
