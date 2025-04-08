@@ -172,9 +172,15 @@
     },
     {
       "file": "src/Alert.h",
-      "description": "Last minute easter egg- \r\n\r\n**Copilot Edits** (Shortcut: _Ctrl+Shift+I_)\r\n\r\nSimilar to the chat but with an inline experience, meaning changes are applied directly to the files provided as context, also called \"working set\". It's still in preview, but let's give it a shot, it's cool.\r\n\r\n\r\nMake sure the only files in the working set is Alert.h by looking at the working set just above the text input box on the bottom of the page. Click on X to remove irrelevant files and + to add the desired files to edit. Once only `Alert.h` is in the working set...\r\n\r\nStart with the prompt:\r\n\r\n\"_Add a logger to the alert class and log the important properties_\"\r\n\r\n\r\nHit submit and watch the magic happens\r\n\r\nNow let's reiterate before we get too excited and accept, write the next prompt: \r\n\r\n\"_Log everything in a single log and use JSON_\"\r\n\r\nTa. Da.\r\n\r\nDon't forget to accept / discard the changes.",
+      "description": "**Copilot Edits** (Shortcut: _Ctrl+Shift+I_)\r\n\r\nUsed to **edit multiple files at the same time**! \r\n\r\nChanges are applied directly to the files provided as context / detected by Copilot, these files are also called \"working set\" and recently the 10 file limit has been removed (yay).\r\n\r\nLet's start with the prompt:\r\n\r\n\"_Add a logger to the alert class and log the important properties_\"",
       "line": 26,
       "title": "Copilot edits 😮"
+    },
+    {
+      "file": "src/Program.cpp",
+      "description": "Introducing Agent mode, same functionality of editing multiple files, but with iterations. Let's call it edits ++ \r\n\r\nLet's ask Copilot to create the spec for our functionality:\r\n\r\n`\r\nI want the main function to use the different functions that exists in the code base. And allow the user to filter specific alerts based on inputs. So this will now be a console app that runs on the generated alerts, and while the alerts are generated every second in the background. Without interfering with alert generation, the user will be able to get the current status by choosing a number from the menu which will execute a specific function.`\r\n\r\nBut before that, **copy the prompt above** and let's use our [special prompt](.github\\prompts\\Feature breakdown prompt.prompt.md):\r\n\r\n\r\nCtrl + Shift + P -> Use prompt\r\n\r\nPaste the prompt, and take the response.",
+      "line": 18,
+      "title": "Github Copilot Agent 🤯"
     },
     {
       "file": "src/Program.cpp",

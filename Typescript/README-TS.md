@@ -2,12 +2,6 @@
 
 Welcome to the Github Copilot lab Typescript track!
 
-There is no need to run the code in this lab, you can follow the tour and learn about Github Copilot. 
-If you'd like to run the code, you can do so by installing [Quokka](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode), then 
-copy-pasting the imports (as the free version doesn't support imports) into the 
-current file and start the server with Ctrl + P and then typing
-`> Quokka: Start on Current File`. 
-
 ## How to participate:
 1. Install recommended extensions from the workspace
 	1. If you don't want to run the code, CodeTour is the critical one
