@@ -143,7 +143,7 @@
     },
     {
       "title": "Context explanation",
-      "description": "With GHCP, context is everything. If you see  bad responses, it may be confused with older, no-longer-relevant, contexts. For better accuracy / responses:\r\n\r\n1. Try closing unused editor windows.\r\n1. Provide more context by attaching it directly using # operators, which also reduces search time for Copilot\r\n1. Don't ask him about C# and jump to typescript, create a new chat for these subject jumps. You can always navigate to previous sessions\r\n1. Provide [Custom Instructions](https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot?tool=vscode#enabling-or-disabling-custom-instructions) - we will discuss these in more details after the Ask/Chat section"
+      "description": "With GHCP, **context is everything**.\r\n\r\nThis is the GHCP context hierarchy: \r\n\r\n1. Cursor position -> Selection -> Active file -> Opened files. \r\n1. Additional context provided (files/ folders/ problems / changes/ search results)\r\n\r\nIf you see bad responses, it may be confused with older, no-longer-relevant, contexts. For better accuracy / responses:\r\n\r\n1. Try closing unused editor windows.\r\n1. Provide more context by attaching it directly using # operators, which also reduces search time for Copilot\r\n1. Don't ask him about C# and jump to typescript, create a new chat for these subject jumps. You can always navigate to previous sessions\r\n1. Provide [Custom Instructions](https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot?tool=vscode#enabling-or-disabling-custom-instructions) - we will discuss these in more details after the Ask/Chat section"
     },
     {
       "file": "src/Chat.cs",
@@ -153,9 +153,15 @@
     },
     {
       "file": "src/Chat.cs",
-      "description": "More searching... I've hidden a few SECRETs in the repo. Try using Copilot to find these secrets there should be four.\r\n\r\nTry your own phrasing or use the prompt: \"List all secrets in #codebase\"",
+      "description": "In Ask mode, run \"`/help`\"\r\n\r\nThere are many more aliases, even for the `Terminal` which is extremely useful to debug errors, recall git commands much more. I urge you to go into the Chat input and iterate over these prefixes\r\n1. \"`/`\" - Use specific functionality \"/test\", \"/explain\", \"/search\". \r\n1. \"`@`\" - Used to set a scope @github/@vscode/@workspace etc.\r\n1. \"`#`\" - Used to provide additional context. Recently #folder and #problem were introduced and are helpful in scoping the context\r\n\r\nThere's a lot the Chat experience can provide and teach, don't hesitate to explore!\r\nUse the up and down arrows and spend a little time to read the descriptions of these commands.",
+      "line": 21,
+      "title": "Chat #2"
+    },
+    {
+      "file": "src/Chat.cs",
+      "description": "More searching... I've hidden a few SECRETs in the repo. Use Copilot to find these secrets, there should be four.\r\n\r\nTry your own phrasing or use the prompt: \"List all secrets in #codebase\"",
       "line": 10,
-      "title": "Chat #2",
+      "title": "Chat #3",
       "selection": {
         "start": {
           "line": 4,
@@ -171,13 +177,13 @@
       "file": "src/Chat.cs",
       "description": "Now let's use #selection, this is what you should be using when asking code-specific-questions or writing unit tests. Highlight the text desired and in your question (even in inline-chat) use the #selection alias.\r\n\r\nLet's try it now: \r\n1. Highlight the method\r\n2. Ask in chat \"What edge cases did I miss\"?\r\n",
       "line": 12,
-      "title": "Chat #3"
+      "title": "Chat #4"
     },
     {
       "file": "src/Chat.cs",
       "description": "While trivial, lots of developers tend to jump into code and start reading it to understand, natural language is still faster to comprehend. You can use the `/explain` alias and read it in plain text, it's pretty accurate.",
       "line": 17,
-      "title": "Chat #4"
+      "title": "Chat #5"
     },
     {
       "file": "src/Chat.cs",
@@ -193,12 +199,6 @@
           "character": 54
         }
       },
-      "title": "Chat #5"
-    },
-    {
-      "file": "src/Chat.cs",
-      "description": "There are many more aliases, even for the `Terminal` which is extremely useful to debug errors, recall git commands much more. I urge you to go into the Chat input and iterate over these prefixes\r\n1. \"`/`\" - Use specific functionality \"/test\", \"/explain\", \"/search\". Let's try out \"/help\"\r\n1. \"`@`\" - Used to set a scope @github/@vscode/@workspace etc.\r\n1. \"`#`\" - Used to provide additional context. Recently #folder and #problem were introduced and are helpful in scoping the context\r\n\r\nThere's a lot the Chat experience can provide and teach, don't hesitate to explore!\r\nUse the up and down arrows and spend a little time to read the descriptions of these commands.",
-      "line": 21,
       "title": "Chat #6"
     },
     {
