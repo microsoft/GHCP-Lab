@@ -36,6 +36,9 @@
         "text": "Use conventional commit message format."
       }
     ],
+    "github.copilot.enable": {
+      "json": false
+    },
     "prettier.printWidth": 120,
   },
   "extensions": {

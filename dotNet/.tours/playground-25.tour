@@ -1,0 +1,66 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Github Copilot (GHCP) Workshop - Playground 25 (C#)",
+  "steps": [
+    {
+      "file": "../GHCP-dotNet.code-workspace",
+      "description": "## Use VS Code workspaces\r\n\r\n1. Setup your Copilot instructions for test creation, code generation, code-reviews and even commit message\r\n2. Commit the workspace in your repo and instruct (😉) your team to open it via VS Code.\r\n3. Instructions come in the form of free text or files. The more context you enrich Github Copilot with, the better results you'll get.",
+      "pattern": "github.copilot.chat.commitMessageGeneration.instructions"
+    },
+    {
+      "file": "src/Program.cs",
+      "description": "Instead of telling the coding step-by-step, developers should now describe what they want through meaningful variable or function names and let Github Copilot figure out the how.",
+      "pattern": "var carInventory",
+      "title": "The Paradigm Shift"
+    },
+    {
+      "file": "src/Program.cs",
+      "description": "Your task: **Get the make of the oldest car**\r\n\r\nNormally you'd write a LINQ expression with OrderBy and FirstOrDefault, but let's utilize Copilot to the fullest and name our variable:\r\n\r\n\r\n`var makeOfOldestCar`\r\n\r\nAnd now, let's have Copilot autocomplete.",
+      "pattern": "First task",
+      "title": "First task"
+    },
+    {
+      "file": "src/Program.cs",
+      "description": "**Get the total price of all the cars**\r\n\r\nInstead of using LINQ Sum method manually, let's leverage Copilot's predictive capabilities.\r\n\r\nSimply name your variable:\r\n\r\n`var totalValueOfAllCars`\r\n\r\nAnd let Copilot handle the rest!",
+      "pattern": "Second task",
+      "title": "Second task"
+    },
+    {
+      "file": "src/Program.cs",
+      "description": "Create a dictionary of the car's condition property as key and count of cars with the condition as value\r\n\r\n\r\nExpected output: \r\n\r\n{ \"used\": 3, \"new\": 3 }\r\n\r\nNow we need to create a Dictionary, then use GroupBy and ToDictionary... \r\n\r\nOr we can name our variable:\r\n\r\n`var countOfCarsByCondition`\r\n",
+      "pattern": "Third task",
+      "title": "Third task"
+    },
+    {
+      "file": "src/Program.cs",
+      "description": "**Get the average value of new cars**\r\n\r\nInstead of manually filtering with Where() and calculating the average with Average(), let's name our variable:\r\n\r\n`var averageValueOfNewCars`\r\n\r\nAnd let Copilot handle the rest!",
+      "pattern": "Fourth task",
+      "title": "Fourth task"
+    },
+    {
+      "file": "src/Program.cs",
+      "description": "**Find the most expensive car**\r\n\r\nInstead of using OrderByDescending and FirstOrDefault manually, let's name our variable:\r\n\r\n`var mostExpensiveCar`\r\n\r\nAnd let Copilot autocomplete!",
+      "pattern": "Fifth task",
+      "title": "Fifth task"
+    },
+    {
+      "file": "src/Program.cs",
+      "description": "**Group cars by their make**\r\n\r\nInstead of manually creating a GroupBy LINQ expression, let's name our variable:\r\n\r\n`var carsGroupedByMake`\r\n\r\nAnd let Copilot handle the rest!",
+      "pattern": "Sixth task",
+      "title": "Sixth task"
+    },
+    {
+      "file": "src/LegacyCodeBase.cs",
+      "description": "Here's is a snippet of a legacy code base. It's full of ToDos, and code which could be improved. \r\n\r\nLet's use Copilot to ease our assessment of technical debt.\r\n\r\nOpen Github Copilot in `Ask` or `Agent` Mode. And write the following prompt\r\n\r\n\"Gather all the todos from the file in the format of a table, add a column for the the content, add priority, and T-shirt size cost estimation\"",
+      "pattern": "public class SmartHouseManager",
+      "title": "Extracting info"
+    },
+    {
+      "file": "src/LegacyCodeBase.cs",
+      "description": "Now let's switch `Agent` mode and ask to to implement the first to do item:\r\n\r\n`Implement the To-Do: \"Add validation for duplicate IDs\"`",
+      "pattern": "TODO Add my fridge",
+      "title": "Implementation task"
+    }
+  ],
+  "isPrimary": true
+}
