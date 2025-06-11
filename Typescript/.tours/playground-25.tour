@@ -59,17 +59,7 @@
       "file": "LegacyCodeBase.ts",
       "description": "Now let's switch `Agent` mode and ask to to implement the first to do item:\r\n\r\n`Implement the first todo item in the list`",
       "pattern": "Sixth task",
-      "title": "Sixth task",
-      "selection": {
-        "start": {
-          "line": 3,
-          "character": 2
-        },
-        "end": {
-          "line": 3,
-          "character": 44
-        }
-      }
+      "title": "Sixth task"
     }
   ],
   "isPrimary": true
