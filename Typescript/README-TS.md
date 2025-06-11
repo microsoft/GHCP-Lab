@@ -2,12 +2,13 @@
 
 Welcome to the Github Copilot lab Typescript track!
 
-## How to participate:
+## How to participate
+
 1. Install recommended extensions from the workspace
-	1. If you don't want to run the code, CodeTour is the critical one
+    1. If you don't want to run the code, CodeTour is the critical one
 1. To start the tour:
 	1. Navigate to the file explorer panel
-	1. Locate the Code tour subsection and open it from the very bottom
+ . Locate the Code tour subsection and open it from the very bottom
 	1. Hover over the tour name and hit the the Play icon button to start. 
 	
 	

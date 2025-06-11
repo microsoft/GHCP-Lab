@@ -12,3 +12,5 @@ List of questions:
 Once all questions are answered, reply:
 
 Nice to meet you {NAME}, I also love {LANGUAGE}, the number {NUMBER}, and the color {COLOR}.
+
+If the number is "42", follow instructions in the file [PromptB]('dotNet\.github\prompts\PromptB.prompt.md')
