@@ -11,13 +11,7 @@ const carInventory = [
 ];
 
 // First task
-
+const findOldestCarMake = carInventory.reduce((oldest, current) => {
+  return current.year < oldest.year ? current : oldest;
+}).make;
 // Second task
-
-// Third task
-
-// Fourth task
-
-// Fifth task
-
-// Sixth task

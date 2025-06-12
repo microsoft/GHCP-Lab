@@ -3,11 +3,6 @@
   "title": "Github Copilot (GHCP) Workshop - Playground 25",
   "steps": [
     {
-      "file": "../GHCP-Typescript.code-workspace",
-      "description": "## Use VS Code workspaces\r\n\r\n1. Setup your Copilot instructions for test creation, code generation, code-reviews and even commit message\r\n2. Commit the workspace in your repo and instruct (😉) your team to open it via VS Code.\r\n3. Instructions come in the form of free text or files. The more context you enrich Github Copilot with, the better results you'll get.",
-      "pattern": "github.copilot.chat.commitMessageGeneration.instructions"
-    },
-    {
       "file": "ParadigmShift.ts",
       "description": "Instead of telling the coding step-by-step, developers should now describe what they want through meaningful variable or function names and let Github Copilot figure out the how.",
       "pattern": "const canInventory",
@@ -15,7 +10,7 @@
     },
     {
       "file": "ParadigmShift.ts",
-      "description": "Your task: **Get the make of the oldest car**\r\n\r\nNormally you'd write a find method with a comparison predicate of year and let Copilot do that for you.\r\nHowever, let's utilize copilot to the fullest and name our variable:\r\n\r\n\r\n`const makeOfOldestCar`\r\n\r\nAnd now, let's Copilot autocomplete.",
+      "description": "Your task: **Get the make of the oldest car**\r\n\r\nNormally you'd write a find method with a comparison predicate of year and let Copilot do that for you.\r\nHowever, let's utilize copilot to the fullest and name our variable:\r\n\r\n\r\n`const getMakeOfOldestCar`\r\n\r\nAnd now, let Github Copilot autocomplete.\r\n\r\n\r\n\r\n",
       "pattern": "First task",
       "title": "First task"
     },
@@ -26,40 +21,44 @@
       "title": "Second task"
     },
     {
-      "file": "ParadigmShift.ts",
-      "description": "Create a dictionary of the car's condition property as key and count of cars with the condition as value\r\n\r\n\r\nExpected output: \r\n\r\n{ used: 3, new: 3 }\r\n\r\nNow we need to create a map / record then iterate over the array and build it... \r\n\r\nOr we can name our variable:\r\n\r\n`const countOfCarsByCarCondition`\r\n",
-      "pattern": "Third task",
-      "title": "Third task"
-    },
-    {
-      "file": "ParadigmShift.ts",
-      "description": "**Get the average value of new cars**\r\n\r\nInstead of manually filtering and calculating the average, let's name our variable:\r\n\r\n`const averageValueOfNewCars`\r\n\r\nAnd let Copilot handle the rest!",
-      "pattern": "Fourth task",
-      "title": "Fourth task"
-    },
-    {
-      "file": "ParadigmShift.ts",
-      "description": "**Find the most expensive car**\r\n\r\nInstead of iterating through the array manually, let's name our variable:\r\n\r\n`const mostExpensiveCar`\r\n\r\nAnd let Copilot autocomplete!",
-      "pattern": "Fifth task",
-      "title": "Fifth task"
-    },
-    {
-      "file": "ParadigmShift.ts",
-      "description": "**Group cars by their make**\r\n\r\nInstead of manually creating a grouping logic, let's name our variable:\r\n\r\n`const carsGroupedByMake`\r\n\r\nAnd let Copilot handle the rest!",
-      "pattern": "Sixth task",
-      "title": "Sixth task"
+      "title": "Code onboarding",
+      "file": "LegacyCodeBase.ts",
+      "description": "Let's ask Github Copilot to help us onboard with the following prompt:\r\n\r\nSummarize the #LegacyCodeBase.ts and provide a brief overview of what it does, then provide visualizations for the different flows.",
+      "pattern": "class SmartHouseManager"
     },
     {
       "file": "LegacyCodeBase.ts",
-      "description": "Here's is a snippet of a legacy code base. It's full of ToDos, and code which could be improved. \r\n\r\nLet's use Copilot to ease our assessment of technical debt.\r\n\r\nOpen Github Copilot in `Ask` or `Agent` Mode. And write the following prompt\r\n\r\n\"Gather all the todos from the file in the format of a table, add a column for the the content, add priority, and T-shirt size cost estimation\"",
+      "description": "Here's is a snippet of a legacy code base. It's full of ToDos, and code which could be improved. \r\n\r\nLet's use Github Copilot to ease our assessment of technical debt.\r\n\r\n\"Gather all the todos from the file in the format of a table, add a column for the the content, add priority, and T-shirt size cost estimation\"",
       "pattern": "class SmartHouseManager",
-      "title": "Extracting info"
+      "title": "Identify technical debt"
     },
     {
       "file": "LegacyCodeBase.ts",
-      "description": "Now let's switch `Agent` mode and ask to to implement the first to do item:\r\n\r\n`Implement the first todo item in the list`",
+      "title": "Resolve technical debt",
+      "description": "Ask Copilot in Agent mode, using any of the models:\r\n\r\n\"Help me get rid of these todos, implement them\"\r\n\r\nOnce it finishes please wait for the guide before proceeding.",
+      "pattern": "TODO Create an interface",
+      "selection": {
+        "start": {
+          "line": 3,
+          "character": 2
+        },
+        "end": {
+          "line": 3,
+          "character": 48
+        }
+      }
+    },
+    {
+      "file": "../GHCP-Typescript.code-workspace",
+      "title": "Setup custom instructions",
+      "description": "## Use VS Code workspaces\r\n\r\n1. Setup your Copilot instructions for test creation, code generation, code-reviews and even commit message\r\n2. Commit the workspace in your repo and instruct (😉) your team to open it via VS Code.\r\n3. Instructions come in the form of free text or files. The more context you enrich Github Copilot with, the better results you'll get.",
+      "pattern": "github.copilot.chat.commitMessageGeneration.instructions"
+    },
+    {
+      "file": "LegacyCodeBase.ts",
+      "description": "Now that we've setup custom instructions, let's re-trigger our prompt.\r\n\r\nPro tip ✨:\r\nInstead of copy-pasting the ask, simply hit the arrow-up key and hit return.\r\n\r\nYou should now see in the references that the instructions file is referenced.",
       "pattern": "Sixth task",
-      "title": "Sixth task"
+      "title": "Implement with instructions"
     }
   ],
   "isPrimary": true

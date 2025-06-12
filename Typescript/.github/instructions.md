@@ -1,2 +1,2 @@
-- Interfaces should only be in files named "models.ts" under the relevant folder
-- Interfaces should start with the letter I
+- Interfaces **must** only be in files named "models.ts" under the relevant folder
+- Interfaces should start with the letter `I`. Example `interface ISomeInterface`

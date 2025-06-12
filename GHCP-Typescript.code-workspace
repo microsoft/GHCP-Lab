@@ -36,6 +36,7 @@
         "text": "Use conventional commit message format."
       }
     ],
+    "github.copilot.nextEditSuggestions.enabled": false,
     "github.copilot.enable": {
       "json": false
     },
