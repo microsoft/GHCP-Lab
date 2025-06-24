@@ -6,13 +6,6 @@ using SOC.AdvancedCopilot.Models;
 
 public static class GHCPInlineChat
 {
-    // #1
-
-    // #2
-
-    // #3
-
-    // #4
-
-    // #5
+    // TASK here
+    
 }

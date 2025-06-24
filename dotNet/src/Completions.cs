@@ -7,20 +7,7 @@ namespace SOC.AdvancedCopilot.DotNet;
 
 public static class GHCPCompletions
 {
-
-        // #1 
-        dynamic totalAlertsCount
-
-        // #2
-
-        // #3
-
-        // #4
-
-        // #5
-
-        // #6
-
-        // #7
-
+        // TASK #1 here
+        
+        // TASK #2 here
 }

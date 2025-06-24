@@ -24,122 +24,47 @@
       "file": "src/Program.cs",
       "description": "Using GHCP completions is optimal for Simple, Short and Specific logic (the 3 `S` principle), remember that!\r\n\r\n**TASK** - Store the list of alerts in a variable. Then right click on the variable, and select `Rename Symbol (F2)`. You should see some Copilot suggestions for variable name.\r\n\r\nPro tips - Watch this for more context on the [3 `S` Principal](https://www.youtube.com/watch?v=hh1nOX14TyY&t=38s&ab_channel=VisualStudioCode)",
       "line": 10,
-      "title": "Completions introduction"
+      "title": "Code Completions #1"
     },
     {
       "file": "src/Completions.cs",
-      "description": "Let's start easy, we'll create a function to return the total number of alerts \r\n\r\nSimply place your caret at the end of the function and add the opening brackets()",
-      "line": 12,
-      "title": "Completion #1"
-    },
-    {
-      "file": "src/Completions.cs",
-      "description": "Create a function that receives alerts and `locationName` and finds the alerts which happened at `locationName`.\r\n\r\nBut what about the return type? Please use `dynamic` for all return types, we will get to it later using inline chat.",
-      "line": 14,
-      "title": "Completion #2"
-    },
-    {
-      "file": "src/Completions.cs",
-      "description": "Create a function with an input of alerts and returns the aggregated count of alerts by Severity, example output: {\"Critical\": 2, \"Medium\": 1, ....}\r\n\r\n\r\nFriendly reminder that occasionally, you may not get the completion you want, you may use \r\n\r\n`Ctrl + Enter`\r\n\r\nTo open the `Suggestions panel`, and see several options (it may present very bad options, so proceed with care and feel free to only take what you need and ignore the rest)",
-      "line": 12,
-      "title": "Completion #3"
-    },
-    {
-      "file": "src/Completions.cs",
-      "description": "Create a function to get all alerts which happened between two specific dates.\r\n\r\nNow, how would that change if you wanted to get alerts between specific hours, as string? Create a function for that too.",
-      "line": 16,
-      "title": "Completion #4"
-    },
-    {
-      "file": "src/Completions.cs",
-      "description": "Top Alert Sources: Create a function that takes all alerts and finds the most common source of alerts. ",
-      "line": 18,
-      "title": "Completion #5"
-    },
-    {
-      "file": "src/Completions.cs",
-      "description": "Let's try to be more specific, when you type \"`dynamic filterAlertsWithLongName`\" what is the length you get in the code? Stop reading and give it try, then continue reading.\r\n\r\nDoes that \"satisfy\" the requirement? What if you wanted it to be a little longer let's say more than 12 characters?\r\n\r\n You have two options:\r\n\r\n1. To write a hard-coded value in the variable name and that's the generated code you get, i.e. filterAlertsWithNameLongerThan12. Then you can rename the variable to your needs.\r\n\r\n2. Create a variable, let's create a const with a value of 15 named MAX_ALERT_NAME. Now when you write `filterAlertWithLongName` Copilot will take that into account and use the variable",
-      "line": 20,
-      "title": "Completions #6"
-    },
-    {
-      "file": "src/Completions.cs",
-      "title": "Completions #7",
-      "description": "In case you got here, here are a few more methods to implement:\r\n\r\n1. Get Average Latitute or average Langitute of all alerts.\r\n\r\n1. Get the last alert by time.\r\n\r\n1. Get first alert by time.\r\n\r\n1. Get alert count by input of Severity.\r\n\r\n1. Get all alerts which are not Resolved.\r\n\r\n1. Extract alert descriptions"
+      "description": "In this class, we will add some functions to demo GitHub Copilot code completion.\r\n\r\n**TASK #1**\r\n- Create a function that receives the list of `alerts` and a `locationName` as input, and finds the alerts which happened at `locationName`.\r\n- Please use `dynamic` for all return types, we will get to it later using inline chat.\r\n\r\n**TASK #2**\r\n- Create a function that receives the list of `alerts` as input, and returns the aggregated count of alerts by `Severity`. Example output: `{\"Critical\": 2, \"Medium\": 1, ....}`\r\n- Occasionally, you may not get the completion you want, you may use `Ctrl + Enter` to open the Suggestions panel, and see several options.",
+      "line": 8,
+      "title": "Code Completions #2",
+      "selection": {
+        "start": {
+          "line": 9,
+          "character": 36
+        },
+        "end": {
+          "line": 9,
+          "character": 256
+        }
+      }
     },
     {
       "file": "src/Point.cs",
-      "description": "The point of this file is demonstrate Next Edit Suggestions, rename Point to Point3D and move your cursor to the constructor, see how there's a green pop up? You can accept that with the Tab key or cancel with Esc",
+      "description": "The point of this file is demonstrate **Next Edit Suggestions**, rename Point to Point3D and move your cursor to the constructor, see how there's a green pop up? You can accept that with the Tab key or cancel with Esc",
       "line": 1,
-      "title": "Next Edit Suggestions"
+      "title": "Next Edit Suggestions #1"
     },
     {
       "file": "src/Completions.cs",
-      "description": "So we now know to name the variable according to what the logic we want it to execute, and then rename it for easier reading. \r\n\r\n\r\nAs a perfect segue for inline chat, let's now fix all these \"dynamic\" return types.\r\nSelect all the methods which include the dynamic return type, open inline chat using Ctrl + I (🍏: Command + I) and use the following prompt: \r\n\r\n\"**Instead of dynamic, use correct return type**\"\r\n\r\nGithub Copilot should fix these to be the correct return type auto-magically ✨.",
+      "description": "Time to try Inline Chat! Let's fix all these `dynamic` return types.\r\n\r\n**TASK** - Select all methods which include the `dynamic` return type, open inline chat using `Ctrl + I` (🍏: `Command + I`) and use the following prompt - `Instead of dynamic, use correct return type`\r\n\r\n**GHCP Inline Chat** - Using GHCP Inline Chat fits scenarios where -\r\n- You need to directly edit code\r\n- Generate code that does more than one thing at a time\r\n- Generate code for a very specific logic that's too long for a variable name\r\n- Generate code based on an example (yes, that's a recommendation!)\r\n\r\nIn VS Code the default shortcut is Ctrl + I (🍏: Command + I) to open inline chat.\r\n\r\n**AI Models** - You can select the AI model which Inline Chat uses.\r\n- Tokens are per model, so if you run out, simply switch a model. \r\n- GPT models are great for reasoning, 4o when you care more about speed and less about accuracy.\r\n- Claude models are superb for code generation. \r\n- Using Claude within VS Code **is allowed** and I'd recommend 3.7 over 3.5",
       "line": 30,
-      "title": "Completions summary"
+      "title": "Inline Chat #1"
     },
     {
       "file": "src/InlineChat.cs",
-      "description": "Using GHCP Inline Chat fits scenarios where you need to directly edit code, generate code that does more than one thing at a time, a very specific logic that's too long for a variable name, or you want to provide examples (yes, that's a recommendation!).\r\n\r\n\r\nIn VS Code the default shortcut is Ctrl + I (🍏: Command + I) to open inline chat.\r\n\r\n\r\nThis is also where models start coming into play. Tokens are per model, so if you run out, simply switch a model. \r\n\r\nGPT models are great for reasoning, 4o when you care more about speed and less about accuracy.\r\n\r\nClaude models are superb for code generation. \r\n\r\nUsing Claude within VS Code **is allowed** and I'd recommend 3.7 over 3.5",
-      "line": 5,
-      "title": "Inline chat introduction"
-    },
-    {
-      "file": "src/InlineChat.cs",
-      "description": "Your task: \r\n\r\nCreate a function which takes an alert and checks if the `AlertStatus` is not `Resolved` for more than seven days, log to console if so.\r\n\r\nNow you're probably thinking - \r\n\r\nCan I copy and paste this? The answer is yes. But how will you practice phrasing your requirements? \r\n\r\nDoes the below code work? If not, try selecting the function, and prompt inline chat again with `\"/fix\"`.\r\n\r\nLazy tip:\r\nIf the thought of typing a lot is what deters you, consider talking to VS Code (aka _Vibe Coding_)! Using the extension \"VS Code Speech\" (Also recommended in workspace and should be installed) you can simply talk to VS Code with speech to text. This works very well and can be done both in editor, in inline chat as well as in the chat window, give it a go!\r\n\r\nOnce installed, you may invoke it within the inline chat using another click of `Ctrl + I` or simply press the mic button with the mouse",
+      "description": "**TASK** - Create a function which takes an alert and checks if the `AlertStatus` is not `Resolved` for more than seven days, log to console if so.\r\n\r\nNote -\r\n- Can I copy and paste this? The answer is yes. But how will you practice phrasing your requirements?\r\n- Lazy tip - **use speech**!\r\n   - If the thought of typing a lot is what deters you, consider talking to VS Code (aka _Vibe Coding_)! Using the extension \"VS Code Speech\" (Also recommended in workspace and should be installed) you can simply talk to VS Code with speech to text. This works very well and can be done both in editor, in inline chat as well as in the chat window, give it a go!\r\n- Once installed, you may invoke it within the inline chat using another click of `Ctrl + I` or simply press the mic button with the mouse.\r\n- Does the below code work? If not, try selecting the function, and prompt inline chat again with `\"/fix\"`.",
       "line": 8,
-      "title": "Inline chat #1"
-    },
-    {
-      "file": "src/InlineChat.cs",
-      "description": "Create a method which accepts a list of alerts and as a parameter, checks if there are any alerts with Critical severity which are still active, return these alerts.\r\n\r\n\r\n\r\nNow we have to stop for a second to ask:\r\nBut why can't I simply use comments instead? They are also left in the repo explaining what the code below does! \r\n\r\n1. Code gets refactored, comments usually do not. These comments will demand a cleanup in the future and get disregarded and become unrelevant.\r\n2. More importantly, comments with GHCP aren't iterable, meaning it's a one-shot completions attempt. If you get it wrong, you have to edit your comment and try again. When using the inline chat you can then reply with what needs to be fixed. Just think of how rare it is when you code things that work for the first time, the better you are explaining what you want to GHCP, the better GHCP will help you, sometimes it takes a few rounds of explanations, a.k.a. \"inline chat ;)\"",
-      "line": 10,
-      "selection": {
-        "start": {
-          "line": 1,
-          "character": 1
-        },
-        "end": {
-          "line": 1,
-          "character": 162
-        }
-      },
-      "title": "Inline chat #2"
-    },
-    {
-      "file": "src/InlineChat.cs",
-      "description": "Create a method which receives a list of alerts, a locationName and a severity level and checks if location had any alerts with provided severity",
-      "line": 12,
-      "selection": {
-        "start": {
-          "line": 1,
-          "character": 1
-        },
-        "end": {
-          "line": 1,
-          "character": 14
-        }
-      },
-      "title": "Inline chat #3"
-    },
-    {
-      "file": "src/InlineChat.cs",
-      "description": "Filter alerts which have a source of everything but words ending with 'phone'.\r\nI.e Source == 'Sensor', yes, 'telephone', no, 'microphone', no. Log to console when matched and return alerts",
-      "line": 14,
-      "title": "Inline chat #4"
-    },
-    {
-      "file": "src/InlineChat.cs",
-      "description": "Using Inline Chat gives us significant advantages over completions and comments. With Inline Chat, we can:\n\n1. Handle complex, multi-step tasks that are too lengthy for variable names\n2. Iterate on our requirements through conversation rather than starting over\n3. Provide specific examples to clarify our intent\n4. Fix and refine code through multiple prompts\n\nRemember to use `/fix` when you need to fix existing code, and consider using speech-to-text for more natural interactions. When defining your requirements, be as specific as possible about the task you're trying to accomplish, including expected inputs, outputs, and edge cases.",
-      "line": 14,
-      "title": "Inline chat summary"
+      "title": "Inline Chat #2"
     },
     {
       "file": "src/Chat.cs",
       "description": "Using GHCP Ask mode (previously called Chat) is ideal for discussions, questions, guidance and reassurance of your code. \r\n\r\nOpen GCHP side pane (Ctrl + Alt + I), and pick the Ask from the dropdown at the bottom next to the model picker. It's much easier to provide context in this experience and to use ALIASES. We'll talk about aliases next.\r\n\r\nThe more context you add, the more accurate and efficient Copilot would be.\r\n\r\n\r\nSome examples to use:\r\n1. \"Check if I missed any edge cases in #selection\"\r\n2. \"Can you provide a numerical example? To validate my logic. Format response as a table with inputs and output values\"\r\n3. \"How do I run the project?\"\r\n    - More often than not, the instructions may be a little obscure, Copilot knows how to simplify and provide simple commands.\r\n4. Using it for some git operations! \r\n    - \"How to edit the last commit message?\"\r\n\t- \"List all commits that have any editing of the path `packages/some_package`, format the list as table with columns 'author, commit message, date'\"",
       "line": 6,
-      "title": "Chat introduction"
+      "title": "Ask mode intro"
     },
     {
       "title": "Context explanation",
@@ -149,41 +74,13 @@
       "file": "src/Chat.cs",
       "description": "Let's say you remembered there's an enum for `AlarmSeverity`, but looking at the file structure, you can't recall where it is.\r\nYou may use the @workspace scope or the #codebase context in GHCP to search for it. These two GHCP functionalties iterate over *the _open_ project* and can answer your questions on a project scope. Try asking in Ask mode\r\n\r\nUsing @workspace it where you can find the AlarmSeverity enum?\r\n\r\nTip: When searching in the project scope, be sure to deselect the active file attached by clicking the eye icon next to it.",
       "line": 8,
-      "title": "Chat #1"
+      "title": "Ask mode #1"
     },
     {
       "file": "src/Chat.cs",
       "description": "In Ask mode, run \"`/help`\"\r\n\r\nThere are many more aliases, even for the `Terminal` which is extremely useful to debug errors, recall git commands much more. I urge you to go into the Chat input and iterate over these prefixes\r\n1. \"`/`\" - Use specific functionality \"/test\", \"/explain\", \"/search\". \r\n1. \"`@`\" - Used to set a scope @github/@vscode/@workspace etc.\r\n1. \"`#`\" - Used to provide additional context. Recently #folder and #problem were introduced and are helpful in scoping the context\r\n\r\nThere's a lot the Chat experience can provide and teach, don't hesitate to explore!\r\nUse the up and down arrows and spend a little time to read the descriptions of these commands.",
       "line": 21,
-      "title": "Chat #2"
-    },
-    {
-      "file": "src/Chat.cs",
-      "description": "More searching... I've hidden a few SECRETs in the repo. Use Copilot to find these secrets, there should be four.\r\n\r\nTry your own phrasing or use the prompt: \"List all secrets in #codebase\"",
-      "line": 10,
-      "title": "Chat #3",
-      "selection": {
-        "start": {
-          "line": 4,
-          "character": 18
-        },
-        "end": {
-          "line": 4,
-          "character": 47
-        }
-      }
-    },
-    {
-      "file": "src/Chat.cs",
-      "description": "Now let's use #selection, this is what you should be using when asking code-specific-questions or writing unit tests. Highlight the text desired and in your question (even in inline-chat) use the #selection alias.\r\n\r\nLet's try it now: \r\n1. Highlight the method\r\n2. Ask in chat \"What edge cases did I miss\"?\r\n",
-      "line": 12,
-      "title": "Chat #4"
-    },
-    {
-      "file": "src/Chat.cs",
-      "description": "While trivial, lots of developers tend to jump into code and start reading it to understand, natural language is still faster to comprehend. You can use the `/explain` alias and read it in plain text, it's pretty accurate.",
-      "line": 17,
-      "title": "Chat #5"
+      "title": "Ask mode #2"
     },
     {
       "file": "src/Chat.cs",
@@ -199,7 +96,7 @@
           "character": 54
         }
       },
-      "title": "Chat #6"
+      "title": "Ask mode #3"
     },
     {
       "file": "src/Alert.cs",
