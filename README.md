@@ -1,12 +1,10 @@
 # Github Copilot Lab
 
-Welcome to the Github copilot (GHCP) lab.
+Welcome to the Github copilot (GHCP) lab (for easier reading, you can preview this file as Markdown using `Ctrl+Shift+V`). This lab contains boilerplate code for a simple Alert Management System, where we receive alerts, and perform some aggregations on it. This lab uses the CodeTour Visual Studio Extension to help you execute tailored exercises so that you get some hands-on experience with GitHub Copilot.
 
-For easier reading, you can preview this file as Markdown using `Ctrl+Shift+V`,
-it may need a moment to open render. 
 
 ## What will we learn in this lab?
-- At the end of this lab you will know the differences between Github Copilot chat, inline chat, and completions and even edits. And you'll learn when to use which one.
+- At the end of this lab you will know the differences between Github Copilot chat, inline chat, code completions, edit mode and agent mode. And you'll learn when to use which one.
 - You will learn about GHCP aliases (`@` / `#`) and slash commands for Github Copilot Chat and inline.
 - You will learn how to be more proficient with your completions and how to get it right on the first try 🥇
 - You will learn about the GHCP suggestions panel.
@@ -15,7 +13,13 @@ it may need a moment to open render.
 *This lab **shouldn't take more than 60 minutes**. 
 Take a look at the clock. If you reach more than 30 minutes, I suggest you stop and wait for the learning session*
 
-There are two tracks, the [Typescript](./GHCP-Typescript.code-workspace) track and the [dotNet](./GHCP-dotNet.code-workspace)** track, choose the one that suits you best, or do both!
+There are two tracks -
+
+1. [.NET](./GHCP-dotNet.code-workspace) track
+1. [Typescript](./GHCP-Typescript.code-workspace) track
+1. [C++](./GHCP-cpp.code-workspace) track
+
+The focus will be on the .NET track, but feel free to check out others as well.
 
 Each workspace has recommended extensions that you need to install to be able to run the code, you can run those.
 
@@ -43,13 +47,13 @@ If you don't have them installed, follow the installation instructions at [https
 1. Double click the relevant workspace and hit the "Open Workspace" button in the Editor (bottom right)
     1. `GHCP-dotNet.code-workspace` for dotNet developers
     2. `GHCP-Typescript.code-workspace` for Typescript developers
-    2. `GHCP-cpp.code-workspace` for C++ developers
+    2. `GHCP-cpp.code-workspace` for C++ developers <br><br>
     ![Image showing where to click to open the relevant workspace](assets/image-1.png)
 2. Install recommended extensions from the workspace
     1. If you don't want to run the code, CodeTour is the critical one
-3. Start the tour by clicking on tour Panel, then hit the the Play icon button to start.
+3. Start the tour by clicking on tour Panel, then hit the the Play icon button to start. <br><br>
 ![Code tour starting place](assets/image-2.png)
-4. Click the next (or previous) buttons to navigate the code tour once you're ready to move on, or need to take another look in a previous step.
+4. Click the next (or previous) buttons to navigate the code tour once you're ready to move on, or need to take another look in a previous step. <br><br>
 ![Next Code tour step](assets/image-3.png)
 
 Feel free to reach out with improvement suggestions, feedback, or anything that you may come up with to @Yomanor.
