@@ -16,14 +16,14 @@
     },
     {
       "file": "src/Program.cs",
-      "description": "We have mocked some alerts! Spoiler, will be used later.\r\n\r\nIn the following order, we'll take a look at GHCP Completions, Inline chat (and comments), then Chat, Edits and finally - Agent mode!",
+      "description": "This is the main function for our application. For now we are just getting a list of alerts (which we have mocked). Spoiler, will be used later.\r\n\r\nIn the following order, we'll take a look at GHCP Completions, Inline chat (and comments), then Chat, Edits and finally - Agent mode!",
       "line": 8,
       "title": "Mocks and order of exercises"
     },
     {
       "file": "src/Program.cs",
-      "description": "Using GHCP completions is optimal for Simple, Short and Specific logic (the 3 `S` principle), remember that!\r\n\r\n\r\n\r\nFor best completions results - \r\nName a variable according to the logic you expect and then refactor the name after.\r\n\r\nPro tips:\r\n1. GHCP also suggests names (!) if you press Refactor (F2) on the function/variable name.\r\n2. Watch this for more context on the [3 `S` Principal](https://www.youtube.com/watch?v=hh1nOX14TyY&t=38s&ab_channel=VisualStudioCode)",
-      "line": 9,
+      "description": "Using GHCP completions is optimal for Simple, Short and Specific logic (the 3 `S` principle), remember that!\r\n\r\n**TASK** - Store the list of alerts in a variable. Then right click on the variable, and select `Rename Symbol (F2)`. You should see some Copilot suggestions for variable name.\r\n\r\nPro tips - Watch this for more context on the [3 `S` Principal](https://www.youtube.com/watch?v=hh1nOX14TyY&t=38s&ab_channel=VisualStudioCode)",
+      "line": 10,
       "title": "Completions introduction"
     },
     {
