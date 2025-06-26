@@ -78,25 +78,9 @@
     },
     {
       "file": "src/Chat.cs",
-      "description": "In Ask mode, run \"`/help`\"\r\n\r\nThere are many more aliases, even for the `Terminal` which is extremely useful to debug errors, recall git commands much more. I urge you to go into the Chat input and iterate over these prefixes\r\n1. \"`/`\" - Use specific functionality \"/test\", \"/explain\", \"/search\". \r\n1. \"`@`\" - Used to set a scope @github/@vscode/@workspace etc.\r\n1. \"`#`\" - Used to provide additional context. Recently #folder and #problem were introduced and are helpful in scoping the context\r\n\r\nThere's a lot the Chat experience can provide and teach, don't hesitate to explore!\r\nUse the up and down arrows and spend a little time to read the descriptions of these commands.",
+      "description": "In Ask mode, run \"`/help`\"\r\n\r\nThere are many more aliases, even for the `Terminal` which is extremely useful to debug errors, recall git commands much more. I urge you to go into the Chat input and iterate over these prefixes\r\n1. \"`/`\" - Use specific functionality \"/test\", \"/explain\", \"/search\". \r\n1. \"`@`\" - Used to set a scope @github/@vscode/@workspace etc.\r\n1. \"`#`\" - Used to provide additional context.\r\n\r\nThere's a lot the Chat experience can provide and teach, don't hesitate to explore!\r\nUse the up and down arrows and spend a little time to read the descriptions of these commands.",
       "line": 21,
       "title": "Ask mode #2"
-    },
-    {
-      "file": "src/Chat.cs",
-      "description": "Finally, let's write some unit tests using GHCP.\r\nRemember what we said? \r\nHighlight the desired code to test, in our case the Divider function. let's write up unittests for it, remember to fix the missing edge case first.\r\n\r\nIn chat, write:\r\n\r\n`@workspace /tests Write unit tests for #selection using NUnit`\r\n\r\n\r\nDon't forget to mention which test framework you're using as it may vary.",
-      "line": 19,
-      "selection": {
-        "start": {
-          "line": 6,
-          "character": 1
-        },
-        "end": {
-          "line": 6,
-          "character": 54
-        }
-      },
-      "title": "Ask mode #3"
     },
     {
       "file": "src/Alert.cs",
@@ -116,16 +100,16 @@
     },
     {
       "file": "src/Program.cs",
-      "description": "Introducing Agent mode, same functionality of editing multiple files, but with iterations. Let's call it edits ++ \r\n\r\nLet's ask Copilot to create the spec for our functionality:\r\n\r\n`\r\nI want the main function to use the different functions that exists in the code base. And allow the user to filter specific alerts based on inputs. So this will now be a console app that runs on the generated alerts, and while the alerts are generated every second in the background.Without interfering with alert generation, the user will be able to get the current status by choosing a number from the menu which will execute a specific function.`\r\n\r\nBut before that, **copy the prompt above** and let's use our [special prompt](.github\\prompts\\Feature breakdown prompt.prompt.md):\r\n\r\n\r\nCtrl + Shift + P -> Use prompt\r\n\r\nPaste the prompt, and take the response.",
+      "description": "Introducing Agent mode, same functionality of editing multiple files, but with iterations. Let's call it edits ++ \r\n\r\nLet's ask Copilot to create the spec for our functionality:\r\n\r\n`\r\nI want the main function to use the different functions in Completions.cs and InlineChat.cs that exists in the code base. And allow the user to filter specific alerts based on inputs. So this will now be a console app that runs on the generated mocked alerts. The user will be able to get the current status by choosing a number from the menu which will execute a specific function.`\r\n\r\nBut before that, **copy the prompt above** and let's use our [special prompt](.github\\prompts\\Feature breakdown prompt.prompt.md):",
       "line": 18,
       "selection": {
         "start": {
-          "line": 4,
+          "line": 6,
           "character": 1
         },
         "end": {
-          "line": 8,
-          "character": 1
+          "line": 6,
+          "character": 369
         }
       },
       "title": "Github Copilot Agent 🤯"
