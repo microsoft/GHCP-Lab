@@ -26,7 +26,7 @@ Using the CodeTour extension, you will be prompted with questions which will hel
 
 ## Pre-requisite:
 Have the extensions Copilot and Copilot Chat installed.
-If you don't have them installed, follow the installation instructions at [https://aka.ms/copilot](aka.ms/copilot).
+If you don't have them installed, follow the installation instructions at [https://aka.ms/copilot](https://aka.ms/copilot).
 
 ## Terminology and tips:
 - Completions is the "ghost text" (gray) that appears in your editor after you start typing
