@@ -3,10 +3,16 @@
   "title": "Advanced GHCP lab for C#",
   "steps": [
     {
-      "file": "src/README-dotNet.md",
-      "description": "Start here :) ",
-      "line": 1,
-      "title": "Start Here!"
+      "file": "./GHCP-dotNet.code-workspace",
+      "title": "GitHub Copilot Instructions - The Secret to Better Code Generation",
+      "pattern": "github.copilot.chat.codeGeneration.useInstructionFiles",
+      "description": "**GitHub Copilot Instructions** - Setting the Foundation for Better Code Generation 🎯\r\n\r\nBefore we dive into Chat and Inline Chat, let's talk about a game-changing feature: **Custom Instructions**!\r\n\r\nThese instructions apply to Chat mode onwards (not basic completions) and are crucial for getting code right on the first try.\r\n\r\n**Why Instructions Matter:**\r\n- ⏱️ **Time Saving** - Get accurate code generation without redundant iterations\r\n- 🎨 **Consistent Style & Successful Builds** - Ensure generated code matches your repo's coding standards\r\n- 🔧 **Fewer Fixes** - Reduce the need for manual corrections and style adjustments after Copilot has contributed code\r\n\r\n**What Instructions Help With:**\r\n1. **Coding Style** - Explicit types vs `var`, method naming conventions, etc.\r\n1. **Framework Preferences** - Which libraries, patterns, and approaches to use\r\n1. **Project Structure** - How to organize and structure code within your solution\r\n1. **Error Prevention** - Avoiding common pitfalls and anti-patterns\r\n1. **Test generation** - Generating test which match your project's pattern\r\n\r\n**Pro Tip**: 💡 You can reference your `.editorconfig` file in your instructions! This helps Copilot understand your formatting rules, indentation preferences, and style guidelines - avoiding those annoying style errors that break builds.\r\n\r\nIn this project, we've already configured instructions in `.github/copilot-instructions.md` that emphasize explicit types, proper exception handling, and C# best practices. This means from Chat mode onwards, Copilot will generate code that fits our project perfectly!"
+    },
+    {
+      "file": "./GHCP-dotNet.code-workspace",
+      "title": "Practice: Generate Copilot Instructions for Your Repo",
+      "pattern": "github.copilot.chat.codeGeneration.useInstructionFiles",
+      "description": "**🎯 Assignment Time!**\r\nLet's practice creating instructions for your own repositories:\r\n\r\n1. **Navigate** to your favorite repo or day-to-day working repository in VS Code\r\n2. **Open the VS Code Chat** panel (Ctrl + Alt + I)\r\n3. **Look for the settings button** (⚙️) within the chat interface\r\n4. **Click on \"Generate Instructions\"** - This will analyze your repository and automatically create tailored Copilot instructions!\r\n5. **Review and customize** the generated instructions to match your team's preferences\r\n\r\nThis auto-generation feature saves you time and ensures you don't miss important coding patterns specific to your project.\r\n\r\nReady to see the difference? Let's move to Inline Chat where these instructions start taking effect! 🚀"
     },
     {
       "file": "src/Alert.cs",
@@ -70,8 +76,14 @@
     {
       "file": "src/Point.cs",
       "description": "The point of this file is demonstrate Next Edit Suggestions, rename Point to Point3D and move your cursor to the constructor, see how there's a green pop up? You can accept that with the Tab key or cancel with Esc",
-      "line": 1,
+      "pattern": "class Point",
       "title": "Next Edit Suggestions"
+    },
+    {
+      "file": "src/Point.cs",
+      "description": "Now that you've experienced Next Edit Suggestions, let's learn how to control them! 🎛️\r\n\r\nLook at the bottom right corner of your VS Code window - you'll see the GitHub Copilot icon. Click on it to open the Copilot status menu.\r\n\r\nFrom this menu, you can:\r\n\r\n1. **Snooze suggestions** - Temporarily disable suggestions for a set time (+5 min iterations, and restore)\r\n2. **Disable for file type** - Turn off completions and suggestions only for .cs files (or whatever file type you're currently in)\r\n3. **Disable globally** - Turn off all Copilot completions and suggestions entirely\r\n\r\nYou'll see separate controls for:\r\n- ✨ **Completions** (the main autocomplete suggestions)\r\n- 🔄 **Next Edit Suggestions** (the green popups you just experienced)\r\n\r\n**Pro tip**: When you're demoing or presenting code and don't want the ghost text from completions constantly appearing, you can quickly disable completions for 5 minutes using the snooze feature. This keeps your demo clean while ensuring Copilot automatically re-enables when you're done!\r\n\r\nTry clicking the icon and exploring these options - don't worry, you can always turn them back on! 😊",
+      "pattern": "}",
+      "title": "Managing Next Edit Suggestions & Completions Settings"
     },
     {
       "file": "src/Completions.cs",
@@ -239,6 +251,5 @@
       "line": 19,
       "title": "Finishing up"
     }
-  ],
-  "ref": "main"
+  ]
 }
