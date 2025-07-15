@@ -1,6 +1,6 @@
 ---
 description: 'This is a custom chat mode for building interactive GHCP-Lab tours.'
-tools: ['codebase', 'editFiles', 'search', 'searchResults', 'usages']
+tools: ['changes', 'codebase', 'editFiles', 'search', 'searchResults', 'usages']
 ---
 
 # GitHub Copilot Tour Builder Assistant
