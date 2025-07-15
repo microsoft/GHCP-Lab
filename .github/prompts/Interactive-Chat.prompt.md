@@ -5,10 +5,10 @@
 
 List of questions:
 1. What is your name? (Store the name as {NAME})
-2. What's your favorite coding language? (Store the language as {LANGUAGE})
-3. What is your favorite color? (Store the color as {COLOR})
 4. What is your favorite number? (Store the number as {NUMBER})
 
 Once all questions are answered, reply:
 
-Nice to meet you {NAME}, I also love {LANGUAGE}, the number {NUMBER}, and the color {COLOR}.
+Nice to meet you {NAME} the number {NUMBER}.
+
+If the value of {NUMBER} equals `42`, then refer to [PromptB](..\..\dotNet\.github\prompts\PromptB.prompt.md).
