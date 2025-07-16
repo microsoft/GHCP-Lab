@@ -80,6 +80,18 @@
       "title": "Completions summary"
     },
     {
+      "file": "src/Point.cs",
+      "description": "The point of this file is demonstrate Next Edit Suggestions, rename Point to Point3D and move your cursor to the constructor, see how there's a green pop up? You can accept that with the Tab key or cancel with Esc",
+      "pattern": "class Point",
+      "title": "Next Edit Suggestions"
+    },
+    {
+      "file": "src/Point.cs",
+      "description": "Now that you've experienced Next Edit Suggestions, let's learn how to control them! 🎛️\r\n\r\nLook at the bottom right corner of your VS Code window - you'll see the GitHub Copilot icon. Click on it to open the Copilot status menu.\r\n\r\nFrom this menu, you can:\r\n\r\n1. **Snooze suggestions** - Temporarily disable suggestions for a set time (+5 min iterations, and restore)\r\n2. **Disable for file type** - Turn off completions and suggestions only for .cs files (or whatever file type you're currently in)\r\n3. **Disable globally** - Turn off all Copilot completions and suggestions entirely\r\n\r\nYou'll see separate controls for:\r\n- ✨ **Completions** (the main autocomplete suggestions)\r\n- 🔄 **Next Edit Suggestions** (the green popups you just experienced)\r\n\r\n**Pro tip**: When you're demoing or presenting code and don't want the ghost text from completions constantly appearing, you can quickly disable completions for 5 minutes using the snooze feature. This keeps your demo clean while ensuring Copilot automatically re-enables when you're done!\r\n\r\nTry clicking the icon and exploring these options - don't worry, you can always turn them back on! 😊",
+      "pattern": "}",
+      "title": "Managing Next Edit Suggestions & Completions Settings"
+    },
+    {
       "file": "./GHCP-dotNet.code-workspace",
       "title": "GitHub Copilot Instructions - The Secret to Better Code Generation",
       "pattern": "github.copilot.chat.codeGeneration.useInstructionFiles",
