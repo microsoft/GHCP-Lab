@@ -3,12 +3,6 @@
   "title": "Advanced GHCP lab for C#",
   "steps": [
     {
-      "file": "src/README-dotNet.md",
-      "description": "Start here :) ",
-      "line": 1,
-      "title": "Start Here!"
-    },
-    {
       "file": "src/Alert.cs",
       "description": "This is the model of the alert, this is what we'll be iterating on.\r\n\r\n\r\nWe'll make aggregations on alerts and create functions to process alerts.\r\n\r\nTake a few seconds and take a look at it. ",
       "line": 3,
@@ -70,8 +64,14 @@
     {
       "file": "src/Point.cs",
       "description": "The point of this file is demonstrate Next Edit Suggestions, rename Point to Point3D and move your cursor to the constructor, see how there's a green pop up? You can accept that with the Tab key or cancel with Esc",
-      "line": 1,
+      "pattern": "class Point",
       "title": "Next Edit Suggestions"
+    },
+    {
+      "file": "src/Point.cs",
+      "description": "Now that you've experienced Next Edit Suggestions, let's learn how to control them! 🎛️\r\n\r\nLook at the bottom right corner of your VS Code window - you'll see the GitHub Copilot icon. Click on it to open the Copilot status menu.\r\n\r\nFrom this menu, you can:\r\n\r\n1. **Snooze suggestions** - Temporarily disable suggestions for a set time (+5 min iterations, and restore)\r\n2. **Disable for file type** - Turn off completions and suggestions only for .cs files (or whatever file type you're currently in)\r\n3. **Disable globally** - Turn off all Copilot completions and suggestions entirely\r\n\r\nYou'll see separate controls for:\r\n- ✨ **Completions** (the main autocomplete suggestions)\r\n- 🔄 **Next Edit Suggestions** (the green popups you just experienced)\r\n\r\n**Pro tip**: When you're demoing or presenting code and don't want the ghost text from completions constantly appearing, you can quickly disable completions for 5 minutes using the snooze feature. This keeps your demo clean while ensuring Copilot automatically re-enables when you're done!\r\n\r\nTry clicking the icon and exploring these options - don't worry, you can always turn them back on! 😊",
+      "pattern": "}",
+      "title": "Managing Next Edit Suggestions & Completions Settings"
     },
     {
       "file": "src/Completions.cs",
@@ -80,8 +80,26 @@
       "title": "Completions summary"
     },
     {
+      "file": "./GHCP-dotNet.code-workspace",
+      "title": "GitHub Copilot Instructions - The Secret to Better Code Generation",
+      "pattern": "github.copilot.chat.codeGeneration.useInstructionFiles",
+      "description": "**GitHub Copilot Instructions** - Setting the Foundation for Better Code Generation 🎯\r\n\r\nBefore we dive forward into Chats and agents, let's talk about a game-changing feature: **Custom Instructions**!\r\n\r\nThese instructions apply to Chat mode onwards (not basic completions) and are crucial for getting code right on the first try.\r\n\r\n**Why Instructions Matter:**\r\n- ⏱️ **Time Saving** - Get accurate code generation without redundant iterations\r\n- 🎨 **Consistent Style & Successful Builds** - Ensure generated code matches your repo's coding standards\r\n- 🔧 **Fewer Fixes** - Reduce the need for manual corrections and style adjustments after Copilot has contributed code\r\n- ✨ **YOU NEED TO WRITE LESS** - Copilot will have the context\r\n\r\n**What Instructions Help With:**\r\n1. **Coding Style** - Explicit types vs `var`, method naming conventions, etc.\r\n1. **Framework Preferences** - Which libraries, patterns, and approaches to use\r\n1. **Project Structure** - How to organize and structure code within your solution\r\n1. **Error Prevention** - Avoiding common pitfalls and anti-patterns\r\n1. **Test generation** - Generating test which match your project's pattern\r\n\r\n**Pro Tip**: 💡 You can reference your `.editorconfig` file in your instructions! This helps Copilot understand your formatting rules, indentation preferences, and style guidelines - avoiding those annoying style errors that break builds.\r\n\r\nIn this project, we've already configured instructions in `.github/copilot-instructions.md` that emphasize explicit types, proper exception handling, and C# best practices. This means from Chat mode onwards, Copilot will generate code that fits our project perfectly!"
+    },
+    {
+      "file": "./GHCP-dotNet.code-workspace",
+      "title": "Practice: Generate Copilot Instructions for Your Repo",
+      "pattern": "github.copilot.chat.codeGeneration.useInstructionFiles",
+      "description": "**🎯 Assignment Time!**\r\nLet's practice creating instructions for your own repositories:\r\n\r\n1. **Navigate** to your favorite repo or day-to-day working repository in VS Code\r\n2. **Open the VS Code Chat** panel (Ctrl + Alt + I)\r\n3. **Look for the settings button** (⚙️) within the chat interface\r\n4. **Click on \"Generate Instructions\"** - This will analyze your repository and automatically create tailored Copilot instructions!\r\n5. **Review and customize** the generated instructions to match your team's preferences. \r\n\r\n**Double check to verify it has included the code-style instructions, correct it if it hasn't** \r\n\r\nThis auto-generation feature saves you time and ensures you don't miss important coding patterns specific to your project.\r\n\r\nReady to see the difference? Let's move to Inline Chat where these instructions start taking effect! 🚀"
+    },
+    {
+      "file": ".github/prompts/Interactive-Chat.prompt.md",
+      "title": "Prompts files: Orchestrating Scenarios with Chat",
+      "description": "Next level customizations Part 1- Let's explore how you can use interactive prompts to create dynamic, multi-step chat experiences!\n\nOpen the attached `Interactive-Chat.prompt.md` file. This prompt demonstrates how you can guide users through a sequence of questions, keep track of their answers, and even branch to other files based on their responses.\n\n**Why is this powerful?**\n- You can orchestrate different scenarios and learning paths based on user input.\n- If a certain answer is given (like the number 42), you can reference a different prompt file (see how it refers to [PromptB](.github/prompts/PromptB.prompt.md)).\n- This enables you to build interactive, context-aware flows for onboarding, quizzes, or troubleshooting.\n\n**Try it out:**\n1. Open the prompt file and review the logic.\n2. Imagine how you could use this to create your own guided experiences.\n3. Think about how branching logic and file references can help you automate support, onboarding, or even code reviews!\n\nPro tip 1: You can chain multiple prompt files together, making your chat agent as smart (or witty) as you want!\n\nPro tip 2: You can quickly invoke a prompt by typing a slash `/` followed by the prompt name (e.g., `/Interactive-Chat`) in the chat side panel or even inline. This will autocomplete and execute the prompt instantly—no need to browse for the file!\n\nReady to build your own interactive chat flows? Give it a go! 🤖✨",
+      "pattern": "Interactive Chat Prompt"
+    },
+    {
       "file": "src/InlineChat.cs",
-      "description": "Using GHCP Inline Chat fits scenarios where you need to directly edit code, generate code that does more than one thing at a time, a very specific logic that's too long for a variable name, or you want to provide examples (yes, that's a recommendation!).\r\n\r\n\r\nIn VS Code the default shortcut is Ctrl + I (🍏: Command + I) to open inline chat.\r\n\r\n\r\nThis is also where models start coming into play. Tokens are per model, so if you run out, simply switch a model. \r\n\r\nGPT models are great for reasoning, 4o when you care more about speed and less about accuracy.\r\n\r\nClaude models are superb for code generation. \r\n\r\nUsing Claude within VS Code **is allowed** and I'd recommend 3.7 over 3.5",
+      "description": "Using GHCP Inline Chat fits scenarios where you need to directly edit code, generate code that does more than one thing at a time, a very specific logic that's too long for a variable name, or you want to provide examples (yes, that's a recommendation!).\r\n\r\n\r\nIn VS Code the default shortcut is Ctrl + I (🍏: Command + I) to open inline chat.\r\n\r\n\r\nThis is also where models start coming into play. Tokens are per model, so if you run out, simply switch a model. \r\n\r\nGPT models are great for reasoning, 4o when you care more about speed and less about accuracy.\r\n\r\nAnthropic models are superb for code generation. \r\n\r\nUsing Anthropic within VS Code **is allowed** and I'd recommend sonnet 4 over 3.7 or 3.5",
       "line": 5,
       "title": "Inline chat introduction"
     },
@@ -234,11 +252,33 @@
       "title": "Github Copilot Agent 🤯"
     },
     {
-      "file": "src/Program.cs",
-      "description": "Congratulations!!!\r\n\r\n\r\nYou have completed the lab, I hope that you have learned a thing or two and had some fun while you're at it.\r\n\r\nRemember - \r\n\r\n\r\nShort.\r\n\r\n\r\nSimple.\r\n\r\n\r\nSpecific.\r\n\r\n\r\n\r\n\r\nAnd provide the relevant context (#file/ #selection, etc.)",
+      "file": ".github/chatmodes/tour-builder.chatmode.md",
+      "title": "Next Level Customizations: Meet Your Custom AI Agent",
+      "description": "Ready to go beyond the basics? Let's harness the power of a custom AI agent!\n\nIn this step, we'll introduce the concept of a custom AI agent that can be tailored to your workflow, preferences, and even your team's unique needs.\n\nOpen the `tour-builder.chatmode.md` file. This is the very entity that helped build this tour!\n\n**Why use a custom agent?**\n- Automate repetitive tasks\n- Guide users through complex flows\n- Enforce best practices and standards\n- Provide contextual help and onboarding\n\nCustom agents can be as simple or as advanced as you need. They're the next step in making your development environment truly yours.\n\nTake a look at the file and see how you might start building your own!"
+    },
+    {
+      "file": ".github/chatmodes/tour-builder.chatmode.md",
+      "title": "Next Level Customizations: Build Your Own Tour Agent",
+      "description": "Now it's your turn!\n\nUse the `tour-builder.chatmode.md` as a template to create your own custom AI agent - Plan Mode.\n\n**Try this:**\n1. Duplicate the file and rename it for your scenario or simply use the Copilot \"Ask/Edits/Agent\" menu to create a new Custom Agent.\n2. Edit the tools, logic, and flow to match your needs.\n3. Reference other prompt files, add branching, or even integrate with your team's documentation.\n\n**Pro tip:** You can use your custom agent to automate onboarding, enforce code review checklists, or even run interactive workshops.\n**Pro tip 2:** You can save it per repo or per user\n\nThe possibilities are endless—let your creativity (and your agent) run wild! 🤖✨",
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 13,
+          "character": 81
+        }
+      }
+    },
+    {
+      "title": "GitHub Copilot Coding Agent: Official Demo & Repo",
+      "description": "Let's take it one step further and explore the official GitHub Copilot Agent (ADO) project!\n\nThe Copilot Agent is an open-source, extensible framework for building your own AI-powered developer workflows—beyond just chat and completions.\n\n**What can you do with it?**\n- Integrate with GitHub\n- Automate code reviews, PR triage, and more\n- Build custom agents for your team's unique needs\n\n**Want to understand the difference?**\n📖 [Learn about the differences between coding agent and agent mode](https://github.blog/developer-skills/github/less-todo-more-done-the-difference-between-coding-agent-and-agent-mode-in-github-copilot/) - This blog post explains when to use each approach!\n\n**Demo time:**\n1. Let's visit the [GHCP-Lab](https://github.com/microsoft/GHCP-Lab) and try it out.\n\nThis is where the future of AI-powered development is headed—give it a try and imagine the possibilities! 🚀"
+    },
+    {
+      "description": "🎉 **Congratulations - You're Now a GitHub Copilot Power User!**\r\n\r\nYou've mastered the complete spectrum: Completions → Inline Chat → Chat → Edits → Agent Mode → Custom Agents → ADO Integration!\r\n\r\n**💪 Ready to Transform Your Development Workflow?**\r\n\r\n**Action Item #1 - Boost Your Daily Coding:**\r\n1. **Generate custom instructions** for your main repositories (Settings ⚙️ → Generate Instructions)\r\n2. **Focus on code generation patterns** - What frameworks do you use? What coding standards?\r\n3. **Include test generation rules** - Specify your testing framework, naming conventions, and coverage expectations\r\n\r\n**Action Item #2 - Automate Your Complex Tasks:**\r\n1. **Identify repetitive workflows** - Code reviews, PR templates, deployment checklists\r\n2. **Break them into sub-tasks** - Each step the ADO agent can handle\r\n3. **Create custom agents** - Use the tour-builder template we explored\r\n\r\n**Remember the 3 S Principle:**\r\n- **Short** 📝\r\n- **Simple** ⚡\r\n- **Specific** 🎯\r\n\r\n**Plus provide context:** #file, #selection, #codebase, @workspace\r\n\r\n**🚀 Your Next Mission:** Go implement Copilot instructions in your real projects and watch your productivity soar!\r\n\r\nThe future of coding is collaborative - and you're now equipped to lead it! 🤖✨",
       "line": 19,
-      "title": "Finishing up"
+      "title": "Your Copilot Journey Starts Now! 🚀"
     }
-  ],
-  "ref": "main"
+  ]
 }
