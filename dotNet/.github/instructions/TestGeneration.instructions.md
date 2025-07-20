@@ -1,3 +1,7 @@
+---
+applyTo: '*Tests.cs'
+---
+
 # Test Generation Instructions for C# with MOQ and NUnit
 
 When generating unit tests for this project, follow these guidelines to ensure consistent, maintainable, and effective test code.

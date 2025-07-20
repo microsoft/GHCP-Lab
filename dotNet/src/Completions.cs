@@ -7,6 +7,7 @@ namespace SOC.AdvancedCopilot.DotNet;
 
 public static class GHCPCompletions
 {
+        static IEnumerable<Alert> alerts = Mocks.MockedAlerts.GetMockedAlerts();
 
         // #1 
         dynamic totalAlertsCount
