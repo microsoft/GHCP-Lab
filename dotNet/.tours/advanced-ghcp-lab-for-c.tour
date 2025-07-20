@@ -9,22 +9,26 @@
       "title": "Get to know your data!"
     },
     {
-      "file": "src/Program.cs",
-      "description": "We have mocked some alerts! Spoiler, will be used later.\r\n\r\nIn the following order, we'll take a look at GHCP Completions, Inline chat (and comments), then Chat, Edits and finally - Agent mode!",
-      "line": 8,
-      "title": "Mocks and order of exercises"
-    },
-    {
-      "file": "src/Program.cs",
+      "file": "src/Completions.cs",
       "description": "Using GHCP completions is optimal for Simple, Short and Specific logic (the 3 `S` principle), remember that!\r\n\r\n\r\n\r\nFor best completions results - \r\nName a variable according to the logic you expect and then refactor the name after.\r\n\r\nPro tips:\r\n1. GHCP also suggests names (!) if you press Refactor (F2) on the function/variable name.\r\n2. Watch this for more context on the [3 `S` Principal](https://www.youtube.com/watch?v=hh1nOX14TyY&t=38s&ab_channel=VisualStudioCode)",
       "line": 9,
       "title": "Completions introduction"
     },
     {
       "file": "src/Completions.cs",
+      "description": "We have mocked some alerts! Let's get started on processing these.",
+      "pattern": "Mocks.MockedAlerts.GetMockedAlerts",
+      "title": "See mocks"
+    },
+    {
+      "file": "src/Completions.cs",
       "description": "Let's start easy, we'll create a function to return the total number of alerts \r\n\r\nSimply place your caret at the end of the function and add the opening brackets()",
       "line": 12,
       "title": "Completion #1"
+    },
+    {
+      "title": "Context explanation",
+      "description": "With GHCP, **context is everything**.\r\n\r\nThis is the GHCP context hierarchy: \r\n\r\n1. Cursor position -> Selection -> Active file -> Opened files. \r\n1. Additional context provided (files/ folders/ problems / changes/ search results)\r\n\r\nIf you see bad responses, it may be confused with older, no-longer-relevant, contexts. For better accuracy / responses:\r\n\r\n1. Try closing unused editor windows.\r\n1. Provide more context by attaching it directly using # operators, which also reduces search time for Copilot\r\n1. Don't ask him about C# and jump to typescript, create a new chat for these subject jumps. You can always navigate to previous sessions\r\n1. Provide [Custom Instructions](https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot?tool=vscode#enabling-or-disabling-custom-instructions) - we will discuss these in more details after the Ask/Chat section"
     },
     {
       "file": "src/Completions.cs",
@@ -170,10 +174,6 @@
       "description": "Using GHCP Ask mode (previously called Chat) is ideal for discussions, questions, guidance and reassurance of your code. \r\n\r\nOpen GCHP side pane (Ctrl + Alt + I), and pick the Ask from the dropdown at the bottom next to the model picker. It's much easier to provide context in this experience and to use ALIASES. We'll talk about aliases next.\r\n\r\nThe more context you add, the more accurate and efficient Copilot would be.\r\n\r\n\r\nSome examples to use:\r\n1. \"Check if I missed any edge cases in #selection\"\r\n2. \"Can you provide a numerical example? To validate my logic. Format response as a table with inputs and output values\"\r\n3. \"How do I run the project?\"\r\n    - More often than not, the instructions may be a little obscure, Copilot knows how to simplify and provide simple commands.\r\n4. Using it for some git operations! \r\n    - \"How to edit the last commit message?\"\r\n\t- \"List all commits that have any editing of the path `packages/some_package`, format the list as table with columns 'author, commit message, date'\"",
       "line": 6,
       "title": "Chat introduction"
-    },
-    {
-      "title": "Context explanation",
-      "description": "With GHCP, **context is everything**.\r\n\r\nThis is the GHCP context hierarchy: \r\n\r\n1. Cursor position -> Selection -> Active file -> Opened files. \r\n1. Additional context provided (files/ folders/ problems / changes/ search results)\r\n\r\nIf you see bad responses, it may be confused with older, no-longer-relevant, contexts. For better accuracy / responses:\r\n\r\n1. Try closing unused editor windows.\r\n1. Provide more context by attaching it directly using # operators, which also reduces search time for Copilot\r\n1. Don't ask him about C# and jump to typescript, create a new chat for these subject jumps. You can always navigate to previous sessions\r\n1. Provide [Custom Instructions](https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot?tool=vscode#enabling-or-disabling-custom-instructions) - we will discuss these in more details after the Ask/Chat section"
     },
     {
       "file": "src/Chat.cs",
