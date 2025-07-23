@@ -15,7 +15,8 @@
       }
     ],
     "github.copilot.nextEditSuggestions.enabled": true,
-    "accessibility.voice.speechTimeout": 0
+    "accessibility.voice.speechTimeout": 0,
+    "editor.rename.enablePreview": false
   },
   "extensions": {
     "recommendations": [

@@ -16,21 +16,27 @@
     },
     {
       "file": "src/Program.cs",
-      "description": "This is the main function for our application. For now we are just getting a list of alerts (which we have mocked). Spoiler, will be used later.\r\n\r\nIn the following order, we'll take a look at GHCP Completions, Inline chat (and comments), then Chat, Edits and finally - Agent mode!",
+      "description": "This is the main function for our application. For now we are just getting a list of alerts (which we have mocked). Spoiler, will be used later.\r\n\r\nIn the following order, we'll take a look at GHCP Completions, Inline chat (and comments), then Chat, Edits and finally - Agent mode!\r\n\r\nLet us take a closer look at out mocked list of alerts.",
       "line": 8,
       "title": "Mocks and order of exercises"
+    },
+    {
+      "file": "src/MockedAlerts.cs",
+      "description": "This is our list of mocked alerts.\r\n\r\n**TASK** - Add a comma here (`,`) and hit Enter. GHCP's Code Completion should show you ghost text on adding more alerts.",
+      "line": 142,
+      "title": "Code Completions #1"
     },
     {
       "file": "src/Program.cs",
       "description": "Using GHCP completions is optimal for Simple, Short and Specific logic (the 3 `S` principle), remember that!\r\n\r\n**TASK** - Store the list of alerts in a variable. Then right click on the variable, and select `Rename Symbol (F2)`. You should see some Copilot suggestions for variable name.\r\n\r\nPro tips - Watch this for more context on the [3 `S` Principal](https://www.youtube.com/watch?v=hh1nOX14TyY&t=38s&ab_channel=VisualStudioCode)",
       "line": 10,
-      "title": "Code Completions #1"
+      "title": "Code Completions #2"
     },
     {
       "file": "src/Completions.cs",
       "description": "In this class, we will add some functions to demo GitHub Copilot code completion.\r\n\r\n**TASK #1**\r\n- Create a function that receives the list of `alerts` and a `locationName` as input, and finds the alerts which happened at `locationName`.\r\n- Please use `dynamic` for all return types, we will get to it later using inline chat.\r\n\r\n**TASK #2**\r\n- Create a function that receives the list of `alerts` as input, and returns the aggregated count of alerts by `Severity`. Example output: `{\"Critical\": 2, \"Medium\": 1, ....}`\r\n- Occasionally, you may not get the completion you want, you may use `Ctrl + Enter` to open the Suggestions panel, and see several options.",
       "line": 8,
-      "title": "Code Completions #2",
+      "title": "Code Completions #3",
       "selection": {
         "start": {
           "line": 9,
@@ -116,7 +122,13 @@
     },
     {
       "file": "src/Program.cs",
-      "description": "Congratulations!!!\r\n\r\n\r\nYou have completed the lab, I hope that you have learned a thing or two and had some fun while you're at it.\r\n\r\nRemember - \r\n\r\n\r\nShort.\r\n\r\n\r\nSimple.\r\n\r\n\r\nSpecific.\r\n\r\n\r\n\r\n\r\nAnd provide the relevant context (#file/ #selection, etc.)",
+      "description": "Let us review and commit our changes.\r\n\r\n**TASK** - Go to the `Source Control` option in the side bar menu of VSCode. When you hover on `Changes` you should see some options pop up on the right. Select the 3rd option from left which says `Copilot Code Review - Uncommitted changes`. Watch GHCP review your code!\r\n\r\n**TASK** - In the `Message` text box, there should be a magic sparkle icon at the right which would say `Generate commit message with Copilot` when hovered on. Click on this icon to have GHCP generate a commit message for you.",
+      "line": 1,
+      "title": "Git tricks with GHCP"
+    },
+    {
+      "file": "src/Program.cs",
+      "description": "Congratulations!!!\r\n\r\n\r\nYou have completed the lab, I hope that you have learned a thing or two and had some fun while you're at it.\r\n\r\nRemember - \r\n\r\n**Short. Simple. Specific.**\r\n\r\nAnd provide the relevant context (#file/ #selection, etc.)\r\n\r\n---\r\n\r\nBonus content - Checkout http://aka.ms/adosweagent",
       "line": 19,
       "title": "Finishing up"
     }
