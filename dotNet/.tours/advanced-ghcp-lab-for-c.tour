@@ -28,13 +28,13 @@
     },
     {
       "file": "src/Program.cs",
-      "description": "Using GHCP completions is optimal for Simple, Short and Specific logic (the 3 `S` principle), remember that!\r\n\r\n**TASK** - Store the list of alerts in a variable. Then right click on the variable, and select `Rename Symbol (F2)`. You should see some Copilot suggestions for variable name.\r\n\r\nPro tips - Watch this for more context on the [3 `S` Principal](https://www.youtube.com/watch?v=hh1nOX14TyY&t=38s&ab_channel=VisualStudioCode)",
+      "description": "**TASK** - Store the list of alerts in a variable. Then right click on the variable, and select `Rename Symbol (F2)`. You should see some Copilot suggestions for variable name.",
       "line": 10,
       "title": "Code Completions #2"
     },
     {
       "file": "src/Completions.cs",
-      "description": "In this class, we will add some functions to demo GitHub Copilot code completion.\r\n\r\n**TASK #1**\r\n- Create a function that receives the list of `alerts` and a `locationName` as input, and finds the alerts which happened at `locationName`.\r\n- Please use `dynamic` for all return types, we will get to it later using inline chat.\r\n\r\n**TASK #2**\r\n- Create a function that receives the list of `alerts` as input, and returns the aggregated count of alerts by `Severity`. Example output: `{\"Critical\": 2, \"Medium\": 1, ....}`\r\n- Occasionally, you may not get the completion you want, you may use `Ctrl + Enter` to open the Suggestions panel, and see several options.",
+      "description": "In this class, we will add some functions to demo GitHub Copilot code completion.\r\n\r\n**TASK #1**\r\n- Create a function that receives the list of `alerts` and a `locationName` as input, and finds the alerts which happened at `locationName`.\r\n- Please use `dynamic` for all return types, we will get to it later using inline chat.\r\n\r\n**TASK #2**\r\n- Create a function that receives the list of `alerts` as input, and returns the aggregated count of alerts by `Severity`. Example output: `{\"Critical\": 2, \"Medium\": 1, ....}`\r\n- Occasionally, you may not get the completion you want, you may use `Ctrl + Enter` to open the Suggestions panel, and see several options.\r\n\r\nUsing GHCP completions is optimal for Simple, Short and Specific logic (the 3 `S` principle), remember that!\r\n\r\nPro tips - Watch this for more context on the [3 `S` Principal](https://www.youtube.com/watch?v=hh1nOX14TyY&t=38s&ab_channel=VisualStudioCode)",
       "line": 8,
       "title": "Code Completions #3",
       "selection": {
@@ -74,7 +74,7 @@
     },
     {
       "title": "Context explanation",
-      "description": "With GHCP, **context is everything**.\r\n\r\nThis is the GHCP context hierarchy: \r\n\r\n1. Cursor position -> Selection -> Active file -> Opened files. \r\n1. Additional context provided (files/ folders/ problems / changes/ search results)\r\n\r\nIf you see bad responses, it may be confused with older, no-longer-relevant, contexts. For better accuracy / responses:\r\n\r\n1. Try closing unused editor windows.\r\n1. Provide more context by attaching it directly using # operators, which also reduces search time for Copilot\r\n1. Don't ask him about C# and jump to typescript, create a new chat for these subject jumps. You can always navigate to previous sessions\r\n1. Provide [Custom Instructions](https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot?tool=vscode#enabling-or-disabling-custom-instructions) - we will discuss these in more details after the Ask/Chat section"
+      "description": "With GHCP, **context is everything**.\r\n\r\nThis is the GHCP context hierarchy: \r\n\r\n1. Cursor position -> Selection -> Active file -> Opened files. \r\n1. Additional context provided (files/ folders/ problems / changes/ search results)\r\n\r\nIf you see bad responses, it may be confused with older, no-longer-relevant, contexts. For better accuracy / responses:\r\n\r\n1. Try closing unused editor windows.\r\n1. Provide more context by attaching it directly using # operators, which also reduces search time for Copilot\r\n1. Don't ask about C# and jump to typescript, create a new chat for these subject jumps. You can always navigate to previous sessions\r\n1. Provide [Custom Instructions](https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot?tool=vscode#enabling-or-disabling-custom-instructions)."
     },
     {
       "file": "src/Chat.cs",
@@ -132,6 +132,5 @@
       "line": 19,
       "title": "Finishing up"
     }
-  ],
-  "ref": "main"
+  ]
 }
