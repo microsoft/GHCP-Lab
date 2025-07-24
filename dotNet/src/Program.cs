@@ -48,5 +48,5 @@ class Program
 
 
 
-// SECRET: rick
+// SECRET: connectionString = https://localhost:8080/key=someDummySecretKey-2348n3isbc2123121
 

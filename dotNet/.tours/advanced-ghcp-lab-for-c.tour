@@ -78,8 +78,8 @@
     },
     {
       "file": "src/Chat.cs",
-      "description": "Let's say you remembered there's an enum for `AlarmSeverity`, but looking at the file structure, you can't recall where it is.\r\nYou may use the @workspace scope or the #codebase context in GHCP to search for it. These two GHCP functionalties iterate over *the _open_ project* and can answer your questions on a project scope. Try asking in Ask mode\r\n\r\nUsing @workspace it where you can find the AlarmSeverity enum?\r\n\r\nTip: When searching in the project scope, be sure to deselect the active file attached by clicking the eye icon next to it.",
-      "line": 8,
+      "description": "Let's say you remembered there's an enum for `AlarmSeverity`, but looking at the file structure, you can't recall where it is.\r\nYou may use the @workspace scope or the #codebase context in GHCP to search for it. These two GHCP functionalties iterate over *the _open_ project* and can answer your questions on a project scope. Try asking in Ask mode\r\n\r\n> `@workspace Can you find the AlarmSeverity enum?`\r\n\r\nor\r\n\r\n> `Using #codebase Can you find the AlarmSeverity enum?`\r\n\r\nTip: When searching in the project scope, be sure to deselect the active file attached by clicking the eye/cross icon next to it.",
+      "line": 12,
       "title": "Ask mode #1"
     },
     {
@@ -106,7 +106,7 @@
     },
     {
       "file": "src/Program.cs",
-      "description": "Introducing Agent mode, same functionality of editing multiple files, but with iterations. Let's call it edits ++ \r\n\r\nLet's ask Copilot to create the spec for our functionality:\r\n\r\n`\r\nI want the main function to use the different functions in Completions.cs and InlineChat.cs that exists in the code base. And allow the user to filter specific alerts based on inputs. So this will now be a console app that runs on the generated mocked alerts. The user will be able to get the current status by choosing a number from the menu which will execute a specific function.`\r\n\r\nBut before that, **copy the prompt above** and let's use our [special prompt](.github\\prompts\\Feature breakdown prompt.prompt.md):",
+      "description": "Introducing Agent mode, same functionality of editing multiple files, but with iterations. Let's call it edits ++ \r\n\r\nLet's ask Copilot to create the spec for our functionality:\r\n\r\n`\r\nI want the main function to print a menu to the user. The menu will have a number which the user can select to run the various functions in Completions.cs and InlineChat.cs. Based on user selection, run the respective function and display the output. Run my project and fix errors if any.`\r\n\r\nBut before that, **copy the prompt above** and let's use our [special prompt](.github\\prompts\\Feature breakdown prompt.prompt.md):",
       "line": 18,
       "selection": {
         "start": {
@@ -128,7 +128,7 @@
     },
     {
       "file": "src/Program.cs",
-      "description": "Congratulations!!!\r\n\r\n\r\nYou have completed the lab, I hope that you have learned a thing or two and had some fun while you're at it.\r\n\r\nRemember - \r\n\r\n**Short. Simple. Specific.**\r\n\r\nAnd provide the relevant context (#file/ #selection, etc.)\r\n\r\n---\r\n\r\nBonus content - Checkout http://aka.ms/adosweagent",
+      "description": "Congratulations!!!\r\n\r\n\r\nYou have completed the lab, I hope that you have learned a thing or two and had some fun while you're at it.\r\n\r\nRemember - \r\n\r\n**Short. Simple. Specific.**\r\n\r\nAnd provide the relevant context (#file / #selection, etc.)\r\n\r\n---\r\n\r\nBonus content - Checkout http://aka.ms/adosweagent",
       "line": 19,
       "title": "Finishing up"
     }
