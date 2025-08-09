@@ -54,8 +54,12 @@ If you don't have them installed, follow the installation instructions at [https
 2. Install recommended extensions from the workspace
     1. If you don't want to run the code, CodeTour is the critical one
 3. Start the tour by clicking on tour Panel, then hit the the Play icon button to start.
+
 ![Code tour starting place](assets/image-2.png)
-4. Click the next (or previous) buttons to navigate the code tour once you're ready to move on, or need to take another look in a previous step.
+
+
+5. Click the next (or previous) buttons to navigate the code tour once you're ready to move on, or need to take another look in a previous step.
+
 ![Next Code tour step](assets/image-3.png)
 
 Feel free to reach out with improvement suggestions, feedback, or anything that you may come up with to @Yomanor.
