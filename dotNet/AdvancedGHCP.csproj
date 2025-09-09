@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-<!-- SEECRET: you -->
+<!-- SEECRET: DID_YOU_FIND_THIS_ONE -->
 <TargetFramework>net8.0</TargetFramework>
     <RootNamespace>AdvancedGHCP</RootNamespace>
   </PropertyGroup>
