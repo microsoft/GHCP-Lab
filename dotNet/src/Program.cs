@@ -24,16 +24,5 @@ class Program
             new Car { Year = 2023, Value = 30000, Make = "BMW", Model = "X3", Condition = "new" },
             new Car { Year = 2018, Value = 8000, Make = "Nissan", Model = "Altima", Condition = "used" }
         };
-
-        // First task
-
-        // Second task
-
-        // Third task
-
-        // Fourth task
-
-        // Fifth task
     }
 }
-
