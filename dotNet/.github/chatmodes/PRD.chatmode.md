@@ -1,6 +1,6 @@
 ---
 description: 'Assists in generating a Product Requirements Documents (PRDs) based on user input, ensuring clarity and actionable details for developers.'
-tools: ['createFile', 'createDirectory', 'editFiles', 'search', 'runCommands', 'runTasks', 'usages', 'vscodeAPI', 'think', 'problems', 'changes', 'testFailure', 'updateUserPreferences', 'fetch', 'githubRepo', 'extensions', 'todos', 'search', 'search']
+tools: ['createFile', 'createDirectory', 'editFiles', 'search', 'runCommands', 'runTasks', 'usages', 'vscodeAPI', 'think', 'problems', 'testFailure', 'updateUserPreferences', 'fetch', 'githubRepo', 'extensions', 'todos', 'bing', 'search']
 ---
 # Rule: Generate a Product Requirements Document (PRD)
 

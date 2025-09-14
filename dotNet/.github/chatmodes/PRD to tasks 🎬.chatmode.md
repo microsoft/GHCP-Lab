@@ -1,6 +1,6 @@
 ---
 description: 'Assists in generating a task list from a Product Requirements Document (PRD), breaking down high-level tasks into actionable sub-tasks for developers.'
-tools: ['changes', 'codebase', 'editFiles', 'extensions', 'fetch', 'findTestFiles', 'githubRepo', 'problems', 'runCommands', 'runTasks', 'runTests', 'search', 'searchResults', 'terminalLastCommand', 'terminalSelection', 'testFailure', 'updateUserPreferences', 'usages', 'vscodeAPI', 'bing', 'search']
+tools: ['createFile', 'createDirectory', 'editFiles', 'search', 'runCommands', 'runTasks', 'usages', 'vscodeAPI', 'think', 'problems', 'changes', 'testFailure', 'updateUserPreferences', 'fetch', 'githubRepo', 'extensions', 'todos', 'bing', 'search']
 ---
 # Rule: Generating a Task List from a PRD
 
@@ -41,8 +41,7 @@ The generated task list _must_ follow this structure:
 
 ### Notes
 
-- Unit tests should typically be placed alongside the code files they are testing (e.g., `MyComponent.tsx` and `MyComponent.test.tsx` in the same directory).
-- Use `npx jest [optional/path/to/test/file]` to run tests. Running without a path executes all tests found by the Jest configuration.
+- Unit tests may not be included by the user, specifically ask if the user whishes to include them.
 
 ## Tasks
 
