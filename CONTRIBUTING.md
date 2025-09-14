@@ -149,13 +149,6 @@ Before submitting:
 - Provide context for why certain techniques work better
 - Show both basic and advanced usage patterns
 
-### GitHub Copilot Features to Highlight
-- **Chat modes**: When to use chat vs inline chat
-- **Context optimization**: File selection, naming, comments
-- **Aliases and commands**: `@workspace`, `@terminal`, `/explain`, etc.
-- **Completion techniques**: Accepting partial suggestions, using Ctrl+Enter
-- **Prompt engineering**: How to write effective requests
-
 ### Quality Standards
 - All code must be functional and tested
 - Instructions should be clear and unambiguous
