@@ -1,0 +1,126 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Vamsi\\GHCP-Lab\\dotNet\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D0DB58ED-0780-4290-886D-DF444FB9D521}|AdvancedGHCP.csproj|c:\\vamsi\\ghcp-lab\\dotnet\\src\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0DB58ED-0780-4290-886D-DF444FB9D521}|AdvancedGHCP.csproj|solutionrelative:src\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0DB58ED-0780-4290-886D-DF444FB9D521}|AdvancedGHCP.csproj|c:\\vamsi\\ghcp-lab\\dotnet\\src\\alertaggregations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0DB58ED-0780-4290-886D-DF444FB9D521}|AdvancedGHCP.csproj|solutionrelative:src\\alertaggregations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0DB58ED-0780-4290-886D-DF444FB9D521}|AdvancedGHCP.csproj|c:\\vamsi\\ghcp-lab\\dotnet\\src\\point.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0DB58ED-0780-4290-886D-DF444FB9D521}|AdvancedGHCP.csproj|solutionrelative:src\\point.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0DB58ED-0780-4290-886D-DF444FB9D521}|AdvancedGHCP.csproj|c:\\vamsi\\ghcp-lab\\dotnet\\src\\models.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0DB58ED-0780-4290-886D-DF444FB9D521}|AdvancedGHCP.csproj|solutionrelative:src\\models.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0DB58ED-0780-4290-886D-DF444FB9D521}|AdvancedGHCP.csproj|c:\\vamsi\\ghcp-lab\\dotnet\\src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0DB58ED-0780-4290-886D-DF444FB9D521}|AdvancedGHCP.csproj|solutionrelative:src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0DB58ED-0780-4290-886D-DF444FB9D521}|AdvancedGHCP.csproj|c:\\vamsi\\ghcp-lab\\dotnet\\src\\mockedalerts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0DB58ED-0780-4290-886D-DF444FB9D521}|AdvancedGHCP.csproj|solutionrelative:src\\mockedalerts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Point.cs",
+              "DocumentMoniker": "C:\\Vamsi\\GHCP-Lab\\dotNet\\src\\Point.cs",
+              "RelativeDocumentMoniker": "src\\Point.cs",
+              "ToolTip": "C:\\Vamsi\\GHCP-Lab\\dotNet\\src\\Point.cs",
+              "RelativeToolTip": "src\\Point.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T05:12:05.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Models.cs",
+              "DocumentMoniker": "C:\\Vamsi\\GHCP-Lab\\dotNet\\src\\Models.cs",
+              "RelativeDocumentMoniker": "src\\Models.cs",
+              "ToolTip": "C:\\Vamsi\\GHCP-Lab\\dotNet\\src\\Models.cs",
+              "RelativeToolTip": "src\\Models.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T05:12:02.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AlertAggregations.cs",
+              "DocumentMoniker": "C:\\Vamsi\\GHCP-Lab\\dotNet\\src\\AlertAggregations.cs",
+              "RelativeDocumentMoniker": "src\\AlertAggregations.cs",
+              "ToolTip": "C:\\Vamsi\\GHCP-Lab\\dotNet\\src\\AlertAggregations.cs",
+              "RelativeToolTip": "src\\AlertAggregations.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T05:11:29.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Chat.cs",
+              "DocumentMoniker": "C:\\Vamsi\\GHCP-Lab\\dotNet\\src\\Chat.cs",
+              "RelativeDocumentMoniker": "src\\Chat.cs",
+              "ToolTip": "C:\\Vamsi\\GHCP-Lab\\dotNet\\src\\Chat.cs",
+              "RelativeToolTip": "src\\Chat.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T05:11:24.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MockedAlerts.cs",
+              "DocumentMoniker": "C:\\Vamsi\\GHCP-Lab\\dotNet\\src\\MockedAlerts.cs",
+              "RelativeDocumentMoniker": "src\\MockedAlerts.cs",
+              "ToolTip": "C:\\Vamsi\\GHCP-Lab\\dotNet\\src\\MockedAlerts.cs",
+              "RelativeToolTip": "src\\MockedAlerts.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAqwFcAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T04:59:35.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Vamsi\\GHCP-Lab\\dotNet\\src\\Program.cs",
+              "RelativeDocumentMoniker": "src\\Program.cs",
+              "ToolTip": "C:\\Vamsi\\GHCP-Lab\\dotNet\\src\\Program.cs",
+              "RelativeToolTip": "src\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T04:59:25.084Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

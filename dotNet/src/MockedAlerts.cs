@@ -12,134 +12,134 @@ public class MockedAlerts
         {
             new Alert
             {
-            Id = "1",
-            Name = "Scooby Doo",
-            Description = "Microphone detected a noise that sounds like a ghost",
-            CreatedDate = DateTime.Now.AddDays(42),
-            LocationName = "Kitchen",
-            Latitude = 1.0,
-            Longitude = 1.0,
-            Severity = AlertSeverity.Info,
-            Status = AlertStatus.Active,
-            Source = "Microphone"
+                Id = "1",
+                Name = "Microservice communication timeout spikes",
+                Description = "Detected spikes in timeout failures for microservice calls in Load Balancer for East US",
+                CreatedDate = DateTime.Now.AddDays(2),
+                LocationName = "Quincy",
+                Latitude = 42.3601,
+                Longitude = -71.0589,
+                Severity = AlertSeverity.Warning,
+                Status = AlertStatus.Active,
+                Source = "Load Balancer"
             },
             new Alert
             {
-            Id = "2",
-            Name = "Burgers alert",
-            Description = "Looks like instead of burglers in our living room, we have burgers, let's dine!",
-            CreatedDate = DateTime.Now.AddDays(2),
-            LocationName = "Living room",
-            Latitude = 2.0,
-            Longitude = 2.0,
-            Severity = AlertSeverity.Warning,
-            Status = AlertStatus.Acknowledged,
-            Source = "Camera"
+                Id = "2",
+                Name = "DNS resolution intermittent latency in secondary zones",
+                Description = "Intermittent latency observed in DNS resolution for secondary zones impacting service accessibility.",
+                CreatedDate = DateTime.Now.AddDays(4),
+                LocationName = "Denver",
+                Latitude = 39.7392,
+                Longitude = -104.9903,
+                Severity = AlertSeverity.Info,
+                Status = AlertStatus.Resolved,
+                Source = "DNS Service"
             },
             new Alert
             {
-            Id = "3",
-            Name = "Dude, where's my car?",
-            Description = "Car is missing from the garage, I swear I parked it there",
-            CreatedDate = DateTime.Now,
-            LocationName = "Garage",
-            Latitude = 3.0,
-            Longitude = 3.0,
-            Severity = AlertSeverity.Error,
-            Status = AlertStatus.Resolved,
-            Source = "Camera"
+                Id = "3",
+                Name = "Increased error rates in authentication service",
+                Description = "Observed a rise in 500 Internal Server Errors in the authentication microservice affecting user logins.",
+                CreatedDate = DateTime.Now.AddDays(1),
+                LocationName = "San Francisco",
+                Latitude = 37.7749,
+                Longitude = -122.4194,
+                Severity = AlertSeverity.Critical,
+                Status = AlertStatus.Active,
+                Source = "Authentication Service"
             },
             new Alert
             {
-            Id = "4",
-            Name = "Garage door jammed",
-            Description = "This is the last time I'm letting the kids play with jam sandwhiches in the garage",
-            CreatedDate = DateTime.Now.AddDays(-1),
-            LocationName = "Garage",
-            Latitude = 4.0,
-            Longitude = 4.0,
-            Severity = AlertSeverity.Critical,
-            Status = AlertStatus.Active,
-            Source = "Sensor"
+                Id = "4",
+                Name = "Object storage service throttling affecting uploads",
+                Description = "Increased throttling events in the object storage service leading to failed or delayed file uploads.",
+                CreatedDate = DateTime.Now.AddDays(3),
+                LocationName = "San Francisco",
+                Latitude = 37.7749,
+                Longitude = -122.4194,
+                Severity = AlertSeverity.Warning,
+                Status = AlertStatus.Acknowledged,
+                Source = "Storage Service"
             },
             new Alert
             {
                 Id = "5",
-                Name = "Cat Nap",
-                Description = "The cat has taken over the keyboard again, typing gibberish",
-                CreatedDate = DateTime.Now.AddHours(-5),
-                LocationName = "Office",
-                Latitude = 5.0,
-                Longitude = 5.0,
-                Severity = AlertSeverity.Info,
-                Status = AlertStatus.Active,
-                Source = "Keyboard"
+                Name = "Notification delivery service minor delays",
+                Description = "Minor delays observed in the notification delivery service impacting user alerts.",
+                CreatedDate = DateTime.Now.AddDays(5),
+                LocationName = "Redmond",
+                Latitude = 47.6740,
+                Longitude = -122.1215,
+                Severity = AlertSeverity.Warning,
+                Status = AlertStatus.Acknowledged,
+                Source = "Notification Service"
             },
             new Alert
             {
                 Id = "6",
-                Name = "Fridge Raid",
-                Description = "Someone raided the fridge and left it open, ice cream is melting!",
-                CreatedDate = DateTime.Now.AddMinutes(-30),
-                LocationName = "Kitchen",
-                Latitude = 6.0,
-                Longitude = 6.0,
-                Severity = AlertSeverity.Warning,
-                Status = AlertStatus.Acknowledged,
-                Source = "Fridge Sensor"
+                Name = "Database connection pool exhaustion in primary cluster",
+                Description = "Connection pool exhaustion detected in the primary database cluster causing application timeouts and degraded performance.",
+                CreatedDate = DateTime.Now.AddDays(-1),
+                LocationName = "Tokyo",
+                Latitude = 35.6762,
+                Longitude = 139.6503,
+                Severity = AlertSeverity.Error,
+                Status = AlertStatus.Active,
+                Source = "Database Service"
             },
             new Alert
             {
                 Id = "7",
-                Name = "Laundry Monster",
-                Description = "The washing machine is making strange noises, could be a laundry monster",
-                CreatedDate = DateTime.Now.AddHours(-2),
-                LocationName = "Laundry Room",
-                Latitude = 7.0,
-                Longitude = 7.0,
-                Severity = AlertSeverity.Error,
+                Name = "Content delivery network cache miss rate spike",
+                Description = "Unusual spike in cache miss rates across CDN edge nodes resulting in increased origin server load and slower content delivery.",
+                CreatedDate = DateTime.Now.AddDays(-3),
+                LocationName = "London",
+                Latitude = 51.5074,
+                Longitude = -0.1278,
+                Severity = AlertSeverity.Warning,
                 Status = AlertStatus.Resolved,
-                Source = "Washing Machine"
+                Source = "CDN Service"
             },
             new Alert
             {
                 Id = "8",
-                Name = "Window Break",
-                Description = "Detected a broken window in the living room",
-                CreatedDate = DateTime.Now.AddHours(-3),
-                LocationName = "Living Room",
-                Latitude = 8.0,
-                Longitude = 8.0,
+                Name = "Message queue processing backlog critical threshold",
+                Description = "Message processing backlog has exceeded critical thresholds leading to delayed task execution and potential data loss.",
+                CreatedDate = DateTime.Now.AddHours(-6),
+                LocationName = "Sydney",
+                Latitude = -33.8688,
+                Longitude = 151.2093,
                 Severity = AlertSeverity.Critical,
                 Status = AlertStatus.Active,
-                Source = "Glass Break Sensor"
+                Source = "Message Queue Service"
             },
             new Alert
             {
                 Id = "9",
-                Name = "Overheated Oven",
-                Description = "The oven temperature is too high, potential fire hazard",
-                CreatedDate = DateTime.Now.AddMinutes(-15),
-                LocationName = "Kitchen",
-                Latitude = 9.0,
-                Longitude = 9.0,
-                Severity = AlertSeverity.Error,
+                Name = "API gateway rate limiting anomalies",
+                Description = "Detected anomalous patterns in API gateway rate limiting causing legitimate requests to be incorrectly throttled.",
+                CreatedDate = DateTime.Now.AddDays(-2),
+                LocationName = "Mumbai",
+                Latitude = 19.0760,
+                Longitude = 72.8777,
+                Severity = AlertSeverity.Info,
                 Status = AlertStatus.Acknowledged,
-                Source = "Oven Sensor"
+                Source = "API Gateway"
             },
             new Alert
             {
                 Id = "10",
-                Name = "Water Leak",
-                Description = "Water detected on the floor near the washing machine",
-                CreatedDate = DateTime.Now.AddHours(-6),
-                LocationName = "Laundry Room",
-                Latitude = 10.0,
-                Longitude = 10.0,
+                Name = "Container orchestration resource allocation inefficiencies",
+                Description = "Suboptimal resource allocation patterns detected in container orchestration leading to underutilized nodes and scaling delays.",
+                CreatedDate = DateTime.Now.AddDays(-4),
+                LocationName = "São Paulo",
+                Latitude = -23.5505,
+                Longitude = -46.6333,
                 Severity = AlertSeverity.Warning,
-                Status = AlertStatus.Resolved,
-                Source = "Water Sensor"
-            }
+                Status = AlertStatus.Active,
+                Source = "Orchestration Service"
+            },
         };
     }
 }
