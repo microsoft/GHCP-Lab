@@ -133,7 +133,7 @@ public class MockedAlerts
                 Name = "Container orchestration resource allocation inefficiencies",
                 Description = "Suboptimal resource allocation patterns detected in container orchestration leading to underutilized nodes and scaling delays.",
                 CreatedDate = DateTime.Now.AddDays(-4),
-                LocationName = "São Paulo",
+                LocationName = "Sao Paulo",
                 Latitude = -23.5505,
                 Longitude = -46.6333,
                 Severity = AlertSeverity.Warning,
