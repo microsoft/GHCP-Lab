@@ -107,3 +107,4 @@ Some other cool GitHub Copilot features are -
 1. [GitHub Copilot CLI](https://github.com/features/copilot/cli) - Work with Copilot from the comfort of your terminal.
 2. [GitHub Copilot Spaces](https://docs.github.com/en/copilot/concepts/context/spaces) - Copilot Spaces let you organize the context that Copilot uses to answer your questions. Similar to a knowledge base.
 3. [GitHub Copilot Spark](https://github.com/features/spark) - Transform ideas into full-stack applications.
+4. [GitHub Copilot Coding Agent](https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent) - Assign a GitHub issue to Copilot and have it create a PR.
