@@ -1,0 +1,300 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Advanced GHCP lab for C#",
+  "steps": [
+    {
+      "file": "src/Alert.cs",
+      "description": "This is the model of the alert, this is what we'll be iterating on.\r\n\r\n\r\nWe'll make aggregations on alerts and create functions to process alerts.\r\n\r\nTake a few seconds and take a look at it. ",
+      "line": 3,
+      "title": "Get to know your data!"
+    },
+    {
+      "file": "src/Completions.cs",
+      "description": "Using GHCP completions is optimal for Simple, Short and Specific logic (the 3 `S` principle), remember that!\r\n\r\n\r\n\r\nFor best completions results - \r\nName a variable according to the logic you expect and then refactor the name after.\r\n\r\nPro tips:\r\n1. GHCP also suggests names (!) if you press Refactor (F2) on the function/variable name.\r\n2. Watch this for more context on the [3 `S` Principal](https://www.youtube.com/watch?v=hh1nOX14TyY&t=38s&ab_channel=VisualStudioCode)",
+      "line": 9,
+      "title": "Completions introduction"
+    },
+    {
+      "file": "src/Completions.cs",
+      "description": "We have mocked some alerts! Let's get started on processing these.",
+      "pattern": "Mocks.MockedAlerts.GetMockedAlerts",
+      "title": "See mocks"
+    },
+    {
+      "file": "src/Completions.cs",
+      "description": "Let's start easy, we'll create a function to return the total number of alerts \r\n\r\nSimply place your caret at the end of the function and add the opening brackets()",
+      "line": 12,
+      "title": "Completion #1"
+    },
+    {
+      "title": "Context explanation",
+      "description": "With GHCP, **context is everything**.\r\n\r\nThis is the GHCP context hierarchy: \r\n\r\n1. Cursor position -> Selection -> Active file -> Opened files. \r\n1. Additional context provided (files/ folders/ problems / changes/ search results)\r\n\r\nIf you see bad responses, it may be confused with older, no-longer-relevant, contexts. For better accuracy / responses:\r\n\r\n1. Try closing unused editor windows.\r\n1. Provide more context by attaching it directly using # operators, which also reduces search time for Copilot\r\n1. Don't ask him about C# and jump to typescript, create a new chat for these subject jumps. You can always navigate to previous sessions\r\n1. Provide [Custom Instructions](https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot?tool=vscode#enabling-or-disabling-custom-instructions) - we will discuss these in more details after the Ask/Chat section"
+    },
+    {
+      "file": "src/Completions.cs",
+      "description": "Create a function that receives alerts and `locationName` and finds the alerts which happened at `locationName`.\r\n\r\nBut what about the return type? Please use `dynamic` for all return types, we will get to it later using inline chat.",
+      "line": 14,
+      "title": "Completion #2"
+    },
+    {
+      "file": "src/Completions.cs",
+      "description": "Create a function with an input of alerts and returns the aggregated count of alerts by Severity, example output: {\"Critical\": 2, \"Medium\": 1, ....}\r\n\r\n\r\nFriendly reminder that occasionally, you may not get the completion you want, you may use \r\n\r\n`Ctrl + Enter`\r\n\r\nTo open the `Suggestions panel`, and see several options (it may present very bad options, so proceed with care and feel free to only take what you need and ignore the rest)",
+      "line": 12,
+      "title": "Completion #3"
+    },
+    {
+      "file": "src/Completions.cs",
+      "description": "Create a function to get all alerts which happened between two specific dates.\r\n\r\nNow, how would that change if you wanted to get alerts between specific hours, as string? Create a function for that too.",
+      "line": 16,
+      "title": "Completion #4"
+    },
+    {
+      "file": "src/Completions.cs",
+      "description": "Top Alert Sources: Create a function that takes all alerts and finds the most common source of alerts. ",
+      "line": 18,
+      "title": "Completion #5"
+    },
+    {
+      "file": "src/Completions.cs",
+      "description": "Let's try to be more specific, when you type \"`dynamic filterAlertsWithLongName`\" what is the length you get in the code? Stop reading and give it try, then continue reading.\r\n\r\nDoes that \"satisfy\" the requirement? What if you wanted it to be a little longer let's say more than 12 characters?\r\n\r\n You have two options:\r\n\r\n1. To write a hard-coded value in the variable name and that's the generated code you get, i.e. filterAlertsWithNameLongerThan12. Then you can rename the variable to your needs.\r\n\r\n2. Create a variable, let's create a const with a value of 15 named MAX_ALERT_NAME. Now when you write `filterAlertWithLongName` Copilot will take that into account and use the variable",
+      "line": 20,
+      "title": "Completions #6"
+    },
+    {
+      "file": "src/Completions.cs",
+      "title": "Completions #7",
+      "description": "In case you got here, here are a few more methods to implement:\r\n\r\n1. Get Average Latitute or average Langitute of all alerts.\r\n\r\n1. Get the last alert by time.\r\n\r\n1. Get first alert by time.\r\n\r\n1. Get alert count by input of Severity.\r\n\r\n1. Get all alerts which are not Resolved.\r\n\r\n1. Extract alert descriptions"
+    },
+    {
+      "file": "src/Point.cs",
+      "description": "The point of this file is demonstrate Next Edit Suggestions, rename Point to Point3D and move your cursor to the constructor, see how there's a green pop up? You can accept that with the Tab key or cancel with Esc",
+      "pattern": "class Point",
+      "title": "Next Edit Suggestions"
+    },
+    {
+      "file": "src/Point.cs",
+      "description": "Now that you've experienced Next Edit Suggestions, let's learn how to control them! 🎛️\r\n\r\nLook at the bottom right corner of your VS Code window - you'll see the GitHub Copilot icon. Click on it to open the Copilot status menu.\r\n\r\nFrom this menu, you can:\r\n\r\n1. **Snooze suggestions** - Temporarily disable suggestions for a set time (+5 min iterations, and restore)\r\n2. **Disable for file type** - Turn off completions and suggestions only for .cs files (or whatever file type you're currently in)\r\n3. **Disable globally** - Turn off all Copilot completions and suggestions entirely\r\n\r\nYou'll see separate controls for:\r\n- ✨ **Completions** (the main autocomplete suggestions)\r\n- 🔄 **Next Edit Suggestions** (the green popups you just experienced)\r\n\r\n**Pro tip**: When you're demoing or presenting code and don't want the ghost text from completions constantly appearing, you can quickly disable completions for 5 minutes using the snooze feature. This keeps your demo clean while ensuring Copilot automatically re-enables when you're done!\r\n\r\nTry clicking the icon and exploring these options - don't worry, you can always turn them back on! 😊",
+      "pattern": "}",
+      "title": "Managing Next Edit Suggestions & Completions Settings"
+    },
+    {
+      "file": "src/Completions.cs",
+      "description": "So we now know to name the variable according to what the logic we want it to execute, and then rename it for easier reading. \r\n\r\n\r\nAs a perfect segue for inline chat, let's now fix all these \"dynamic\" return types.\r\nSelect all the methods which include the dynamic return type, open inline chat using Ctrl + I (🍏: Command + I) and use the following prompt: \r\n\r\n\"**Instead of dynamic, use correct return type**\"\r\n\r\nGithub Copilot should fix these to be the correct return type auto-magically ✨.",
+      "line": 30,
+      "title": "Completions summary"
+    },
+    {
+      "file": "src/Point.cs",
+      "description": "The point of this file is demonstrate Next Edit Suggestions, rename Point to Point3D and move your cursor to the constructor, see how there's a green pop up? You can accept that with the Tab key or cancel with Esc",
+      "pattern": "class Point",
+      "title": "Next Edit Suggestions"
+    },
+    {
+      "file": "src/Point.cs",
+      "description": "Now that you've experienced Next Edit Suggestions, let's learn how to control them! 🎛️\r\n\r\nLook at the bottom right corner of your VS Code window - you'll see the GitHub Copilot icon. Click on it to open the Copilot status menu.\r\n\r\nFrom this menu, you can:\r\n\r\n1. **Snooze suggestions** - Temporarily disable suggestions for a set time (+5 min iterations, and restore)\r\n2. **Disable for file type** - Turn off completions and suggestions only for .cs files (or whatever file type you're currently in)\r\n3. **Disable globally** - Turn off all Copilot completions and suggestions entirely\r\n\r\nYou'll see separate controls for:\r\n- ✨ **Completions** (the main autocomplete suggestions)\r\n- 🔄 **Next Edit Suggestions** (the green popups you just experienced)\r\n\r\n**Pro tip**: When you're demoing or presenting code and don't want the ghost text from completions constantly appearing, you can quickly disable completions for 5 minutes using the snooze feature. This keeps your demo clean while ensuring Copilot automatically re-enables when you're done!\r\n\r\nTry clicking the icon and exploring these options - don't worry, you can always turn them back on! 😊",
+      "pattern": "}",
+      "title": "Managing Next Edit Suggestions & Completions Settings"
+    },
+    {
+      "file": "./GHCP-dotNet.code-workspace",
+      "title": "GitHub Copilot Instructions - The Secret to Better Code Generation",
+      "pattern": "github.copilot.chat.codeGeneration.useInstructionFiles",
+      "description": "**GitHub Copilot Instructions** - Setting the Foundation for Better Code Generation 🎯\r\n\r\nBefore we dive forward into Chats and agents, let's talk about a game-changing feature: **Custom Instructions**!\r\n\r\nThese instructions apply to Chat mode onwards (not basic completions) and are crucial for getting code right on the first try.\r\n\r\n**Why Instructions Matter:**\r\n- ⏱️ **Time Saving** - Get accurate code generation without redundant iterations\r\n- 🎨 **Consistent Style & Successful Builds** - Ensure generated code matches your repo's coding standards\r\n- 🔧 **Fewer Fixes** - Reduce the need for manual corrections and style adjustments after Copilot has contributed code\r\n- ✨ **YOU NEED TO WRITE LESS** - Copilot will have the context\r\n\r\n**What Instructions Help With:**\r\n1. **Coding Style** - Explicit types vs `var`, method naming conventions, etc.\r\n1. **Framework Preferences** - Which libraries, patterns, and approaches to use\r\n1. **Project Structure** - How to organize and structure code within your solution\r\n1. **Error Prevention** - Avoiding common pitfalls and anti-patterns\r\n1. **Test generation** - Generating test which match your project's pattern\r\n\r\n**Pro Tip**: 💡 You can reference your `.editorconfig` file in your instructions! This helps Copilot understand your formatting rules, indentation preferences, and style guidelines - avoiding those annoying style errors that break builds.\r\n\r\nIn this project, we've already configured instructions in `.github/copilot-instructions.md` that emphasize explicit types, proper exception handling, and C# best practices. This means from Chat mode onwards, Copilot will generate code that fits our project perfectly!"
+    },
+    {
+      "file": "./GHCP-dotNet.code-workspace",
+      "title": "Practice: Generate Copilot Instructions for Your Repo",
+      "pattern": "github.copilot.chat.codeGeneration.useInstructionFiles",
+      "description": "**🎯 Assignment Time!**\r\nLet's practice creating instructions for your own repositories:\r\n\r\n1. **Navigate** to your favorite repo or day-to-day working repository in VS Code\r\n2. **Open the VS Code Chat** panel (Ctrl + Alt + I)\r\n3. **Look for the settings button** (⚙️) within the chat interface\r\n4. **Click on \"Generate Instructions\"** - This will analyze your repository and automatically create tailored Copilot instructions!\r\n5. **Review and customize** the generated instructions to match your team's preferences. \r\n\r\n**Double check to verify it has included the code-style instructions, correct it if it hasn't** \r\n\r\nThis auto-generation feature saves you time and ensures you don't miss important coding patterns specific to your project.\r\n\r\nReady to see the difference? Let's move to Inline Chat where these instructions start taking effect! 🚀"
+    },
+    {
+      "file": ".github/prompts/Interactive-Chat.prompt.md",
+      "title": "Prompts files: Orchestrating Scenarios with Chat",
+      "description": "Next level customizations Part 1- Let's explore how you can use interactive prompts to create dynamic, multi-step chat experiences!\n\nOpen the attached `Interactive-Chat.prompt.md` file. This prompt demonstrates how you can guide users through a sequence of questions, keep track of their answers, and even branch to other files based on their responses.\n\n**Why is this powerful?**\n- You can orchestrate different scenarios and learning paths based on user input.\n- If a certain answer is given (like the number 42), you can reference a different prompt file (see how it refers to [PromptB](.github/prompts/PromptB.prompt.md)).\n- This enables you to build interactive, context-aware flows for onboarding, quizzes, or troubleshooting.\n\n**Try it out:**\n1. Open the prompt file and review the logic.\n2. Imagine how you could use this to create your own guided experiences.\n3. Think about how branching logic and file references can help you automate support, onboarding, or even code reviews!\n\nPro tip 1: You can chain multiple prompt files together, making your chat agent as smart (or witty) as you want!\n\nPro tip 2: You can quickly invoke a prompt by typing a slash `/` followed by the prompt name (e.g., `/Interactive-Chat`) in the chat side panel or even inline. This will autocomplete and execute the prompt instantly—no need to browse for the file!\n\nReady to build your own interactive chat flows? Give it a go! 🤖✨",
+      "pattern": "Interactive Chat Prompt"
+    },
+    {
+      "file": "src/InlineChat.cs",
+      "description": "Using GHCP Inline Chat fits scenarios where you need to directly edit code, generate code that does more than one thing at a time, a very specific logic that's too long for a variable name, or you want to provide examples (yes, that's a recommendation!).\r\n\r\n\r\nIn VS Code the default shortcut is Ctrl + I (🍏: Command + I) to open inline chat.\r\n\r\n\r\nThis is also where models start coming into play. Tokens are per model, so if you run out, simply switch a model. \r\n\r\nGPT models are great for reasoning, 4o when you care more about speed and less about accuracy.\r\n\r\nAnthropic models are superb for code generation. \r\n\r\nUsing Anthropic within VS Code **is allowed** and I'd recommend sonnet 4 over 3.7 or 3.5",
+      "line": 5,
+      "title": "Inline chat introduction"
+    },
+    {
+      "file": "src/InlineChat.cs",
+      "description": "Your task: \r\n\r\nCreate a function which takes an alert and checks if the `AlertStatus` is not `Resolved` for more than seven days, log to console if so.\r\n\r\nNow you're probably thinking - \r\n\r\nCan I copy and paste this? The answer is yes. But how will you practice phrasing your requirements? \r\n\r\nDoes the below code work? If not, try selecting the function, and prompt inline chat again with `\"/fix\"`.\r\n\r\nLazy tip:\r\nIf the thought of typing a lot is what deters you, consider talking to VS Code (aka _Vibe Coding_)! Using the extension \"VS Code Speech\" (Also recommended in workspace and should be installed) you can simply talk to VS Code with speech to text. This works very well and can be done both in editor, in inline chat as well as in the chat window, give it a go!\r\n\r\nOnce installed, you may invoke it within the inline chat using another click of `Ctrl + I` or simply press the mic button with the mouse",
+      "line": 8,
+      "title": "Inline chat #1"
+    },
+    {
+      "file": "src/InlineChat.cs",
+      "description": "Create a method which accepts a list of alerts and as a parameter, checks if there are any alerts with Critical severity which are still active, return these alerts.\r\n\r\n\r\n\r\nNow we have to stop for a second to ask:\r\nBut why can't I simply use comments instead? They are also left in the repo explaining what the code below does! \r\n\r\n1. Code gets refactored, comments usually do not. These comments will demand a cleanup in the future and get disregarded and become unrelevant.\r\n2. More importantly, comments with GHCP aren't iterable, meaning it's a one-shot completions attempt. If you get it wrong, you have to edit your comment and try again. When using the inline chat you can then reply with what needs to be fixed. Just think of how rare it is when you code things that work for the first time, the better you are explaining what you want to GHCP, the better GHCP will help you, sometimes it takes a few rounds of explanations, a.k.a. \"inline chat ;)\"",
+      "line": 10,
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 1,
+          "character": 162
+        }
+      },
+      "title": "Inline chat #2"
+    },
+    {
+      "file": "src/InlineChat.cs",
+      "description": "Create a method which receives a list of alerts, a locationName and a severity level and checks if location had any alerts with provided severity",
+      "line": 12,
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 1,
+          "character": 14
+        }
+      },
+      "title": "Inline chat #3"
+    },
+    {
+      "file": "src/InlineChat.cs",
+      "description": "Filter alerts which have a source of everything but words ending with 'phone'.\r\nI.e Source == 'Sensor', yes, 'telephone', no, 'microphone', no. Log to console when matched and return alerts",
+      "line": 14,
+      "title": "Inline chat #4"
+    },
+    {
+      "file": "src/InlineChat.cs",
+      "description": "Using Inline Chat gives us significant advantages over completions and comments. With Inline Chat, we can:\n\n1. Handle complex, multi-step tasks that are too lengthy for variable names\n2. Iterate on our requirements through conversation rather than starting over\n3. Provide specific examples to clarify our intent\n4. Fix and refine code through multiple prompts\n\nRemember to use `/fix` when you need to fix existing code, and consider using speech-to-text for more natural interactions. When defining your requirements, be as specific as possible about the task you're trying to accomplish, including expected inputs, outputs, and edge cases.",
+      "line": 14,
+      "title": "Inline chat summary"
+    },
+    {
+      "file": "src/Chat.cs",
+      "description": "Using GHCP Ask mode (previously called Chat) is ideal for discussions, questions, guidance and reassurance of your code. \r\n\r\nOpen GCHP side pane (Ctrl + Alt + I), and pick the Ask from the dropdown at the bottom next to the model picker. It's much easier to provide context in this experience and to use ALIASES. We'll talk about aliases next.\r\n\r\nThe more context you add, the more accurate and efficient Copilot would be.\r\n\r\n\r\nSome examples to use:\r\n1. \"Check if I missed any edge cases in #selection\"\r\n2. \"Can you provide a numerical example? To validate my logic. Format response as a table with inputs and output values\"\r\n3. \"How do I run the project?\"\r\n    - More often than not, the instructions may be a little obscure, Copilot knows how to simplify and provide simple commands.\r\n4. Using it for some git operations! \r\n    - \"How to edit the last commit message?\"\r\n\t- \"List all commits that have any editing of the path `packages/some_package`, format the list as table with columns 'author, commit message, date'\"",
+      "line": 6,
+      "title": "Chat introduction"
+    },
+    {
+      "file": "src/Chat.cs",
+      "description": "Let's say you remembered there's an enum for `AlarmSeverity`, but looking at the file structure, you can't recall where it is.\r\nYou may use the @workspace scope or the #codebase context in GHCP to search for it. These two GHCP functionalties iterate over *the _open_ project* and can answer your questions on a project scope. Try asking in Ask mode\r\n\r\nUsing @workspace it where you can find the AlarmSeverity enum?\r\n\r\nTip: When searching in the project scope, be sure to deselect the active file attached by clicking the eye icon next to it.",
+      "line": 8,
+      "title": "Chat #1"
+    },
+    {
+      "file": "src/Chat.cs",
+      "description": "In Ask mode, run \"`/help`\"\r\n\r\nThere are many more aliases, even for the `Terminal` which is extremely useful to debug errors, recall git commands much more. I urge you to go into the Chat input and iterate over these prefixes\r\n1. \"`/`\" - Use specific functionality \"/test\", \"/explain\", \"/search\". \r\n1. \"`@`\" - Used to set a scope @github/@vscode/@workspace etc.\r\n1. \"`#`\" - Used to provide additional context. Recently #folder and #problem were introduced and are helpful in scoping the context\r\n\r\nThere's a lot the Chat experience can provide and teach, don't hesitate to explore!\r\nUse the up and down arrows and spend a little time to read the descriptions of these commands.",
+      "line": 21,
+      "title": "Chat #2"
+    },
+    {
+      "file": "src/Chat.cs",
+      "description": "More searching... I've hidden a few SECRETs in the repo. Use Copilot to find these secrets, there should be four.\r\n\r\nTry your own phrasing or use the prompt: \"List all secrets in #codebase\"",
+      "line": 10,
+      "title": "Chat #3",
+      "selection": {
+        "start": {
+          "line": 4,
+          "character": 18
+        },
+        "end": {
+          "line": 4,
+          "character": 47
+        }
+      }
+    },
+    {
+      "file": "src/Chat.cs",
+      "description": "Now let's use #selection, this is what you should be using when asking code-specific-questions or writing unit tests. Highlight the text desired and in your question (even in inline-chat) use the #selection alias.\r\n\r\nLet's try it now: \r\n1. Highlight the method\r\n2. Ask in chat \"What edge cases did I miss\"?\r\n",
+      "line": 12,
+      "title": "Chat #4"
+    },
+    {
+      "file": "src/Chat.cs",
+      "description": "While trivial, lots of developers tend to jump into code and start reading it to understand, natural language is still faster to comprehend. You can use the `/explain` alias and read it in plain text, it's pretty accurate.",
+      "line": 17,
+      "title": "Chat #5"
+    },
+    {
+      "file": "src/Chat.cs",
+      "description": "Finally, let's write some unit tests using GHCP.\r\nRemember what we said? \r\nHighlight the desired code to test, in our case the Divider function. let's write up unittests for it, remember to fix the missing edge case first.\r\n\r\nIn chat, write:\r\n\r\n`@workspace /tests Write unit tests for #selection using NUnit`\r\n\r\n\r\nDon't forget to mention which test framework you're using as it may vary.",
+      "line": 19,
+      "selection": {
+        "start": {
+          "line": 6,
+          "character": 1
+        },
+        "end": {
+          "line": 6,
+          "character": 54
+        }
+      },
+      "title": "Chat #6"
+    },
+    {
+      "file": "src/Alert.cs",
+      "description": "**Copilot Edits** (Shortcut: _Ctrl+Shift+I_)\r\n\r\nUsed to **edit multiple files at the same time**! \r\n\r\nChanges are applied directly to the files provided as context / detected by Copilot, these files are also called \"working set\" and recently the 10 file limit has been removed (yay). \r\n\r\n\r\nLet's start with the prompt:\r\n\r\n\"_Add a to string method to the Alert class. In addition, add logger to the project. Search the #codebase , in places the console was used to print anything, also append the alert to string method and log instead of printing to console_\"\r\n\r\n\r\nHit submit and watch the magic happens\r\n\r\nDon't forget to accept / discard the changes.",
+      "line": 26,
+      "title": "Copilot edits 😮",
+      "selection": {
+        "start": {
+          "line": 19,
+          "character": 3
+        },
+        "end": {
+          "line": 19,
+          "character": 46
+        }
+      }
+    },
+    {
+      "file": "src/Program.cs",
+      "description": "Introducing Agent mode, same functionality of editing multiple files, but with iterations. Let's call it edits ++ \r\n\r\nLet's ask Copilot to create the spec for our functionality:\r\n\r\n`\r\nI want the main function to use the different functions that exists in the code base. And allow the user to filter specific alerts based on inputs. So this will now be a console app that runs on the generated alerts, and while the alerts are generated every second in the background.Without interfering with alert generation, the user will be able to get the current status by choosing a number from the menu which will execute a specific function.`\r\n\r\nBut before that, **copy the prompt above** and let's use our [special prompt](.github\\prompts\\Feature breakdown prompt.prompt.md):\r\n\r\n\r\nCtrl + Shift + P -> Use prompt\r\n\r\nPaste the prompt, and take the response.",
+      "line": 18,
+      "selection": {
+        "start": {
+          "line": 4,
+          "character": 1
+        },
+        "end": {
+          "line": 8,
+          "character": 1
+        }
+      },
+      "title": "Github Copilot Agent 🤯"
+    },
+    {
+      "title": "Create a Custom Chat Mode: PRD builder",
+      "description": "Let's set up our own custom GitHub Copilot Chat Mode to accelerate creation of Product Requirements Documents (PRDs).\n\n**Goal**: Create a mode named **PRD builder** that loads the persona instructions so you can quickly draft structured PRDs from short prompts.\n\n### Steps\n1. Open the Copilot Chat panel (Ctrl + Alt + I).\n1. Click the mode dropdown (where you pick *Ask* / *Agent*). You probably noticed there are already two custom modes, let's create our own by selecting **Configure modes** (see screenshot below).\n\n    ![Configure Modes](./assets/ConfigureModes.png)\n\n1. In the configuration UI, click **Create a new custom mode**.\n\n    ![Create Mode](./assets/Create a new custom mode.png)\n\n1. Let's use the User level scope to share this across projects instead of being project specific\n\n    ![User Data Folder](./assets/UserDataFolder.png)    \n        \n1. Name it exactly: `PRD builder`.\n1. Open this file `PRD-Builder-Persona.md` ([link](./personas/PRD-Builder-Persona.md)) and copy its entire contents into the new mode's definition/instructions text area.\n1. (Optional) Pick an emoji/icon to make it stand out (🧱, 📄, 🚀).\n1. Save the mode.\n\nCongratulations, you've created a custom mode.\n\n\n### What This Gives You\n- Consistent PRD structure (intro, goals, user stories, requirements, non-goals, metrics)\n- Automatic reminder to ask clarifying questions first\n- Faster onboarding for teammates who can reuse the same mode\n\n### Pro Tips\n- You can store multiple personas (e.g., *Test Plan Builder*, *API Spec Writer*) the same way.\n- Version your persona files in Git so the team can improve them collaboratively.\n- If you update the persona text here, re-open the mode config and re-paste to sync.\n\nWhen you're done, try giving it a *very short* feature idea and see how it first asks you clarifying questions (that's by design!).\n\nGive it a spin—your future specs will thank you. ✨"
+    },
+    {
+      "file": ".github/chatmodes/tour-builder.chatmode.md",
+      "title": "Next Level Customizations: Meet Your Custom AI Agent",
+      "description": "Ready to go beyond the basics? Let's harness the power of a custom AI agent!\n\nIn this step, we'll introduce the concept of a custom AI agent that can be tailored to your workflow, preferences, and even your team's unique needs.\n\nOpen the `tour-builder.chatmode.md` file. This is the very entity that helped build this tour!\n\n**Why use a custom agent?**\n- Automate repetitive tasks\n- Guide users through complex flows\n- Enforce best practices and standards\n- Provide contextual help and onboarding\n\nCustom agents can be as simple or as advanced as you need. They're the next step in making your development environment truly yours.\n\nTake a look at the file and see how you might start building your own!"
+    },
+    {
+      "file": ".github/chatmodes/tour-builder.chatmode.md",
+      "title": "Next Level Customizations: Build Your Own Tour Agent",
+      "description": "Now it's your turn!\n\nUse the `tour-builder.chatmode.md` as a template to create your own custom AI agent - Plan Mode.\n\n**Try this:**\n1. Duplicate the file and rename it for your scenario or simply use the Copilot \"Ask/Edits/Agent\" menu to create a new Custom Agent.\n2. Edit the tools, logic, and flow to match your needs.\n3. Reference other prompt files, add branching, or even integrate with your team's documentation.\n\n**Pro tip:** You can use your custom agent to automate onboarding, enforce code review checklists, or even run interactive workshops.\n**Pro tip 2:** You can save it per repo or per user\n\nThe possibilities are endless—let your creativity (and your agent) run wild! 🤖✨",
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 13,
+          "character": 81
+        }
+      }
+    },
+    {
+      "title": "GitHub Copilot Coding Agent: Official Demo & Repo",
+      "description": "Let's take it one step further and explore the official GitHub Copilot Agent (ADO) project!\n\nThe Copilot Agent is an open-source, extensible framework for building your own AI-powered developer workflows—beyond just chat and completions.\n\n**What can you do with it?**\n- Integrate with GitHub\n- Automate code reviews, PR triage, and more\n- Build custom agents for your team's unique needs\n\n**Want to understand the difference?**\n📖 [Learn about the differences between coding agent and agent mode](https://github.blog/developer-skills/github/less-todo-more-done-the-difference-between-coding-agent-and-agent-mode-in-github-copilot/) - This blog post explains when to use each approach!\n\n**Demo time:**\n1. Let's visit the [GHCP-Lab](https://github.com/microsoft/GHCP-Lab) and try it out.\n\nThis is where the future of AI-powered development is headed—give it a try and imagine the possibilities! 🚀"
+    },
+    {
+      "description": "🎉 **Congratulations - You're Now a GitHub Copilot Power User!**\r\n\r\nYou've mastered the complete spectrum: Completions → Inline Chat → Chat → Edits → Agent Mode → Custom Agents → ADO Integration!\r\n\r\n**💪 Ready to Transform Your Development Workflow?**\r\n\r\n**Action Item #1 - Boost Your Daily Coding:**\r\n1. **Generate custom instructions** for your main repositories (Settings ⚙️ → Generate Instructions)\r\n2. **Focus on code generation patterns** - What frameworks do you use? What coding standards?\r\n3. **Include test generation rules** - Specify your testing framework, naming conventions, and coverage expectations\r\n\r\n**Action Item #2 - Automate Your Complex Tasks:**\r\n1. **Identify repetitive workflows** - Code reviews, PR templates, deployment checklists\r\n2. **Break them into sub-tasks** - Each step the ADO agent can handle\r\n3. **Create custom agents** - Use the tour-builder template we explored\r\n\r\n**Remember the 3 S Principle:**\r\n- **Short** 📝\r\n- **Simple** ⚡\r\n- **Specific** 🎯\r\n\r\n**Plus provide context:** #file, #selection, #codebase, @workspace\r\n\r\n**🚀 Your Next Mission:** Go implement Copilot instructions in your real projects and watch your productivity soar!\r\n\r\nThe future of coding is collaborative - and you're now equipped to lead it! 🤖✨",
+      "line": 19,
+      "title": "Your Copilot Journey Starts Now! 🚀"
+    }
+  ]
+}
