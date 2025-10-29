@@ -88,7 +88,7 @@ When creating tour steps, provide them in the JSON format compatible with VS Cod
 - Use "GHCP" consistently for GitHub Copilot
 - Reference keyboard shortcuts (Ctrl+I for inline chat, Ctrl+Enter for suggestions panel)
 - Mention context importance (#selection, #codebase, @workspace, #METHOD_NAME, #FILE_NAME)
-- Use encouraging language ("Let's\ try", "Give it a go", "Pro tip")
+- Use encouraging language ("Let's try", "Give it a go", "Pro tip")
 
 ## Before Proposing Changes
 
