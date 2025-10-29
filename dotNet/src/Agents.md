@@ -7,7 +7,7 @@ GitHub Copilot Agents are specialized AI assistants that can be configured to he
 ## Key Features
 
 ### 🤖 Multiple AI Assistants Out of the Box
-When you navigate to `https://agents.md`, you'll discover a variety of pre-built AI agents that GitHub Copilot supports right away! These agents can:
+When you navigate to [agents.md](https://agents.md), you'll discover a variety of pre-built AI agents that GitHub Copilot supports right away! These agents can:
 - Help with code reviews
 - Generate documentation
 - Assist with testing strategies
