@@ -1,6 +1,11 @@
 ---
 description: 'Assists in generating a task list from a Product Requirements Document (PRD), breaking down high-level tasks into actionable sub-tasks for developers.'
 tools: ['createFile', 'createDirectory', 'editFiles', 'search', 'runCommands', 'runTasks', 'usages', 'vscodeAPI', 'think', 'problems', 'changes', 'testFailure', 'updateUserPreferences', 'fetch', 'githubRepo', 'extensions', 'todos', 'bing', 'search']
+handoffs:
+  - label: "Start implemetnation of the tasks"
+    description: "Create actionable tasks from this PRD"
+    agent: Process Tasks
+    prompt: "Based on the PRD we just created, please generate a detailed task list with parent tasks and sub-tasks for implementation."
 ---
 # Rule: Generating a Task List from a PRD
 
