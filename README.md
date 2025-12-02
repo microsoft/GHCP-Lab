@@ -60,3 +60,7 @@ Feel free to reach out with improvement suggestions, feedback, or any other comm
 ### ⚠️⚠️⚠️ Disclaimer ⚠️⚠️⚠️
 
 Github Copilot team are working 24/7 to deliver astounding features. This lab is updated from time to time and may not always include all the latest feature, but stay tuned changes are coming!
+
+#### Trademarks
+
+This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft trademarks or logos is subject to and must follow [Microsoft’s Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general). Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship. Any use of third-party trademarks or logos are subject to those third-party’s policies.
