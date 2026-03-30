@@ -1,0 +1,13 @@
+{
+  "name": "code-reviewer",
+  "description": "Automated code review assistant with structured feedback",
+  "version": "1.2.0",
+  "author": {
+    "name": "GHCP Lab"
+  },
+  "license": "MIT",
+  "keywords": ["review", "quality", "security", "best-practices"],
+  "category": "developer-tools",
+  "agents": "agents/",
+  "skills": "skills/"
+}

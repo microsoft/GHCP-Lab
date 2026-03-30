@@ -135,3 +135,13 @@ HIDDENSECRETVALUE = 5
 # Ignore the files in the dotnet obj folder
 dotNet/obj/
 dotNet/bin/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/

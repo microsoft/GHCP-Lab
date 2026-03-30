@@ -1,0 +1,25 @@
+{
+  "servers": {
+    "alert-mcp-ts": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["ts-node", "${workspaceFolder}/Typescript/mcp-server/alert-mcp-server.ts"],
+      "env": {},
+      "description": "Alert MCP Server — TypeScript track"
+    },
+    "alert-mcp-cs": {
+      "type": "stdio",
+      "command": "dotnet",
+      "args": ["run", "--project", "${workspaceFolder}/dotNet/McpServer"],
+      "env": {},
+      "description": "Alert MCP Server — C# track"
+    },
+    "alert-mcp-cpp": {
+      "type": "stdio",
+      "command": "${workspaceFolder}/cpp/mcp_server/alert-mcp-server",
+      "args": [],
+      "env": {},
+      "description": "Alert MCP Server — C++ track (compile first: see cpp/mcp_server/README)"
+    }
+  }
+}

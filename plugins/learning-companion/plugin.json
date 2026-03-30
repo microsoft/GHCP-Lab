@@ -1,0 +1,13 @@
+{
+  "name": "learning-companion",
+  "description": "Interactive learning companion for GitHub Copilot features",
+  "version": "0.5.0",
+  "author": {
+    "name": "GHCP Lab"
+  },
+  "license": "MIT",
+  "keywords": ["learning", "education", "copilot", "exercises"],
+  "category": "education",
+  "agents": "agents/",
+  "skills": "skills/"
+}

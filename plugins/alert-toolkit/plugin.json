@@ -1,0 +1,13 @@
+{
+  "name": "alert-toolkit",
+  "description": "Alert analysis and triage tools for security event management",
+  "version": "1.0.0",
+  "author": {
+    "name": "GHCP Lab"
+  },
+  "license": "MIT",
+  "keywords": ["alerts", "security", "triage", "analysis"],
+  "category": "security",
+  "agents": "agents/",
+  "skills": "skills/"
+}
